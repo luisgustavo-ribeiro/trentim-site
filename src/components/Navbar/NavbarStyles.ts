@@ -10,12 +10,7 @@ export const NavbarContent = styled.div`
 
   .nav-container {
     display: flex;
-    width: 100%;
-    height: 100%;
     align-items: center;
-    max-width: 1320px;
-    padding: 0 20px;
-    margin: 0 auto;  
   }
 
   .links-container {

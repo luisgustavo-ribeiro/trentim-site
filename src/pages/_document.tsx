@@ -3,6 +3,7 @@ import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, Next
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
+
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -37,7 +38,7 @@ export default class MyDocument extends Document {
 		      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
-        <body>
+        <body>          
           <Main />
           <NextScript />
         </body>

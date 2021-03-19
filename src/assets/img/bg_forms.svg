@@ -1,0 +1,80 @@
+<svg width="1304" height="354" viewBox="0 0 1304 354" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="802" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1252" y="202" width="50" height="50" transform="rotate(-180 1252 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="902" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="902" y="252" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M952 227C952 213.193 963.193 202 977 202C990.807 202 1002 213.193 1002 227V252H952V227Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1002" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1052" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1102" y="252" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1102" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1202" y="252" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M1152 227C1152 213.193 1163.19 202 1177 202V202C1190.81 202 1202 213.193 1202 227V227C1202 240.807 1190.81 252 1177 252H1152V227Z" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1152" y="252" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1152" y="302" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1202" y="202" width="50" height="50" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1252" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="352" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="402" y="202" width="50" height="50" rx="25" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="452" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="502" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="402" y="252" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="552" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="602" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="702" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="752" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M102 227C102 213.193 113.193 202 127 202V202C140.807 202 152 213.193 152 227V252H102V227Z" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="152" y="202" width="50" height="50" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="252" y="202" width="50" height="50" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="502" y="202" width="50" height="50" transform="rotate(-180 502 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="502" y="152" width="50" height="50" transform="rotate(-180 502 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="452" y="202" width="50" height="50" transform="rotate(-180 452 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="452" y="152" width="50" height="50" transform="rotate(-180 452 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="402" y="202" width="50" height="50" transform="rotate(-180 402 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="402" y="152" width="50" height="50" transform="rotate(-180 402 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="402" y="102" width="50" height="50" transform="rotate(-180 402 102)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="352" y="202" width="50" height="50" transform="rotate(-180 352 202)" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M352 127C352 140.807 340.807 152 327 152C313.193 152 302 140.807 302 127L302 102L352 102L352 127Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="302" y="202" width="50" height="50" transform="rotate(-180 302 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="302" y="152" width="50" height="50" transform="rotate(-180 302 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="252" y="152" width="50" height="50" transform="rotate(-180 252 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="202" y="102" width="50" height="50" transform="rotate(-180 202 102)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="202" y="202" width="50" height="50" transform="rotate(-180 202 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="202" y="152" width="50" height="50" transform="rotate(-180 202 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="102" y="102" width="50" height="50" transform="rotate(-180 102 102)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="152" y="202" width="50" height="50" transform="rotate(-180 152 202)" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M202 177C202 163.193 213.193 152 227 152V152C240.807 152 252 163.193 252 177V177C252 190.807 240.807 202 227 202L202 202L202 177Z" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="152" y="102" width="50" height="50" transform="rotate(-180 152 102)" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M102 127C102 113.193 113.193 102 127 102V102C140.807 102 152 113.193 152 127V127C152 140.807 140.807 152 127 152L102 152L102 127Z" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="152" y="52" width="50" height="50" transform="rotate(-180 152 52)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="102" y="202" width="50" height="50" transform="rotate(-180 102 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="102" y="152" width="50" height="50" transform="rotate(-180 102 152)" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M2 177C2 163.193 13.1929 152 27 152V152C40.8071 152 52 163.193 52 177L52 202H2L2 177Z" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="52" y="152" width="50" height="50" transform="rotate(-180 52 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1002" y="202" width="50" height="50" transform="rotate(-180 1002 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="952" y="202" width="50" height="50" transform="rotate(-180 952 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="952" y="152" width="50" height="50" transform="rotate(-180 952 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="902" y="202" width="50" height="50" transform="rotate(-180 902 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="902" y="152" width="50" height="50" rx="25" transform="rotate(-180 902 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="852" y="202" width="50" height="50" transform="rotate(-180 852 202)" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="852" y="152" width="50" height="50" transform="rotate(-180 852 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="802" y="202" width="50" height="50" transform="rotate(-180 802 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="802" y="152" width="50" height="50" transform="rotate(-180 802 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="902" y="102" width="50" height="50" transform="rotate(-180 902 102)" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M702 177C702 163.193 713.193 152 727 152V152C740.807 152 752 163.193 752 177V202H702V177Z" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="752" y="152" width="50" height="50" transform="rotate(-180 752 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="702" y="202" width="50" height="50" transform="rotate(-180 702 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="652" y="202" width="50" height="50" transform="rotate(-180 652 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="602" y="202" width="50" height="50" transform="rotate(-180 602 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="602" y="152" width="50" height="50" transform="rotate(-180 602 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="552" y="202" width="50" height="50" rx="25" transform="rotate(-180 552 202)" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1302" y="202" width="50" height="50" transform="rotate(-180 1302 202)" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M852 227C852 213.193 863.193 202 877 202C890.807 202 902 213.193 902 227C902 240.807 890.807 252 877 252L852 252L852 227Z" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1202" y="202" width="50" height="50" transform="rotate(-180 1202 202)" stroke="#F2F2F2" stroke-width="3"/>
+<path d="M1152 127C1152 113.193 1163.19 102 1177 102V102C1190.81 102 1202 113.193 1202 127V152H1152V127Z" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1152" y="202" width="50" height="50" transform="rotate(-180 1152 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1152" y="152" width="50" height="50" transform="rotate(-180 1152 152)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1102" y="202" width="50" height="50" rx="25" transform="rotate(-180 1102 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1052" y="202" width="50" height="50" transform="rotate(-180 1052 202)" stroke="#F2F2F2" stroke-width="3"/>
+<rect x="1052" y="152" width="50" height="50" transform="rotate(-180 1052 152)" fill="#F2F2F2" stroke="#F2F2F2" stroke-width="3"/>
+</svg>

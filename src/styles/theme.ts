@@ -1,7 +1,7 @@
 const theme = {
   mainColor: {    
     pro: "#03148B",
-    tec: "#15B4E6",
+    tec: "#00BCF2",
     sol: "#69207B",
     exp: "#00B294",
     dir: "#BCD909",
@@ -9,7 +9,8 @@ const theme = {
     sup: "#EE0F23",
   },
   otherColor: {
-    grey: "#606167",
+    grey1: "#606167",
+    grey3: "#828282",
     blue: "#0072C6",
     oran: "#FF8C00",
     yell: "#FCD116",
