@@ -28,10 +28,10 @@ const tabItems = [
 ];
 
 const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
-  const [activeItem, setActiveItem] = React.useState<number>(0);
+  const [heroActiveItem, setHeroActiveItem] = React.useState<number>(0);
 
   const showItem = (index: number) => {
-    setActiveItem(index);
+    heroActiveItem !== index && setHeroActiveItem(index);
   };
 
   return (
@@ -42,15 +42,16 @@ const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
           <div className="hero-left-col">
             <div className="hero-carousel">
               {
-                tabItems && 
-                  <div className='hero-carousel-content'>
+                tabItems.map((tabItem, index) => 
+                  <div key={index} className={`hero-carousel-content ${index === heroActiveItem ? 'open' : ''}`}>
                     <div className='content-img'>
-                      <img src={tabItems[activeItem].url} alt={tabItems[activeItem].name} />
+                      <img src={tabItem.url} alt={tabItem.name} />
                     </div>
                     <div className='content-info'>
-                      <p>{tabItems[activeItem].text}</p>
+                      <p>{tabItem.text}</p>
                     </div>
                   </div>
+                )
               }
               <div className="hero-carousel-items">
                 {tabItems.map((item, index) => 

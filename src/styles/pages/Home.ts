@@ -15,7 +15,6 @@ export const HomeContainer = styled.div`
       color: ${(props) => props.theme.otherColor.blue};
       font-size: 24px;
       line-height: 1.6;
-      max-width: 540px;
       text-align: center;
       align-self: center;
       margin: 0 auto;
@@ -24,13 +23,13 @@ export const HomeContainer = styled.div`
 
   #ms-partnership {
     display: flex;
-    height: 450px;    
-    background-color: ${props => props.theme.mainColor.tec};
-
+    height: 450px;
+    background-color: ${(props) => props.theme.mainColor.tec};
+    
     .image-block {
       display: flex;
       overflow: hidden;
-      width: 100%;
+      width: calc(100% - 430px);
 
       img {
         object-fit: cover;
@@ -46,14 +45,14 @@ export const HomeContainer = styled.div`
       padding-right: 0;
       justify-content: center;
       height: 100%;
-      background-color: ${props => props.theme.mainColor.tec};
+      background-color: ${(props) => props.theme.mainColor.tec};
       color: #fff;
       width: 430px;
       z-index: 10;
       margin-left: auto;
 
       :before {
-        content: '';
+        content: "";
         position: absolute;
         top: calc(50% - 24px);
         left: -24px;
@@ -61,7 +60,7 @@ export const HomeContainer = styled.div`
         width: 48px;
         transform: rotate(45deg);
         z-index: 9;
-        background-color: ${props => props.theme.mainColor.tec};
+        background-color: ${(props) => props.theme.mainColor.tec};
       }
     }
 
@@ -75,7 +74,7 @@ export const HomeContainer = styled.div`
         font-weight: 400;
         padding: 24px;
         padding-left: 0;
-        border-right: 3px solid #fff
+        border-right: 3px solid #fff;
       }
     }
 
@@ -83,6 +82,58 @@ export const HomeContainer = styled.div`
       list-style: none;
       padding-left: 24px;
       font-weight: 300;
+    }
+  }
+
+  #process {
+    height: 100vh;
+    background-color: #fff;
+    color: ${(props) => props.theme.mainColor.exp};
+    padding: 100px 0;
+
+    .section-title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: 400;
+    }
+    
+    .process-forms {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .form {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: 4px solid;
+    margin: 0 20px;
+
+    &.square {
+      border-radius: 0;
+    }
+
+    &.postIt {
+      border-top-left-radius: 50%;
+    }
+
+    &.lemon {
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+
+    &.chat {
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+
+    &.circle {
+      border-radius: 100%;
     }
   }
 `;

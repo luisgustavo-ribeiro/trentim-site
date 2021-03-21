@@ -1,13 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeroContent = styled.div`
-  
   width: 100%;
   height: 800px;
   display: flex;
   flex-direction: column;
   position: relative;
-  background: ${props => props.theme.otherColor.blue};
+  background: ${(props) => props.theme.otherColor.blue};
   overflow: hidden;
 
   .bg-container {
@@ -26,26 +25,61 @@ export const HeroContent = styled.div`
   .hero-items {
     display: grid;
     grid-template-columns: 800px 480px;
-    height: 100%;    
+    height: 100%;
   }
 
   .hero-left-col {
     display: flex;
-    flex-direction:column;    
+    flex-direction: column;
     justify-content: center;
-    background-color: ${props => props.theme.otherColor.blue};
+    background-color: ${(props) => props.theme.otherColor.blue};
     padding-right: 130px;
     position: relative;
+  }
+
+  .hero-right-col {
+    width: 480px;
+    background-color: #fff;
   }
 
   .hero-carousel {
     display: flex;
     flex-direction: column;
-    z-index: 2
+    z-index: 2;
   }
 
   .hero-carousel-content {
-    margin: 0 0 50px;
+    margin: 0 0 50px;    
+    overflow: hidden;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+
+    .content-img {
+      transform: translateY(20px);
+      opacity: 0;
+      transition: 400ms ease-in-out all;
+    }
+
+    .content-info {
+      transform: translateY(20px);
+      opacity: 0;
+      transition: 300ms ease-in-out all;
+    }
+    
+    &.open {
+      position: relative;
+      opacity: 1;
+      z-index: 99;
+
+      .content-img,
+      .content-info {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: 400ms ease-in-out all;
+        transition-delay: 200ms;
+      }
+    }
   }
 
   .content-img {
@@ -53,7 +87,7 @@ export const HeroContent = styled.div`
     height: 60px;
     margin: 0 0 40px;
 
-    img {      
+    img {
       filter: grayscale(1) brightness(10);
     }
   }
@@ -77,7 +111,7 @@ export const HeroContent = styled.div`
 
   .carousel-logo-container {
     display: flex;
-    background-color: ${props => props.theme.otherColor.grey3};
+    background-color: ${(props) => props.theme.otherColor.grey3};
     padding: 8px 10px;
     align-items: center;
     justify-content: center;

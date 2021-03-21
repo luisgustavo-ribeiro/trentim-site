@@ -19,6 +19,10 @@ export default createGlobalStyle `
     max-width: 1320px;
     padding: 0 20px;
     margin: 0 auto;
+
+    &.col {
+      flex-flow: column;
+    }
   }
 
 `
