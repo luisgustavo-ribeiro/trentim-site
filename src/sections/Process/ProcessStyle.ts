@@ -4,6 +4,7 @@ export const ProcessStyle = styled.section`
   background-color: #fff;
   color: ${(props) => props.theme.colors.base.aqua};
   padding: 100px 0;
+  min-height: 680px;
 
   .section-title {
     width: 100%;
@@ -21,7 +22,7 @@ export const ProcessStyle = styled.section`
     justify-content: center;
     font-size: 24px;
     margin: 24px 0 40px;
-    color: ${(props) => props.theme.colors.base.grey3};
+    color: ${(props) => props.theme.colors.base.gray3};
   }
 
   .process-forms {
@@ -52,7 +53,7 @@ export const ProcessStyle = styled.section`
     }
 
     .text {
-      color: ${props => props.theme.colors.base.grey3};
+      color: ${props => props.theme.colors.base.gray3};
       font-size: 18px;
       line-height: 1.4;
       display: none;
@@ -60,42 +61,6 @@ export const ProcessStyle = styled.section`
       &.open {
         display: block;
       }
-    }
-  }
-
-  .form {
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: 5px solid;
-    margin: 0 20px;
-
-    &.open {
-      height: 100px;
-      width: 100px;      
-    }
-
-    &.square {
-      border-radius: 0;
-    }
-
-    &.postIt {
-      border-top-left-radius: 50%;
-    }
-
-    &.lemon {
-      border-top-left-radius: 50%;
-      border-bottom-right-radius: 50%;
-    }
-
-    &.chat {
-      border-top-left-radius: 50%;
-      border-top-right-radius: 50%;
-      border-bottom-right-radius: 50%;
-    }
-
-    &.circle {
-      border-radius: 100%;
     }
   }
 `;

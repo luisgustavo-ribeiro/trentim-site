@@ -5,6 +5,9 @@ import WhiteBanner from "../sections/WhiteBanner";
 import MSPartnership from "../sections/MSPartnership";
 import ProcessSection from "../sections/Process";
 import Contact from "../sections/Contact";
+import Blog from "../sections/Blog";
+import Newsletter from "../sections/Newsletter";
+import Footer from "../sections/Footer";
 
 
 // function parallax() {
@@ -29,6 +32,12 @@ const Home: React.FC = () => {
 
       <Contact />
 
+      <Blog />
+
+      <Newsletter />
+
+      <Footer />
+      
     </HomeContainer>
   );
 };

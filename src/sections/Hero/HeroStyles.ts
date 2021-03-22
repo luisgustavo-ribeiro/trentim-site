@@ -111,7 +111,7 @@ export const HeroContent = styled.div`
 
   .carousel-logo-container {
     display: flex;
-    background-color: ${(props) => props.theme.colors.base.grey3};
+    background-color: ${(props) => props.theme.colors.base.gray3};
     padding: 8px 10px;
     align-items: center;
     justify-content: center;

@@ -24,7 +24,9 @@ const theme = {
       red: '#E81123',
       pink: '#EC008C',
       purple: '#68217A',
-      grey3: '#828282',
+      gray2: '#4F4F4F',
+      gray3: '#828282',
+      gray6: '#f2f2f2',
     },
     light: {
       blue: '#4668C5',
