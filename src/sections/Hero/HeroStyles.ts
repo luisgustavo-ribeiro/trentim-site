@@ -6,7 +6,7 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  background: ${(props) => props.theme.otherColor.blue};
+  background: ${(props) => props.theme.colors.base.blue2};
   overflow: hidden;
 
   .bg-container {
@@ -32,7 +32,7 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: ${(props) => props.theme.otherColor.blue};
+    background-color: ${(props) => props.theme.colors.base.blue2};
     padding-right: 130px;
     position: relative;
   }
@@ -111,7 +111,7 @@ export const HeroContent = styled.div`
 
   .carousel-logo-container {
     display: flex;
-    background-color: ${(props) => props.theme.otherColor.grey3};
+    background-color: ${(props) => props.theme.colors.base.grey3};
     padding: 8px 10px;
     align-items: center;
     justify-content: center;
