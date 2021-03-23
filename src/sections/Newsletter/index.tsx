@@ -1,6 +1,10 @@
 import React from "react";
 import { NewsletterStyles } from "./NewsletterStyles";
 
+import BrancoNews from "../../assets/img/quadrados/branco-newsletter-home.png";
+import VermelhoBL from "../../assets/img/quadrados/vermelho1-home.png";
+import VermelhoBR from "../../assets/img/quadrados/vermelho2-home.png";
+
 const Newsletter = () => {
   const [email, setEmail] = React.useState<string>("");
 
@@ -29,6 +33,9 @@ const Newsletter = () => {
             </form>
           </div>
         </div>
+        <div className="detail" style={{top: "50%", transform: "translateY(-50%)", right: "20px"}}><img src={BrancoNews} alt=""/></div>
+        <div className="detail" style={{bottom: "-203px", left: "300px"}}><img src={VermelhoBL} alt=""/></div>
+        <div className="detail" style={{bottom: "-203px", right: "20px"}}><img src={VermelhoBR} alt=""/></div>
       </div>
     </NewsletterStyles>
   );

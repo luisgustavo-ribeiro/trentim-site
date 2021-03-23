@@ -3,9 +3,12 @@ import { ProcessStyle } from './ProcessStyle';
 
 import ProcessDivider from '../../assets/img/process_divider.svg';
 
-import VerdeTL from "../../assets/img/quadrados/verde1-home.png"
-import VerdeTC from "../../assets/img/quadrados/verde2-home.png"
-import VerdeTR from "../../assets/img/quadrados/verde3-home.png"
+import VerdeTL from "../../assets/img/quadrados/verde1-home.png";
+import VerdeTC from "../../assets/img/quadrados/verde2-home.png";
+import VerdeTR from "../../assets/img/quadrados/verde3-home.png";
+
+import VerdeClaroBL from "../../assets/img/quadrados/verde-claro1-home.png";
+import VerdeClaroBR from "../../assets/img/quadrados/verde-claro2-home.png";
 
 const process = [
   {
@@ -41,9 +44,9 @@ const ProcessSection: React.FC = () => {
   return (
     <ProcessStyle id='process'>
       <div className="container col">
-        <div className="detail" style={{top: '-200px', left: '0'}}><img src={VerdeTL} /></div>
-        <div className="detail" style={{top: '-150px', right: '254px'}}><img src={VerdeTC} /></div>
-        <div className="detail" style={{top: '-100px', right: '0'}}><img src={VerdeTR} /></div>
+        <div className="detail" style={{top: '-201px', left: "20px"}}><img src={VerdeTL} /></div>
+        <div className="detail" style={{top: '-151px', right: '254px'}}><img src={VerdeTC} /></div>
+        <div className="detail" style={{top: '-101px', right: '20px'}}><img src={VerdeTR} /></div>
         <div className="section-title">
           <span className="form postIt"></span>
           <span style={{padding: '0 0 12px'}}>nosso processo</span>
@@ -66,6 +69,8 @@ const ProcessSection: React.FC = () => {
             )}
           </div>
         </div>
+        <div className="detail" style={{bottom: '-235px', left: '20px'}}><img src={VerdeClaroBL} /></div>
+        <div className="detail" style={{bottom: '-235px', right: '20px'}}><img src={VerdeClaroBR} /></div>
       </div>
 
     </ProcessStyle>

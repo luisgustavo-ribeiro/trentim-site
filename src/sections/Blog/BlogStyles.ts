@@ -24,6 +24,7 @@ export const BlogStyles = styled.section`
       border-radius: 2px;
       overflow: hidden;
       background-color: ${(props) => props.theme.colors.base.gray6};
+      z-index: 1;
 
       .img-container {
         height: 180px;

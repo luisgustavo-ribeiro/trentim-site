@@ -12,10 +12,10 @@ const WhiteBanner: React.FC = () => {
           Aliamos pessoas, tecnologias e métodos <br />
           para transformar a Gestão de Projetos das organizações
         </p>
-        <div className="detail" style={{ left: "0", bottom: "-55px" }}>
+        <div className="detail" style={{ left: "20px", bottom: "-51px" }}>
           <img src={LeftDetail} />
         </div>
-        <div className="detail" style={{ right: "0", bottom: "-105px" }}>
+        <div className="detail" style={{ right: "20px", bottom: "-101px" }}>
           <img src={RightDetail} />
         </div>
       </div>

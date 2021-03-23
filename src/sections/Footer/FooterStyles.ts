@@ -4,7 +4,7 @@ export const FooterStyles = styled.footer`
   position: relative;
   background-color: #fff;
   color: ${props => props.theme.colors.base.gray1};
-  padding: 150px 0;
+  padding: 150px 0 280px;
 
   a {
     color: ${props => props.theme.colors.base.purple};

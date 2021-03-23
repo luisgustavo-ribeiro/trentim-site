@@ -6,6 +6,8 @@ import Instagram from '../../assets/img/footer/instagram.svg';
 import Linkedin from '../../assets/img/footer/linkedin.svg';
 import Youtube from '../../assets/img/footer/youtube.svg';
 
+import RoxoFooter from "../../assets/img/quadrados/roxo-footer.png";
+
 const Footer = () => {
   return (
     <FooterStyles id="footer">
@@ -38,6 +40,9 @@ const Footer = () => {
           <div className="mid-col"></div>
           <div className="right-col"></div>
           
+        </div>
+        <div className="detail" style={{left: "20px", bottom: "-280px"}}>
+          <img src={RoxoFooter} alt=""/>
         </div>
       </div>
     </FooterStyles>

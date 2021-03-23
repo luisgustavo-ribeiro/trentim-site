@@ -4,7 +4,7 @@ export const ProcessStyle = styled.section`
   background-color: #fff;
   color: ${(props) => props.theme.colors.base.aqua};
   padding: 100px 0;
-  min-height: 680px;
+  min-height: 730px;
 
   .section-title {
     width: 100%;

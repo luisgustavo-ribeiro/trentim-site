@@ -1,6 +1,11 @@
 import React from "react";
 import { ContactStyle } from "./ContactStyles";
 
+import BrancoBKG from "../../assets/img/quadrados/branco-do-contato-home.png";
+import LaranjaBL from "../../assets/img/quadrados/laranja1-home.png"
+import LaranjaBC from "../../assets/img/quadrados/laranja2-home.png"
+import LaranjaBR from "../../assets/img/quadrados/laranja3-home.png"
+
 const Contact: React.FC = () => {
 
   const [name, setName] = React.useState<string>('');
@@ -122,6 +127,12 @@ const Contact: React.FC = () => {
           <span className="subtitle">Seja a transformação, venha para a Trentim!</span>
           <button className="btn-work">vagas</button>
         </div>
+        <div className="detail" style={{bottom: '100px', right: "20px"}}>
+          <img src={BrancoBKG} alt=""/>
+        </div>
+        <div className="detail" style={{bottom: "-203px", left: "20px"}}><img src={LaranjaBL} /></div>
+        <div className="detail" style={{bottom: "-203px", right: "210px"}}><img src={LaranjaBC} /></div>
+        <div className="detail" style={{bottom: "-253px", right: "20px"}}><img src={LaranjaBR} /></div>
       </div>
     </ContactStyle>
   );

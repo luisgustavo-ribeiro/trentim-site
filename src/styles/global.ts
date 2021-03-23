@@ -13,7 +13,9 @@ export default createGlobalStyle `
   }
 
   .detail {
+    display: flex;
     position: absolute;
+    z-index: 1;
   }
 
   .container {
