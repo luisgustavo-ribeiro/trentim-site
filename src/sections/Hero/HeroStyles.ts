@@ -38,8 +38,15 @@ export const HeroContent = styled.div`
   }
 
   .hero-right-col {
+    display: flex;
     width: 480px;
     background-color: #fff;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      object-position: 250% 50%;
+    }
   }
 
   .hero-carousel {

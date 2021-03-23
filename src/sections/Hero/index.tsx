@@ -62,7 +62,9 @@ const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
               </div>
             </div>
           </div>
-          <div className="hero-right-col"></div>
+          <div className="hero-right-col">
+            <img src="https://cdn.stocksnap.io/img-thumbs/960w/man-desk_QPJWWR3W2E.jpg" alt=""/>
+          </div>
         </div>
       </div>
     </HeroContent>
