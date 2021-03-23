@@ -6,6 +6,7 @@ export const WhiteBannerStyles = styled.section`
   justify-content: center;
   height: 150px;
   background-color: white;
+  position: relative;
 
   p {
     color: ${(props) => props.theme.colors.base.blue2};

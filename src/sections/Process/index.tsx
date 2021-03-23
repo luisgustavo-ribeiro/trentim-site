@@ -3,6 +3,10 @@ import { ProcessStyle } from './ProcessStyle';
 
 import ProcessDivider from '../../assets/img/process_divider.svg';
 
+import VerdeTL from "../../assets/img/quadrados/verde1-home.png"
+import VerdeTC from "../../assets/img/quadrados/verde2-home.png"
+import VerdeTR from "../../assets/img/quadrados/verde3-home.png"
+
 const process = [
   {
     form: "square",
@@ -36,8 +40,10 @@ const ProcessSection: React.FC = () => {
 
   return (
     <ProcessStyle id='process'>
-
       <div className="container col">
+        <div className="detail" style={{top: '-200px', left: '0'}}><img src={VerdeTL} /></div>
+        <div className="detail" style={{top: '-150px', right: '254px'}}><img src={VerdeTC} /></div>
+        <div className="detail" style={{top: '-100px', right: '0'}}><img src={VerdeTR} /></div>
         <div className="section-title">
           <span className="form postIt"></span>
           <span style={{padding: '0 0 12px'}}>nosso processo</span>

@@ -27,7 +27,6 @@ export const MSPartnershipStyle = styled.div`
     background-color: ${(props) => props.theme.colors.base.cyan};
     color: #fff;
     width: 430px;
-    z-index: 10;
     margin-left: auto;
 
     :before {

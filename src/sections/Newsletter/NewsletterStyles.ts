@@ -13,16 +13,6 @@ export const NewsletterStyles = styled.section`
     justify-content: center;
   }
 
-  .title-area {
-    display: flex;
-    align-items: center;
-
-    .title {
-      font-size: 48px;
-      padding: 0 0 12px;
-    }
-  }
-
   .newsletter-info {
     display: flex;
     flex-direction: column;

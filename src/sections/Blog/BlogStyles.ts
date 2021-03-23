@@ -10,11 +10,6 @@ export const BlogStyles = styled.section`
     justify-content: center;
     align-items: center;
     margin: 0 0 60px;
-
-    .title {
-      padding: 0 0 12px;
-      font-size: 48px;
-    }
   }
 
   .cards-container {

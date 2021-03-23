@@ -22,15 +22,10 @@ export const ContactStyle = styled.section`
 
     .title-area {
       display: flex;
-      color: ${(props) => props.theme.colors.dark.yellow};
-      font-size: 48px;
+      color: ${(props) => props.theme.colors.dark.yellow};      
       margin: 0 0 24px;
       align-items: center;
       justify-content: center;
-
-      .title {
-        padding: 0 0 12px;
-      }
     }
 
     .subtitle {
@@ -130,11 +125,6 @@ export const ContactStyle = styled.section`
       display: flex;
       align-items: center;
       justify-content: center;
-
-      .title {
-        font-size: 48px;
-        padding: 0 0 12px;
-      }
     }
 
     .subtitle {

@@ -24,6 +24,7 @@ const theme = {
       red: '#E81123',
       pink: '#EC008C',
       purple: '#68217A',
+      gray1: '#5C5C5C',
       gray2: '#4F4F4F',
       gray3: '#828282',
       gray6: '#f2f2f2',

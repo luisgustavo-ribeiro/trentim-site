@@ -12,7 +12,12 @@ export default createGlobalStyle `
     background-color: #fafafa;
   }
 
+  .detail {
+    position: absolute;
+  }
+
   .container {
+    position: relative;
     display: flex;
     width: 100%;
     height: 100%;
@@ -22,6 +27,21 @@ export default createGlobalStyle `
 
     &.col {
       flex-flow: column;
+    }
+  }
+
+  .title-area {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+
+    .form {
+      margin-left: 0;
+    }
+
+    .title {
+      padding: 0 0 12px;
+      font-size: 48px;
     }
   }
 
