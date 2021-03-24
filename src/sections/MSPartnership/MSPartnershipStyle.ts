@@ -61,4 +61,30 @@ export const MSPartnershipStyle = styled.div`
     padding-left: 24px;
     font-weight: 300;
   }
+
+  @media screen and (max-width: 640px) {
+    height: auto;
+
+    .container {
+      flex-direction: column;
+      padding: 0;
+    }
+    
+    .image-block {
+      width: 100%;
+      height: 200px;
+    }
+
+    .partner-block {
+      width: 100%;
+      padding: 20px;
+      height: 200px;
+
+      &:before {
+        top: -24px;
+        left: auto;
+        right: 40px;
+      }      
+    }
+  }
 `;

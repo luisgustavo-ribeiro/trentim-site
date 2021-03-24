@@ -1,12 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const NavbarContent = styled.div`
-  
   width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
-  background-color: ${props => props.theme.colors.base.blue2};
+  background-color: ${(props) => props.theme.colors.base.blue2};
 
   .nav-container {
     display: flex;
@@ -16,6 +15,10 @@ export const NavbarContent = styled.div`
   .links-container {
     display: flex;
     margin-left: auto;
+
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
   }
 
   .nav-link {
@@ -33,5 +36,4 @@ export const NavbarContent = styled.div`
       color: #fff;
     }
   }
-
 `;

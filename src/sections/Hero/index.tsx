@@ -53,12 +53,14 @@ const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
                   </div>
                 )
               }
-              <div className="hero-carousel-items">
-                {tabItems.map((item, index) => 
-                    <div className="carousel-logo-container" onClick={() => showItem(index)}>
-                      <img src={item.url} alt={item.name} />
-                    </div>
-                )}
+              <div className="hero-carousel-items-track">
+                <div className="hero-carousel-items">
+                  {tabItems.map((item, index) => 
+                      <div className="carousel-logo-container" onClick={() => showItem(index)}>
+                        <img src={item.url} alt={item.name} />
+                      </div>
+                  )}
+                </div>
               </div>
             </div>
           </div>

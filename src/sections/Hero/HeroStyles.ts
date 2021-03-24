@@ -109,6 +109,10 @@ export const HeroContent = styled.div`
     }
   }
 
+  .hero-carousel-items-track {
+    position: relative;
+  }
+
   .hero-carousel-items {
     width: 100%;
     display: grid;
@@ -131,6 +135,37 @@ export const HeroContent = styled.div`
       width: 100%;
       display: flex;
       filter: grayscale(1) brightness(10);
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 350px;
+
+    .hero-items {
+      display: flex;
+      width: 100%;
+    }
+
+    .hero-left-col {
+      padding: 0;
+      width: 100%;
+    }
+
+    .hero-right-col {
+      display: none;
+    }
+
+    .content-img {
+      display: none;
+    }
+
+    .content-info p {
+      font-size: 14px
+    }
+
+    .hero-carousel-items-track {
+      overflow: auto;
+      margin: 0 -20px 0 0;
     }
   }
 `;

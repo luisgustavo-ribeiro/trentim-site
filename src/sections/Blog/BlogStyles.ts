@@ -82,4 +82,14 @@ export const BlogStyles = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 640px) {
+    padding: 40px 0;
+
+    .cards-container {
+      overflow: auto;
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
 `;

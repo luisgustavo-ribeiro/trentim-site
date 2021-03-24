@@ -47,4 +47,15 @@ export const NewsletterStyles = styled.section`
       cursor: pointer;
     }
   }
+
+  @media screen and (max-width: 640px) {
+    padding: 40px 0;
+
+    .newsletter-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `;

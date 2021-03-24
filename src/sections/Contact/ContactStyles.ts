@@ -22,7 +22,7 @@ export const ContactStyle = styled.section`
 
     .title-area {
       display: flex;
-      color: ${(props) => props.theme.colors.dark.yellow};      
+      color: ${(props) => props.theme.colors.dark.yellow};
       margin: 0 0 24px;
       align-items: center;
       justify-content: center;
@@ -140,10 +140,24 @@ export const ContactStyle = styled.section`
       border: 1px solid #fff;
       background-color: #fff;
       color: ${(props) => props.theme.colors.dark.yellow};
-      font-size: 24px;      
+      font-size: 24px;
       border-radius: 2px;
       margin: 0 auto;
       cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 30px 0 70px;
+
+    .container {
+      flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+      padding: 30px 16px;
+      min-width: 100%;
     }
   }
 `;

@@ -6,13 +6,8 @@ export const ProcessStyle = styled.section`
   padding: 100px 0;
   min-height: 730px;
 
-  .section-title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    font-weight: 400;
+  .title-area {
+    margin: 0 auto;
   }
 
   .section-subtitle {
@@ -23,6 +18,7 @@ export const ProcessStyle = styled.section`
     font-size: 24px;
     margin: 24px 0 40px;
     color: ${(props) => props.theme.colors.base.gray3};
+    text-align: center;
   }
 
   .process-forms {
@@ -38,7 +34,7 @@ export const ProcessStyle = styled.section`
       align-items: center;
     }
 
-    .forms-container, 
+    .forms-container,
     .text-container {
       max-width: 800px;
       width: 100%;
@@ -53,7 +49,7 @@ export const ProcessStyle = styled.section`
     }
 
     .text {
-      color: ${props => props.theme.colors.base.gray3};
+      color: ${(props) => props.theme.colors.base.gray3};
       font-size: 18px;
       line-height: 1.4;
       display: none;
@@ -61,6 +57,16 @@ export const ProcessStyle = styled.section`
       &.open {
         display: block;
       }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+
+    padding: 40px 0;
+    
+    .section-subtitle {
+      font-size: 18px;
+      margin: 40px 0 50px;
     }
   }
 `;

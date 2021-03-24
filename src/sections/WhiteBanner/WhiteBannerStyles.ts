@@ -15,5 +15,10 @@ export const WhiteBannerStyles = styled.section`
     text-align: center;
     align-self: center;
     margin: 0 auto;
+
+    
+    @media screen and (max-width: 640px) {
+      font-size: 14px;
+    }
   }
 `;

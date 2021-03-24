@@ -42,8 +42,27 @@ export default createGlobalStyle `
     }
 
     .title {
-      padding: 0 0 12px;
-      font-size: 48px;
+      padding: 0 0 12px;      
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .detail {
+      display: none;
+    }
+
+    .title-area {
+      font-size: 24px;
+
+      .form {
+        width: 30px;
+        height: 30px;
+        border-width: 3px;        
+      }
+
+      .title {
+        padding: 0 0 6px;
+      }
     }
   }
 
