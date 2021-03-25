@@ -63,10 +63,25 @@ export const ProcessStyle = styled.section`
   @media screen and (max-width: 640px) {
 
     padding: 40px 0;
+    overflow: hidden;
+    min-height: 500px;
+
+    .process-track {
+      overflow: auto;
+      width: 100%;
+
+      .forms-container {
+        min-width: 800px;
+      }
+    }
     
     .section-subtitle {
       font-size: 18px;
       margin: 40px 0 50px;
+    }
+
+    .text {
+      font-size: 14px !important;
     }
   }
 `;

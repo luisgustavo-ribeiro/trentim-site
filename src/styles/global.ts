@@ -38,7 +38,7 @@ export default createGlobalStyle `
     font-size: 48px;
 
     .form {
-      margin-left: 0;
+      margin-left: 0 !important;
     }
 
     .title {
@@ -55,9 +55,9 @@ export default createGlobalStyle `
       font-size: 24px;
 
       .form {
-        width: 30px;
-        height: 30px;
-        border-width: 3px;        
+        width: 30px !important;
+        height: 30px !important;
+        border-width: 3px !important;       
       }
 
       .title {

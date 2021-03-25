@@ -8,6 +8,19 @@ export const ContactStyle = styled.section`
   &:hover {
     background-color: ${(props) => props.theme.colors.base.orange};
     transition: 10s ease-in-out all;
+
+    .form-info {
+      .title-area {
+        color: ${(props) => props.theme.colors.base.orange};
+        transition: 10s ease-in-out all;
+      }
+
+      .send-button {
+        background-color: ${(props) => props.theme.colors.base.orange};
+        border-color: ${(props) => props.theme.colors.base.orange};
+        transition: 10s ease-in-out all;
+      }
+    }
   }
 
   .contact-form {
@@ -21,10 +34,8 @@ export const ContactStyle = styled.section`
     }
 
     .title-area {
-      display: flex;
       color: ${(props) => props.theme.colors.dark.yellow};
       margin: 0 0 24px;
-      align-items: center;
       justify-content: center;
     }
 

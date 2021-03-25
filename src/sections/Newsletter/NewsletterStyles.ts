@@ -56,6 +56,16 @@ export const NewsletterStyles = styled.section`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 0;
+    }
+
+    .newsletter-info {
+      align-self: normal;
+      margin: 40px 0 0;
+    }
+
+    .text {
+      font-size: 18px;
     }
   }
 `;

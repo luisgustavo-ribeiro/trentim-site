@@ -55,4 +55,14 @@ export const FooterStyles = styled.footer`
   .title-area {
     color: ${props => props.theme.colors.base.purple};
   }
+
+  @media screen and (max-width: 640px) {
+    padding: 40px 0 60px;
+
+    .footer-container {
+      display: flex;
+      flex-flow: column;
+      gap: 0;
+    }
+  }
 `;

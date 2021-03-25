@@ -160,7 +160,7 @@ export const HeroContent = styled.div`
     }
 
     .content-info p {
-      font-size: 14px
+      font-size: 18px
     }
 
     .hero-carousel-items-track {

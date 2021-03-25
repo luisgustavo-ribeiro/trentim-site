@@ -53,14 +53,16 @@ const ProcessSection: React.FC = () => {
         </div>
         <div className="section-subtitle">conheça as etapas do nosso processo de transformação</div>
         <div className="process-forms">
-          <div className='forms-container'>
-            {process.map((item, index) =>
-              <>
-                <div className={`form ${item.form} ${processActiveItem === index ? 'open' : ''}`} onClick={() => showProcess(index)}></div>
-                {index < process.length - 1 ? <span style={{display: 'flex'}}> <ProcessDivider /> </span> : ''}
-              </>
-            )}            
-          </div>                          
+          <div className="process-track">
+            <div className='forms-container'>
+              {process.map((item, index) =>
+                <>
+                  <div className={`form ${item.form} ${processActiveItem === index ? 'open' : ''}`} onClick={() => showProcess(index)}></div>
+                  {index < process.length - 1 ? <span style={{display: 'flex'}}> <ProcessDivider /> </span> : ''}
+                </>
+              )}            
+            </div>
+          </div>                      
           <div className='text-container'>
             {process.map((item, index) =>             
               <div className={`text ${processActiveItem === index ? 'open' : ''}`}>
