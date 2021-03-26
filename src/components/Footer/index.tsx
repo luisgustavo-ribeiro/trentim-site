@@ -8,7 +8,7 @@ import Youtube from '../../assets/img/footer/youtube.svg';
 
 import RoxoFooter from "../../assets/img/quadrados/roxo-footer.png";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <FooterStyles id="footer">
       <div className="container">
@@ -49,4 +49,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

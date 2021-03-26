@@ -1,8 +1,8 @@
 import React from "react";
-import IHeroProps from "../../interfaces/IHeroProps";
+import IHeroProps from "../../../interfaces/IHeroProps";
 import { HeroContent } from "./HeroStyles";
 
-import BG_Hero from '../../assets/img/bg_hero.png';
+import BG_Hero from '../../../assets/img/bg_hero.png';
 
 const tabItems = [
   {

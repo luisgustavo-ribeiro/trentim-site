@@ -1,14 +1,12 @@
 import React from "react";
 import { HomeContainer } from "../styles/pages/Home";
-import Hero from "../sections/Hero";
-import WhiteBanner from "../sections/WhiteBanner";
-import MSPartnership from "../sections/MSPartnership";
-import ProcessSection from "../sections/Process";
-import Contact from "../sections/Contact";
-import Blog from "../sections/Blog";
-import Newsletter from "../sections/Newsletter";
-import Footer from "../sections/Footer";
-
+import Hero from "../pageSections/Home/Hero";
+import WhiteBanner from "../pageSections/Home/WhiteBanner";
+import MSPartnership from "../pageSections/Home/MSPartnership";
+import ProcessSection from "../pageSections/Home/Process";
+import Contact from "../pageSections/Home/Contact";
+import Blog from "../pageSections/Home/Blog";
+import Newsletter from "../pageSections/Home/Newsletter";
 
 // function parallax() {
 //   const scrolled = window.pageYOffset;
@@ -34,9 +32,7 @@ const Home: React.FC = () => {
 
       <Blog />
 
-      <Newsletter />
-
-      <Footer />
+      <Newsletter />      
       
     </HomeContainer>
   );

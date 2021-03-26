@@ -1,9 +1,9 @@
 import React from "react";
 import { NewsletterStyles } from "./NewsletterStyles";
 
-import BrancoNews from "../../assets/img/quadrados/branco-newsletter-home.png";
-import VermelhoBL from "../../assets/img/quadrados/vermelho1-home.png";
-import VermelhoBR from "../../assets/img/quadrados/vermelho2-home.png";
+import BrancoNews from "../../../assets/img/quadrados/branco-newsletter-home.png";
+import VermelhoBL from "../../../assets/img/quadrados/vermelho1-home.png";
+import VermelhoBR from "../../../assets/img/quadrados/vermelho2-home.png";
 
 const Newsletter = () => {
   const [email, setEmail] = React.useState<string>("");

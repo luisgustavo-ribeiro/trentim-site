@@ -1,8 +1,8 @@
 import React from "react";
 import { BlogStyles } from "./BlogStyles";
 
-import VermelhoBlogCL from "../../assets/img/quadrados/vermelho1-home-1.png"
-import VermelhoBlogCR from "../../assets/img/quadrados/vermelho2-home-1.png"
+import VermelhoBlogCL from "../../../assets/img/quadrados/vermelho1-home-1.png"
+import VermelhoBlogCR from "../../../assets/img/quadrados/vermelho2-home-1.png"
 
 const cardsData = [
   {image: 'https://cdn.stocksnap.io/img-thumbs/960w/laptop-working_HB4IJY3TPI.jpg', title: 'Project for the Web e Power Plataform: Conexão e Benefícios', text: 'O Project for the Web foi desenvolvido pela Microsoft visando ser de fácil uso para planejadores de projetos e suas equipes.' },
