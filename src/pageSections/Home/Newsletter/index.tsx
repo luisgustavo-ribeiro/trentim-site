@@ -13,7 +13,7 @@ const Newsletter = () => {
       <div className="container">
         <div className="newsletter-container">
           <div className="title-area">
-            <div className="form chat"></div>
+            <div className="shape chat"></div>
             <div className="title">newsletter</div>
           </div>
           <div className="newsletter-info">

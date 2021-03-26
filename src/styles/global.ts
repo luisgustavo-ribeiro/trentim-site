@@ -32,7 +32,7 @@ export default createGlobalStyle `
     }
   }
 
-  .form {
+  .shape {
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -78,7 +78,7 @@ export default createGlobalStyle `
     align-items: center;
     font-size: 48px;
 
-    .form {
+    .shape {
       margin-left: 0 !important;
     }
 
@@ -95,7 +95,7 @@ export default createGlobalStyle `
     .title-area {
       font-size: 24px;
 
-      .form {
+      .shape {
         width: 30px !important;
         height: 30px !important;
         border-width: 3px !important;       

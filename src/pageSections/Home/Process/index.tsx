@@ -48,7 +48,7 @@ const ProcessSection: React.FC = () => {
         <div className="detail" style={{top: '-151px', right: '254px'}}><img src={VerdeTC} /></div>
         <div className="detail" style={{top: '-101px', right: '20px'}}><img src={VerdeTR} /></div>
         <div className="title-area">
-          <span className="form postIt"></span>
+          <span className="shape postIt"></span>
           <span className="title">nosso processo</span>
         </div>
         <div className="section-subtitle">conheça as etapas do nosso processo de transformação</div>

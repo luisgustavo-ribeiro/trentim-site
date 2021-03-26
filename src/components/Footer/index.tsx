@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         <div className="footer-container">
           <div className="left-col">
             <div className="title-area">
-              <span className="form chat"></span>
+              <span className="shape chat"></span>
               <span className="title">contate-nos</span>
             </div>
             <ul id="address-info">

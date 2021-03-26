@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
         <div className="contact-form">
           <div className="form-info">
             <div className="title-area">
-              <span className="form chat"></span>
+              <span className="shape chat"></span>
               <span className="title">contato</span>
             </div>
             <div className="subtitle">
@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
         </div>
         <div className="contact-info">
           <div className="title-area">
-            <span className="form person"></span>
+            <span className="shape person"></span>
             <span className="title">vagas</span>
           </div>
           <span className="subtitle">Seja a transformação, venha para a Trentim!</span>

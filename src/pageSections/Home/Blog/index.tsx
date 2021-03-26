@@ -17,7 +17,7 @@ const Blog = () => {
         <div className="detail" style={{top: "50%", transform: "translateY(-50%)", left: "20px"}}><img src={VermelhoBlogCL} alt=""/></div>
         <div className="detail" style={{top: "50%", right: "20px"}}><img src={VermelhoBlogCR} alt=""/></div>
         <div className="title-area">
-          <span className="form chat"></span>
+          <span className="shape chat"></span>
           <span className="title">trends</span>
         </div>
         <div className="cards-container">

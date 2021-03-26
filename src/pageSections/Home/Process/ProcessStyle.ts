@@ -44,7 +44,7 @@ export const ProcessStyle = styled.section`
       text-align: center;
     }
 
-    .form {
+    .shape {
       cursor: pointer;
     }
 
