@@ -3,12 +3,10 @@ export interface ISectionWithShapeItems {
   shapeName: string;
   shapeColor: any;
   shapeZIndex: number;
-  image: string;
-  imagePosition: "left" | "right";
+  mediaUrl: string;  
   imageScale?: number;
   imageX?: string,
   imageY?: string,
-  imageZIndex: number;
   title: string;
   titleColor: any;
   text: string;
@@ -17,4 +15,7 @@ export interface ISectionWithShapeItems {
 
 export default interface ISectionWithShapeProps {
   item: ISectionWithShapeItems;
+  mediaType: "img" | "video";
+  mediaPosition: "left" | "right";
+  shapePosition: "left" | "right";
 }

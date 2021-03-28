@@ -10,7 +10,7 @@ export const SectionWithShapeStyles = styled.section`
     gap: 200px;
     width: 100%;
 
-    .img-w-shape {
+    .media-w-shape {
       position: relative;
 
       .shape-image {
@@ -18,7 +18,7 @@ export const SectionWithShapeStyles = styled.section`
         margin: 0;
         height: 290px;
         width: 290px;
-        border-width: 10px;
+        border-width: 16px;
       }
 
       .shape-left {
@@ -28,16 +28,17 @@ export const SectionWithShapeStyles = styled.section`
 
       .shape-right {
         bottom: -30px;
-        right: 30px;
+        right: 15px;
       }
     }
 
-    .img-container {
+    .media-container {
+      position: relative;
       display: flex;
       width: 100%;
       height: 290px;
       overflow: hidden;
-      z-index: 1;
+      z-index: 0;
 
       img {
         display: flex;
