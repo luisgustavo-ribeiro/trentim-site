@@ -53,7 +53,7 @@ const SectionWithShape:React.FC<ISectionWithShapeProps> = (props: ISectionWithSh
                     <img src={props.item.mediaUrl} style={{objectPosition: `${props.item.imageX ? props.item.imageX : "top"} ${props.item.imageY ? props.item.imageY : "right"}`, transform: `scale(${props.item.imageScale ? props.item.imageScale: ''})`}}/>
                   }
                   {props.mediaType === "video" && 
-                    <iframe width="100%" height="290" src={props.item.mediaUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>                    
+                    <iframe width="100%" height="290" src={props.item.mediaUrl} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>                    
                   }
                 </div>
               </div>

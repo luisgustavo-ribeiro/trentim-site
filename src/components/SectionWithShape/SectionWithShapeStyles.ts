@@ -45,6 +45,10 @@ export const SectionWithShapeStyles = styled.section`
         object-fit: cover;
         width: 100%;
       }
+
+      iframe {
+        background-color: #000;
+      }
     }
 
     .col {
