@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const links = [
-  { title: 'Cases',        url: 'http://www.google.com' },
+  { title: 'Cases',        url: '/cases' },
   { title: 'Soluções',     url: 'http://www.google.com' },
   { title: 'Seguimentos',  url: 'http://www.google.com' },
   { title: 'Carreiras',    url: '/carreiras' },
