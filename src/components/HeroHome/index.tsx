@@ -1,7 +1,7 @@
 import React from "react";
-import IHeroProps from "../../../interfaces/IHeroProps";
+import IHeroProps from "../../interfaces/IHeroProps";
 import { HeroContent } from "./HeroStyles";
-import { HeroBG } from "../../../assets/img/quadrados/home";
+import HeroBG from "../../assets/img/quadrados/home/hero.png";
 
 const tabItems = [
   {
@@ -26,7 +26,7 @@ const tabItems = [
   },
 ];
 
-const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
+const HeroHome: React.FC<IHeroProps> = (props: IHeroProps) => {
   const [heroActiveItem, setHeroActiveItem] = React.useState<number>(0);
 
   const showItem = (index: number) => {
@@ -72,4 +72,4 @@ const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
   );
 };
 
-export default Hero;
+export default HeroHome;

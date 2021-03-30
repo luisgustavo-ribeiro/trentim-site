@@ -1,6 +1,6 @@
 import React from "react";
 import SectionWithShape from "../components/SectionWithShape";
-import HeroCarreiras from "../pageSections/Carreiras/Hero";
+import HeroCarreiras from "../components/Hero";
 import { CarreirasContainer } from "../styles/pages/Carreiras";
 import theme from "../styles/theme";
 

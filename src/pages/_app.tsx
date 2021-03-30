@@ -23,7 +23,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <ThemeProvider theme={theme}>
         <Navbar links={links} />
         <GlobalStyle />
-        <Component {...pageProps} />
+        <Component {...pageProps} data-scroll-section />
         <Footer />
       </ThemeProvider>
     </div>

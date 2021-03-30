@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     "src/components"
-  ],
+, "src/assets/img/quadrados/home/index.js"  ],
   "exclude": [
     "node_modules"
   ]

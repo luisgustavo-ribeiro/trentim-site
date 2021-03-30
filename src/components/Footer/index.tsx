@@ -6,7 +6,7 @@ import Instagram from '../../assets/img/footer/instagram.svg';
 import Linkedin from '../../assets/img/footer/linkedin.svg';
 import Youtube from '../../assets/img/footer/youtube.svg';
 
-import RoxoFooter from "../../assets/img/quadrados/home/roxo-footer.png";
+import Roxo from "../../assets/img/quadrados/home/roxo.png";
 
 const Footer: React.FC = () => {
   return (
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
           
         </div>
         <div className="detail" style={{left: "20px", bottom: "-280px"}}>
-          <img src={RoxoFooter} alt=""/>
+          <img src={Roxo} alt=""/>
         </div>
       </div>
     </FooterStyles>
