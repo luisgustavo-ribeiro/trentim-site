@@ -126,7 +126,7 @@ const Carreiras: React.FC = () => {
       <SectionWithShape 
         item={firstSectionData[0]} 
         mediaType="video"          
-        mediaPosition={firstSectionData[0].mediaPosition} 
+        mediaPosition={firstSectionData[0].mediaPosition}
         shapePosition="left"
       />
 

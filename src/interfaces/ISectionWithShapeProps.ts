@@ -16,6 +16,6 @@ export interface ISectionWithShapeItems {
 export default interface ISectionWithShapeProps {
   item: ISectionWithShapeItems;
   mediaType: "img" | "video";
-  mediaPosition: "left" | "right";
-  shapePosition: "left" | "right";
+  mediaPosition: string | "left" | "right";
+  shapePosition: string | "left" | "right";
 }
