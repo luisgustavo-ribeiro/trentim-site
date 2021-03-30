@@ -8,7 +8,9 @@ export const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
     <NavbarContent>
       <div className="nav-container container">
         <div className="logo">
-          <Logo />
+          <a href="/">
+            <Logo />
+          </a>
         </div>
 
         <div className="links-container">

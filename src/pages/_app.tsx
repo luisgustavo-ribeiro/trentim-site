@@ -9,11 +9,11 @@ import Footer from "../components/Footer";
 
 const links = [
   { title: "Cases", url: "/cases" },
-  { title: "Soluções", url: "http://www.google.com" },
-  { title: "Seguimentos", url: "http://www.google.com" },
+  { title: "Soluções", url: "/" },
+  { title: "Seguimentos", url: "/" },
   { title: "Carreiras", url: "/carreiras" },
-  { title: "Blog", url: "http://www.google.com" },
-  { title: "Cliente", url: "http://www.google.com" },
+  { title: "Blog", url: "/" },
+  { title: "Cliente", url: "/" },
 ];
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {  
