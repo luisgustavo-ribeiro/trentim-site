@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterStyles = styled.footer`
+export const FooterStyles = styled.section`
   position: relative;
   background-color: #fff;
   color: ${props => props.theme.colors.base.gray1};
