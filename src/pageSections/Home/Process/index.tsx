@@ -3,12 +3,12 @@ import { ProcessStyle } from './ProcessStyle';
 
 import ProcessDivider from '../../../assets/img/process_divider.svg';
 
-import VerdeTL from "../../../assets/img/quadrados/verde1-home.png";
-import VerdeTC from "../../../assets/img/quadrados/verde2-home.png";
-import VerdeTR from "../../../assets/img/quadrados/verde3-home.png";
+import VerdeTL from "../../../assets/img/quadrados/home/verde1-home.png";
+import VerdeTC from "../../../assets/img/quadrados/home/verde2-home.png";
+import VerdeTR from "../../../assets/img/quadrados/home/verde3-home.png";
 
-import VerdeClaroBL from "../../../assets/img/quadrados/verde-claro1-home.png";
-import VerdeClaroBR from "../../../assets/img/quadrados/verde-claro2-home.png";
+import VerdeClaroBL from "../../../assets/img/quadrados/home/verde-claro1-home.png";
+import VerdeClaroBR from "../../../assets/img/quadrados/home/verde-claro2-home.png";
 
 const process = [
   {

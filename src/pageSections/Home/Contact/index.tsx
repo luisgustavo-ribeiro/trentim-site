@@ -1,10 +1,10 @@
 import React from "react";
 import { ContactStyle } from "./ContactStyles";
 
-import BrancoBKG from "../../../assets/img/quadrados/branco-do-contato-home.png";
-import LaranjaBL from "../../../assets/img/quadrados/laranja1-home.png"
-import LaranjaBC from "../../../assets/img/quadrados/laranja2-home.png"
-import LaranjaBR from "../../../assets/img/quadrados/laranja3-home.png"
+import BrancoBKG from "../../../assets/img/quadrados/home/branco-do-contato-home.png";
+import LaranjaBL from "../../../assets/img/quadrados/home/laranja1-home.png"
+import LaranjaBC from "../../../assets/img/quadrados/home/laranja2-home.png"
+import LaranjaBR from "../../../assets/img/quadrados/home/laranja3-home.png"
 
 const Contact: React.FC = () => {
 

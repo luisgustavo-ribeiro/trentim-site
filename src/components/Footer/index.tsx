@@ -6,7 +6,7 @@ import Instagram from '../../assets/img/footer/instagram.svg';
 import Linkedin from '../../assets/img/footer/linkedin.svg';
 import Youtube from '../../assets/img/footer/youtube.svg';
 
-import RoxoFooter from "../../assets/img/quadrados/roxo-footer.png";
+import RoxoFooter from "../../assets/img/quadrados/home/roxo-footer.png";
 
 const Footer: React.FC = () => {
   return (

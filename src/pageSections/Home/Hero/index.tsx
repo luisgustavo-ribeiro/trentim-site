@@ -1,8 +1,7 @@
 import React from "react";
 import IHeroProps from "../../../interfaces/IHeroProps";
 import { HeroContent } from "./HeroStyles";
-
-import BG_Hero from '../../../assets/img/bg_hero.png';
+import { HeroBG } from "../../../assets/img/quadrados/home";
 
 const tabItems = [
   {
@@ -36,7 +35,7 @@ const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
 
   return (
     <HeroContent>
-      <div className='bg-container' style={{backgroundImage: `url(${BG_Hero})`}}></div>
+      <div className='bg-container' style={{backgroundImage: `url(${HeroBG})`}}></div>
       <div className="container">
         <div className="hero-items">
           <div className="hero-left-col">
