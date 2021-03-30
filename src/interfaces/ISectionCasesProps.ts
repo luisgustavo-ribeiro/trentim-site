@@ -6,7 +6,7 @@ export interface ISectionCasesItem {
   text: string;
   textColor: string;
   imgUrl: string;
-  imgAlignment: "left" | "right";
+  imgAlignment: string | "left" | "right";
   imgPositionX: string;
   imgPositionY: string;
   imgScale: number;
