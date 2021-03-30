@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroStyles } from "./HeroStyles";
-import HeroBG from "../../../assets/img/quadrados/hero-bg.png";
-import HeroCarreirasIMG from "../../../assets/img/pages/carreiras/hero-carreiras.png";
+import HeroBG from "../../assets/img/quadrados/home/hero.png";
+import HeroCarreirasIMG from "../../assets/img/pages/carreiras/hero-carreiras.png";
 
 const HeroCarreiras: React.FC = () => {
   return (
