@@ -4,7 +4,7 @@ import HeroHome from "../components/HeroHome";
 
 import HeroBG from "../assets/img/quadrados/home/hero.png";
 import Azul1 from "../assets/img/quadrados/home/azul1.png";
-import Azul2 from "../assets/img/quadrados/home/azul1.png";
+import Azul2 from "../assets/img/quadrados/home/azul2.png";
 import BrancoContato from "../assets/img/quadrados/home/branco_contato.png";
 import BrancoNewsLetter from "../assets/img/quadrados/home/branco_newsletter.png";
 import Laranja1 from "../assets/img/quadrados/home/laranja1.png";
@@ -76,7 +76,7 @@ const Home: React.FC = () => {
   }  
 
   return (
-    <SmoothScrollProvider options={{ smooth: true, multiplier: 0.5 }}>
+    <SmoothScrollProvider options={{ smooth: true, multiplier: 1 }}>
       
       <HomeContainer>
 
@@ -88,16 +88,10 @@ const Home: React.FC = () => {
               Aliamos pessoas, tecnologias e métodos <br />
               para transformar a Gestão de Projetos das organizações
             </p>
-            <div
-              className="detail"
-              style={{ left: "20px", bottom: "-51px" }}
-              data-scroll
-              data-scroll-position="top"
-              data-scroll-speed="-0.4"
-            >
+            <div className="detail" style={{ left: "20px", bottom: "-51px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
               <img src={Azul1} />
             </div>
-            <div className="detail" style={{ right: "20px", bottom: "-101px" }}>
+            <div className="detail"  style={{ right: "20px", bottom: "-101px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
               <img src={Azul2} />
             </div>
           </div>
@@ -130,13 +124,13 @@ const Home: React.FC = () => {
 
         <section id='process'>
           <div className="container col">
-            <div className="detail" style={{top: '-201px', left: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.4">
+            <div className="detail" style={{top: '-251px', left: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
               <img src={Verde1} />
             </div>
-            <div className="detail" style={{top: '-151px', right: '254px'}}>
+            <div className="detail" style={{top: '-201px', right: '274px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
               <img src={Verde2} />
             </div>
-            <div className="detail" style={{top: '-101px', right: '20px'}}>
+            <div className="detail" style={{top: '-151px', right: '20px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.4">
               <img src={Verde3} />
             </div>
             <div className="title-area">
@@ -163,8 +157,12 @@ const Home: React.FC = () => {
                 )}
               </div>
             </div>
-            <div className="detail" style={{bottom: '-235px', left: '20px'}}><img src={VerdeClaro1} /></div>
-            <div className="detail" style={{bottom: '-235px', right: '20px'}}><img src={VerdeClaro2} /></div>
+            <div className="detail" style={{bottom: '-205px', left: '20px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
+              <img src={VerdeClaro1} />
+            </div>
+            <div className="detail" style={{bottom: '-205px', right: '20px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
+              <img src={VerdeClaro2} />
+            </div>
           </div>
 
         </section>
@@ -275,19 +273,29 @@ const Home: React.FC = () => {
               <span className="subtitle">Seja a transformação, venha para a Trentim!</span>
               <button className="btn-work">vagas</button>
             </div>
-            <div className="detail" style={{bottom: '100px', right: "20px"}}>
+            <div className="detail" style={{bottom: '100px', right: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.01">
               <img src={BrancoContato} alt=""/>
             </div>
-            <div className="detail" style={{bottom: "-203px", left: "20px"}}><img src={Laranja1} /></div>
-            <div className="detail" style={{bottom: "-203px", right: "210px"}}><img src={Laranja2} /></div>
-            <div className="detail" style={{bottom: "-253px", right: "20px"}}><img src={Laranja3} /></div>
+            <div className="detail" style={{bottom: "-113px", left: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.4">
+              <img src={Laranja1} />
+            </div>
+            <div className="detail" style={{bottom: "-117px", right: "210px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
+              <img src={Laranja2} />
+            </div>
+            <div className="detail" style={{bottom: "-173px", right: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
+              <img src={Laranja3} />
+            </div>
           </div>
         </section>
 
         <section id="blog">
           <div className="container col">
-            <div className="detail" style={{top: "50%", transform: "translateY(-50%)", left: "20px"}}><img src={Vermelho1} alt=""/></div>
-            <div className="detail" style={{top: "50%", right: "20px"}}><img src={Vermelho2} alt=""/></div>
+            <div className="detail" style={{top: "50px", left: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+              <img src={VermelhoBlog1} alt=""/>
+            </div>
+            <div className="detail" style={{top: "220px", right: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
+              <img src={VermelhoBlog2} alt=""/>
+            </div>
             <div className="title-area">
               <span className="shape chat"></span>
               <span className="title">trends</span>
@@ -337,13 +345,17 @@ const Home: React.FC = () => {
                 </form>
               </div>
             </div>
-            <div className="detail" style={{top: "50%", transform: "translateY(-50%)", right: "20px"}}><img src={BrancoNewsLetter} alt=""/></div>
-            <div className="detail" style={{bottom: "-203px", left: "300px"}}><img src={Vermelho1} alt=""/></div>
-            <div className="detail" style={{bottom: "-203px", right: "20px"}}><img src={Vermelho2} alt=""/></div>
+            <div className="detail" style={{top: "50%", transform: "translateY(-50%)", right: "20px"}}>
+              <img src={BrancoNewsLetter} alt=""/>
+            </div>
+            <div className="detail" style={{bottom: "3px", left: "300px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+              <img src={Vermelho1} alt=""/>
+            </div>
+            <div className="detail" style={{bottom: "3px", right: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+              <img src={Vermelho2} alt=""/>
+            </div>
           </div>
         </section>
-
-        {/* <Footer /> */}
 
       </HomeContainer>
       

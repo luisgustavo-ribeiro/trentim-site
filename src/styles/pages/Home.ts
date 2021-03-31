@@ -4,13 +4,16 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  section {
+    position: relative;
+  }
+
   #white-banner {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 150px;
-    background-color: white;
-    position: relative;
+    background-color: white;    
 
     p {
       color: ${(props) => props.theme.colors.base.blue2};
@@ -30,6 +33,29 @@ export const HomeContainer = styled.div`
     display: flex;
     height: 450px;
     background-color: ${(props) => props.theme.colors.base.cyan};
+    transition: 200ms ease-in-out all;
+
+    &:hover {
+      background-color: #fff;
+      color: ${(props) => props.theme.colors.base.cyan};
+      transition: 200ms ease-in-out all;
+
+      .info-title {
+        border-color: ${(props) => props.theme.colors.base.cyan} !important;
+        transition: 200ms ease-in-out all;
+      }
+
+      .partner-block {
+        background-color: #fff;
+        color: ${(props) => props.theme.colors.base.cyan};
+        transition: 200ms ease-in-out all;
+
+        :before {
+          background-color: #fff;
+          transition: 200ms ease-in-out all;
+        }
+      }
+    }
 
     .image-block {
       display: flex;
@@ -54,6 +80,7 @@ export const HomeContainer = styled.div`
       color: #fff;
       width: 430px;
       margin-left: auto;
+      transition: 200ms ease-in-out all;
 
       :before {
         content: "";
@@ -228,6 +255,7 @@ export const HomeContainer = styled.div`
       padding: 30px 60px 100px;
       border-radius: 2px;
       min-width: 600px;
+      z-index: 2;
 
       .form-info {
         width: 100%;
