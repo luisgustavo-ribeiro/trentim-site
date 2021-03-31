@@ -76,7 +76,7 @@ const Home: React.FC = () => {
   }  
 
   return (
-    <SmoothScrollProvider options={{ smooth: true, multiplier: 1 }}>
+    
       
       <HomeContainer>
 
@@ -359,7 +359,6 @@ const Home: React.FC = () => {
 
       </HomeContainer>
       
-    </SmoothScrollProvider>
   );
 };
 

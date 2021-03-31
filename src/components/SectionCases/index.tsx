@@ -3,6 +3,7 @@ import ISectionCasesProps from '../../interfaces/ISectionCasesProps';
 import { SectionCasesStyles } from './SectionCasesStyles';
 
 const SectionCases:React.FC<ISectionCasesProps> = (props: ISectionCasesProps) => {
+
   return (
     <SectionCasesStyles style={{ backgroundColor: props.item.bgColor }}>
       <div className="container">
@@ -25,8 +26,9 @@ const SectionCases:React.FC<ISectionCasesProps> = (props: ISectionCasesProps) =>
                   <p className="text" style={{color: props.item.textColor}}>
                     {props.item.text}
                   </p>
+                  <a href={`/case?=${props.item.caseName}`}>Ver case</a>
                 </div>
-              </div>
+              </div>              
             </div>
         }
         {

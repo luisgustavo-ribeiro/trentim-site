@@ -15,6 +15,7 @@ const casesData = [
     imgPositionX: "center",
     imgPositionY: "center",
     imgScale: 1,
+    caseName: "suzano",
   },
   {
     bgColor: `${theme.colors.base.aqua}`,
@@ -28,6 +29,7 @@ const casesData = [
     imgPositionX: "center",
     imgPositionY: "center",
     imgScale: 1,
+    caseName: "saintgobain",
   },
   {
     bgColor: "#FFF",
@@ -41,6 +43,7 @@ const casesData = [
     imgPositionX: "center",
     imgPositionY: "center",
     imgScale: 1,
+    caseName: "bv",
   },
   {
     bgColor: "#FFF",
@@ -54,6 +57,7 @@ const casesData = [
     imgPositionX: "center",
     imgPositionY: "center",
     imgScale: 1,
+    caseName: "suzano",
   },
 ]
 

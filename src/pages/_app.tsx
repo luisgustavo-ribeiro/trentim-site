@@ -6,6 +6,7 @@ import GlobalStyle from "../styles/global";
 import theme from "../styles/theme";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { SmoothScrollProvider } from "../contexts/SmoothScrollContext";
 
 const links = [
   { title: "Cases", url: "/cases" },
@@ -16,14 +17,15 @@ const links = [
   { title: "Cliente", url: "/" },
 ];
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {  
-
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <div data-scroll-container>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme} data-scroll-section>
         <Navbar links={links} />
         <GlobalStyle />
-        <Component {...pageProps} data-scroll-section />
+        <SmoothScrollProvider options={{ smooth: true, multiplier: 1 }}>
+          <Component {...pageProps} />
+        </SmoothScrollProvider>
         <Footer />
       </ThemeProvider>
     </div>

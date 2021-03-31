@@ -40,7 +40,7 @@ const Carreiras: React.FC = () => {
     {
       id: 3,
       url: 'https://player.vimeo.com/video/145813727'
-    }]
+  }]
 
   const carreirasData = [{
     sectionBGColor: "#FFF",

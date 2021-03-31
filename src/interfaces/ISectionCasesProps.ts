@@ -10,6 +10,7 @@ export interface ISectionCasesItem {
   imgPositionX: string;
   imgPositionY: string;
   imgScale: number;
+  caseName: string;
 }
 
 export default interface ISectionCasesProps {
