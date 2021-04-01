@@ -1,9 +1,6 @@
-interface IHeroCompaniesLogos {
-  url: string;
-  logo: string;
-}
-
 export default interface IHeroProps {
-  image?: string;
-  logos?: IHeroCompaniesLogos[];
+  imageUrl: string;
+  logo?: string;
+  title?: string;
+  text: string;
 }

@@ -11,6 +11,12 @@ export const HeroStyles = styled.div`
     transform: translateY(-50%);
     width: 1280px;
     overflow: hidden;
+    z-index: 1;
+  }
+
+  .logo {
+    display: flex;
+    margin: 0 0 20px -4px;
   }
 
   .hero-columns {
@@ -26,6 +32,7 @@ export const HeroStyles = styled.div`
         flex-direction: column;
         justify-content: center;
         padding-right: 300px;
+        z-index: 2;
 
         .hero-title {
           font-size: 36px;

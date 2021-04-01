@@ -1,8 +1,9 @@
 import React from "react";
 import SectionWithShape from "../components/SectionWithShape";
-import HeroCarreiras from "../components/Hero";
+import Hero from "../components/Hero";
 import { CarreirasContainer } from "../styles/pages/Carreiras";
 import theme from "../styles/theme";
+import HeroCarreirasIMG from "../assets/img/pages/carreiras/hero-carreiras.png";
 
 import Desenvolvimento from "../assets/img/pages/carreiras/desenvolvimento_e_inovacao.jpg";
 import CarreiraW from "../assets/img/pages/carreiras/carreira_w.jpg";
@@ -12,12 +13,12 @@ import AtencaoAosClientes from "../assets/img/pages/carreiras/atencao_aos_client
 
 const Carreiras: React.FC = () => {
   
-  const firstSectionData = [{
+  const firstSectionData = {
     sectionBGColor: "#FFF",
     shapeName: "square",
     shapeColor: `${theme.colors.base.cyan}`,
     shapeZIndex: 0,
-    mediaUrl: "https://player.vimeo.com/video/145813727",
+    mediaUrl: "https://player.vimeo.com/video/483171987",
     mediaPosition: 'right',
     imageX: "-40px", 
     imageY:"-80px", 
@@ -26,7 +27,7 @@ const Carreiras: React.FC = () => {
     titleColor: `${theme.colors.base.cyan}`,
     text: "No último ano nós dobramos de tamanho por aqui, de 20 para 40 trentinions. E para cada um deles esse pertencimento tem um significado.\n\n\nConheça um pouco mais de nós!",
     textColor: `${theme.colors.base.gray1}`
-  }];
+  };
 
   const videoSectionData = [
     {
@@ -118,15 +119,25 @@ const Carreiras: React.FC = () => {
     textColor: `${theme.colors.base.gray1}`
   }];
 
+  const heroData = {
+    imageUrl: HeroCarreirasIMG,
+    title: "junte-se ao time!",
+    text: "sobre carreira orientada a resultados por aqui o foco em resultado é sempre prioridade, tanto nos clientes como nas nossas equipes."
+  }
+
   return (
     <CarreirasContainer>
       
-      <HeroCarreiras />
+      <Hero 
+        imageUrl={heroData.imageUrl}
+        title={heroData.title}
+        text={heroData.text}
+      />
 
       <SectionWithShape 
-        item={firstSectionData[0]} 
-        mediaType="video"          
-        mediaPosition={firstSectionData[0].mediaPosition}
+        item={firstSectionData}
+        mediaType="video"
+        mediaPosition={firstSectionData.mediaPosition}
         shapePosition="left"
       />
 

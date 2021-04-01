@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
 export const CompanyCaseStyles = styled.section`
-  position: relative;
   background-color: #fff;
+  position: relative;
+
+  .hero-columns {
+    p {
+      font-size: 36px !important;
+      line-height: 1.4 !important;
+    }
+  }
 
   .case-item-container {
     display: grid;
@@ -21,7 +28,7 @@ export const CompanyCaseStyles = styled.section`
       padding: 0 72px;
 
       .title {
-        color: ${props => props.theme.colors.base.gray2};
+        color: ${(props) => props.theme.colors.base.gray2};
         font-size: 24px;
         margin: 0 0 48px;
         font-weight: 600;

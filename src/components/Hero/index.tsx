@@ -1,9 +1,9 @@
 import React from "react";
 import { HeroStyles } from "./HeroStyles";
 import HeroBG from "../../assets/img/quadrados/home/hero.png";
-import HeroCarreirasIMG from "../../assets/img/pages/carreiras/hero-carreiras.png";
+import IHeroProps from "../../interfaces/IHeroProps";
 
-const HeroCarreiras: React.FC = () => {
+const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
   return (
     <HeroStyles>
       <div className="container">
@@ -13,15 +13,21 @@ const HeroCarreiras: React.FC = () => {
 
         <div className="hero-columns">
           <div className="col left">
-            <span className="hero-title">
-              junte-se ao time!
-            </span>
+            {props.logo && 
+              <div className="logo">
+                <img src={props.logo} alt="" />
+              </div>
+            }
+            {props.title && 
+              <span className="hero-title">
+                {props.title}
+              </span>
+            }
 
-            <p>sobre carreira orientada a resultados por aqui o foco em resultado é sempre prioridade, tanto nos clientes como nas nossas equipes.</p>
-
+            <p>{props.text}</p>
           </div>
           <div className="col right">
-            <img src={HeroCarreirasIMG} alt="" />
+            <img src={props.imageUrl} alt="" />
           </div>
         </div>
       </div>
@@ -29,4 +35,4 @@ const HeroCarreiras: React.FC = () => {
   );
 };
 
-export default HeroCarreiras;
+export default Hero;

@@ -1,5 +1,4 @@
 import React from "react";
-import IHeroProps from "../../interfaces/IHeroProps";
 import { HeroContent } from "./HeroStyles";
 import HeroBG from "../../assets/img/quadrados/home/hero.png";
 
@@ -26,7 +25,7 @@ const tabItems = [
   },
 ];
 
-const HeroHome: React.FC<IHeroProps> = (props: IHeroProps) => {
+const HeroHome: React.FC = () => {
   const [heroActiveItem, setHeroActiveItem] = React.useState<number>(0);
 
   const showItem = (index: number) => {

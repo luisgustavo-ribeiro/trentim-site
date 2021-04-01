@@ -426,6 +426,7 @@ export const HomeContainer = styled.div`
         overflow: hidden;
         background-color: ${(props) => props.theme.colors.base.gray6};
         z-index: 1;
+        border: 2px solid #e0e0e0;
 
         .img-container {
           height: 180px;
