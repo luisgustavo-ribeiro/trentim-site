@@ -35,28 +35,6 @@ export const HomeContainer = styled.div`
     background-color: ${(props) => props.theme.colors.base.cyan};
     transition: 200ms ease-in-out all;
 
-    &:hover {
-      background-color: #fff;
-      color: ${(props) => props.theme.colors.base.cyan};
-      transition: 200ms ease-in-out all;
-
-      .info-title {
-        border-color: ${(props) => props.theme.colors.base.cyan} !important;
-        transition: 200ms ease-in-out all;
-      }
-
-      .partner-block {
-        background-color: #fff;
-        color: ${(props) => props.theme.colors.base.cyan};
-        transition: 200ms ease-in-out all;
-
-        :before {
-          background-color: #fff;
-          transition: 200ms ease-in-out all;
-        }
-      }
-    }
-
     .image-block {
       display: flex;
       overflow: hidden;
@@ -178,7 +156,7 @@ export const HomeContainer = styled.div`
 
       .forms-container,
       .text-container {
-        max-width: 800px;
+        max-width: 820px;
         width: 100%;
       }
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { HomeContainer } from "../styles/pages/Home";
 import HeroHome from "../components/HeroHome";
+import MSPartnership from "../assets/img/pages/home/ms-partnership.jpg";
 
-import HeroBG from "../assets/img/quadrados/home/hero.png";
 import Azul1 from "../assets/img/quadrados/home/azul1.png";
 import Azul2 from "../assets/img/quadrados/home/azul2.png";
 import BrancoContato from "../assets/img/quadrados/home/branco_contato.png";
@@ -10,7 +10,6 @@ import BrancoNewsLetter from "../assets/img/quadrados/home/branco_newsletter.png
 import Laranja1 from "../assets/img/quadrados/home/laranja1.png";
 import Laranja2 from "../assets/img/quadrados/home/laranja2.png";
 import Laranja3 from "../assets/img/quadrados/home/laranja3.png";
-import Roxo from "../assets/img/quadrados/home/roxo.png";
 import VerdeClaro1 from "../assets/img/quadrados/home/verde_claro1.png";
 import VerdeClaro2 from "../assets/img/quadrados/home/verde_claro2.png";
 import Verde1 from "../assets/img/quadrados/home/verde1.png";
@@ -20,33 +19,29 @@ import Vermelho1 from "../assets/img/quadrados/home/vermelho1.png";
 import Vermelho2 from "../assets/img/quadrados/home/vermelho2.png";
 import VermelhoBlog1 from "../assets/img/quadrados/home/vermelho1_blog.png";
 import VermelhoBlog2 from "../assets/img/quadrados/home/vermelho2_blog.png";
-
 import ProcessDivider from "../assets/img/process_divider.svg";
-
-import { SmoothScrollProvider } from "../contexts/SmoothScrollContext";
-import Footer from "../components/Footer";
 
 
 const processData = [
   {
     form: "square",
-    text: "Pensando em organizações que sofrem com prazos e orçamentos de projetos desenvolvemos uma abordagem baseada no nível de maturidade. Tornamos a gestão de projetos mais ágil e eficiente criando ciclos de melhoria contínua por meio de tecnologia, capacitação, melhoria de processos e aplicação de metodologias."
+    text: "Pensando em organizações que querem projetos mais ágeis, flexíveis e eficientes, temos uma abordagem baseada no nível de maturidade, criando ciclos de melhoria contínua."
   },
   {
     form: "postIt",
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et molestias quasi, nulla magnam assumenda delectus commodi nostrum sint dolore nisi!"
+    text: "Conhecer. Nesse momento buscamos entender as suas necessidades e o resultado que espera obter. Aproveitamos para te mostrar como funciona o nosso ecossistema de soluções."
   },
   {
     form: "lemon",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus harum, exercitationem nulla sapiente soluta molestias molestiae beatae aliquam architecto, dolores perferendis officia, cupiditate rem!"
+    text: "Traçar o caminho. Aceitamos o desafio e buscamos possibilidades para alcançar o seu objetivo. Apresentamos nossa solução e definimos juntos a melhor opção para o seu cenário."
   },
   {
     form: "chat",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad sequi, harum earum corporis totam dignissimos similique pariatur molestiae architecto dolore nihil porro vitae, maxime dolorem quas corrupti illo facere?"
+    text: "Transformar. Depois de tudo especificado é hora de iniciarmos a execução do projeto. Nossa equipe acompanha de perto esse processo para garantir o resultado esperado."
   },
   {
     form: "circle",
-    text: "Pensando em organizações que sofrem com prazos e orçamentos de projetos desenvolvemos uma abordagem baseada no nível de maturidade. Tornamos a gestão de projetos mais ágil e eficiente criando ciclos de melhoria contínua por meio de tecnologia, capacitação, melhoria de processos e aplicação de metodologias."
+    text: "Evoluir. O sucesso obtido abre portas para atingirmos novos níveis de maturidade na sua organização. Estaremos prontos para subir mais um degrau na sua transformação em gestão de projetos."
   },
 ];
 
@@ -101,7 +96,7 @@ const Home: React.FC = () => {
           <div className="container">
             <div className="image-block">
               <img
-                src={`https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`}
+                src={MSPartnership}
               />
             </div>
             <div className="partner-block">

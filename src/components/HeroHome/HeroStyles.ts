@@ -44,8 +44,7 @@ export const HeroContent = styled.div`
     overflow: hidden;
 
     img {
-      object-fit: cover;
-      object-position: 250% 50%;
+      object-fit: cover;      
     }
   }
 
@@ -72,6 +71,7 @@ export const HeroContent = styled.div`
       transform: translateY(20px);
       opacity: 0;
       transition: 300ms ease-in-out all;
+      height: 120px;
     }
     
     &.open {
@@ -93,10 +93,6 @@ export const HeroContent = styled.div`
     display: flex;
     height: 60px;
     margin: 0 0 40px;
-
-    img {
-      filter: grayscale(1) brightness(10);
-    }
   }
 
   .content-info {
@@ -134,7 +130,6 @@ export const HeroContent = styled.div`
     img {
       width: 100%;
       display: flex;
-      filter: grayscale(1) brightness(10);
     }
   }
 

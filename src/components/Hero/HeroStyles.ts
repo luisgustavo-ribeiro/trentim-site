@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const HeroStyles = styled.div`
   display: flex;
-  background-color: ${(props) => props.theme.colors.base.blue2};
-  height: 610px;
+  background-color: ${(props) => props.theme.colors.base.blue2};  
+  height: 600px;
 
   .detail {
     opacity: 0.2;
@@ -21,7 +21,7 @@ export const HeroStyles = styled.div`
 
   .hero-columns {
     display: grid;
-    grid-template-columns: 720px 560px;
+    grid-template-columns: 1fr 1fr;
     color: #fff;
 
     .col {
@@ -31,7 +31,7 @@ export const HeroStyles = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 300px;
+        padding: 0 150px;
         z-index: 2;
 
         .hero-title {

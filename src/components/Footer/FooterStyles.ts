@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const FooterStyles = styled.section`
   position: relative;
   background-color: #fff;
-  color: ${props => props.theme.colors.base.gray1};
+  color: ${(props) => props.theme.colors.base.gray1};
   padding: 150px 0 280px;
 
   a {
-    color: ${props => props.theme.colors.base.purple};
+    color: ${(props) => props.theme.colors.base.purple};
     text-decoration: none;
   }
 
@@ -27,7 +27,7 @@ export const FooterStyles = styled.section`
     #address-info {
       list-style: none;
       padding: 0;
-      margin: 32px 0;
+      margin: 0 0 32px;
 
       li {
         margin: 0 0 10px;
@@ -53,7 +53,29 @@ export const FooterStyles = styled.section`
   }
 
   .title-area {
-    color: ${props => props.theme.colors.base.purple};
+    color: ${(props) => props.theme.colors.base.purple};
+    margin: 0 0 32px;
+  }
+
+  .address {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin: 0 0 32px;
+    }
+
+    .text {
+      color: #5c5c5c;
+      font-size: 16px;
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+    }
   }
 
   @media screen and (max-width: 640px) {

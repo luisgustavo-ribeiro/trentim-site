@@ -9,6 +9,7 @@ export const SectionWithShapeStyles = styled.section`
     display: grid;    
     gap: 200px;
     width: 100%;
+    align-items: center;
 
     .media-w-shape {
       position: relative;

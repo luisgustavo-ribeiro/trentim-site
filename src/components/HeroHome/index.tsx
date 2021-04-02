@@ -1,27 +1,39 @@
 import React from "react";
 import { HeroContent } from "./HeroStyles";
 import HeroBG from "../../assets/img/quadrados/home/hero.png";
+import SUZ_HERO from "../../assets/img/pages/cases/casePage/suzano/SUZ_HERO.jpg"; 
+import SUZ_LOGO from "../../assets/img/pages/cases/casePage/suzano/suzano-logo-hero.png";
+import SGB_HERO from "../../assets/img/pages/cases/casePage/saintgobain/SGB_HERO.jpg";
+import SGB_LOGO from "../../assets/img/pages/cases/casePage/saintgobain/saintgobain-logo-hero.png";
+import IBEMA_HERO from "../../assets/img/pages/cases/casePage/ibema/IBEMA_HERO.jpg";
+import IBEMA_LOGO from "../../assets/img/pages/cases/casePage/ibema/ibema-logo-hero.png";
+import BV_HERO from "../../assets/img/pages/cases/casePage/bv/BV_HERO.jpg";
+import BV_LOGO from "../../assets/img/pages/cases/casePage/bV/bv-logo-hero.png";
 
 const tabItems = [
   {
+    hero: SUZ_HERO,
     name: "Suzano",
-    url: "https://suzano-site.s3-sa-east-1.amazonaws.com/assets/img/logo-suzano-branco.png",
-    text: 'Suzano conseguiu economizar 4.500 horas mensais com a gestão de projetos e processos automatizados pela Trentim.'
+    text: 'Redução de 4.500 horas mensais com a plataforma de gestão moderna de projetos',
+    url: SUZ_LOGO,
   },
   {
-    name: "Saint Gobain",
-    url: "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Saint-Gobain_logo.svg/1280px-Saint-Gobain_logo.svg.png",
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit doloribus labore libero necessitatibus similique rerum fugit laboriosam itaque?',
+    hero: SGB_HERO,
+    name: "Saint-Gobain",
+    text: 'Transformação Digital com capacitação intensiva dos colaboradores',
+    url: SGB_LOGO,
   },
   {
-    name: "Klabin",
-    url: "https://iconape.com/wp-content/files/iz/273704/svg/klabin-logo-logo-icon-png-svg.png",
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, temporibus.',
+    hero: BV_HERO,
+    name: "Bureau Veritas",
+    text: 'Aplicativo de Gestão de Mudanças reduz custo e tempo em projetos',
+    url: BV_LOGO,
   },
   {
+    hero: IBEMA_HERO,
     name: "Ibema",
-    url: "https://www.ibema.com.br/assets/img/logo_main.png",
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quod consequuntur nulla.',
+    text: 'Solução de Gestão de Projetos sem gastar uma única hora de trabalho',
+    url: IBEMA_LOGO,
   },
 ];
 
@@ -63,7 +75,7 @@ const HeroHome: React.FC = () => {
             </div>
           </div>
           <div className="hero-right-col">
-            <img src="https://cdn.stocksnap.io/img-thumbs/960w/man-desk_QPJWWR3W2E.jpg" alt=""/>
+            <img src={tabItems[heroActiveItem].hero} alt=""/>
           </div>
         </div>
       </div>

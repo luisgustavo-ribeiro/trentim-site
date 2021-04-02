@@ -67,6 +67,23 @@ export const SectionCasesStyles = styled.section`
       .text {
         font-size: 18px;
       }
+
+      .btn-cases {
+        display: flex;
+        align-self: end;
+        border: 2px solid;
+        border-radius: 2px;
+        height: 48px;
+        font-size: 16px;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+        min-width: 160px;
+        transition: 200ms ease-in-out all;
+        text-decoration: none;
+        margin: 32px 0 0;
+      }
     }
   }
 `;

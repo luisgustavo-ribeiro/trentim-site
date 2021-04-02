@@ -6,6 +6,8 @@ export const NavbarContent = styled.div`
   display: flex;
   align-items: center;
   background-color: ${(props) => props.theme.colors.base.blue2};
+  position: relative;
+  z-index: 999;
 
   .nav-container {
     display: flex;
