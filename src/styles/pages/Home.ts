@@ -23,7 +23,7 @@ export const HomeContainer = styled.div`
       align-self: center;
       margin: 0 auto;
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 768px) {
         font-size: 14px;
       }
     }
@@ -93,7 +93,7 @@ export const HomeContainer = styled.div`
       font-weight: 300;
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       height: auto;
 
       .container {
@@ -180,7 +180,7 @@ export const HomeContainer = styled.div`
       }
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       padding: 40px 0;
       overflow: hidden;
       min-height: 500px;
@@ -364,7 +364,7 @@ export const HomeContainer = styled.div`
       }
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       padding: 30px 0 70px;
 
       .container {
@@ -463,7 +463,7 @@ export const HomeContainer = styled.div`
       }
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       padding: 40px 0;
 
       .cards-container {
@@ -522,7 +522,7 @@ export const HomeContainer = styled.div`
       }
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 768px) {
       padding: 40px 0;
 
       .newsletter-container {

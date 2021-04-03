@@ -44,7 +44,7 @@ export const HeroContent = styled.div`
     overflow: hidden;
 
     img {
-      object-fit: cover;      
+      object-fit: cover;
     }
   }
 
@@ -55,7 +55,7 @@ export const HeroContent = styled.div`
   }
 
   .hero-carousel-content {
-    margin: 0 0 50px;    
+    margin: 0 0 50px;
     overflow: hidden;
     opacity: 0;
     z-index: -1;
@@ -73,7 +73,7 @@ export const HeroContent = styled.div`
       transition: 300ms ease-in-out all;
       height: 120px;
     }
-    
+
     &.open {
       position: relative;
       opacity: 1;
@@ -133,8 +133,8 @@ export const HeroContent = styled.div`
     }
   }
 
-  @media screen and (max-width: 640px) {
-    height: 350px;
+  @media screen and (max-width: 768px) {
+    height: 400px;
 
     .hero-items {
       display: flex;
@@ -154,8 +154,12 @@ export const HeroContent = styled.div`
       display: none;
     }
 
-    .content-info p {
-      font-size: 18px
+    .content-info {
+      height: 100px !important;
+
+      p {
+        font-size: 18px;
+      }
     }
 
     .hero-carousel-items-track {

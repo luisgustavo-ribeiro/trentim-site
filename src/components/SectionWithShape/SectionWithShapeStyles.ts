@@ -5,6 +5,10 @@ export const SectionWithShapeStyles = styled.section`
   padding: 120px 0;
   align-items: center;
 
+  p {
+    white-space: pre-line;
+  }
+
   .section-container {
     display: grid;    
     gap: 200px;

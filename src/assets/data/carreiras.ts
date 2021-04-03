@@ -11,7 +11,7 @@ export const firstSectionData = {
   shapeName: "square",
   shapeColor: `${theme.colors.base.cyan}`,
   shapeZIndex: 0,
-  mediaUrl: "483171987",
+  mediaUrl: "531942120",
   mediaPosition: 'right',
   imageX: "-40px", 
   imageY:"-80px", 
@@ -25,15 +25,15 @@ export const firstSectionData = {
 export const videoSectionData = [
   {
     id: 1,
-    url: '145813727'
+    url: '531948233'
   },
   {
     id: 2,
-    url: '145813727'
+    url: '532027253'
   },
   {
     id: 3,
-    url: '145813727'
+    url: '532047832'
 }]
 
 export const carreirasData = [{

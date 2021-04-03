@@ -24,7 +24,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <Navbar links={links} />
         <GlobalStyle />
         <SmoothScrollProvider options={{ smooth: true, multiplier: 1 }}>
-          <Component {...pageProps} />
+          <div id="pageContent">
+            <Component {...pageProps} />
+          </div>
         </SmoothScrollProvider>
         <Footer />
       </ThemeProvider>

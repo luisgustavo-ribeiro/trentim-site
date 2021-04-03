@@ -49,6 +49,10 @@ export const FooterStyles = styled.section`
 
     .termos {
       margin: 12px 0 0;
+
+      @media screen and (max-width: 768px) {
+        margin: 12px 0 32px;
+      }
     }
   }
 
@@ -78,7 +82,7 @@ export const FooterStyles = styled.section`
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     padding: 40px 0 60px;
 
     .footer-container {
