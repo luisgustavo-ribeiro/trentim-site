@@ -8,7 +8,7 @@ import SGB_LOGO from "../../assets/img/pages/cases/casePage/saintgobain/saintgob
 import IBEMA_HERO from "../../assets/img/pages/cases/casePage/ibema/IBEMA_HERO.jpg";
 import IBEMA_LOGO from "../../assets/img/pages/cases/casePage/ibema/ibema-logo-hero.png";
 import BV_HERO from "../../assets/img/pages/cases/casePage/bv/BV_HERO.jpg";
-import BV_LOGO from "../../assets/img/pages/cases/casePage/bV/bv-logo-hero.png";
+import BV_LOGO from "../../assets/img/pages/cases/casePage/bv/bv-logo-hero.png";
 
 const tabItems = [
   {
