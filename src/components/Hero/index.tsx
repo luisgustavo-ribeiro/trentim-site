@@ -13,21 +13,34 @@ const Hero: React.FC<IHeroProps> = (props: IHeroProps) => {
 
         <div className="hero-columns">
           <div className="col left">
+
             {props.logo && 
               <div className="logo">
                 <img src={props.logo} alt="" />
               </div>
             }
+
             {props.title && 
+            
               <span className="hero-title">
                 {props.title}
+
+                {props.subtitle && 
+                  <div className="subtitle">
+                    {props.subtitle}
+                  </div>
+                }
               </span>
+
             }
 
-            <p>{props.text}</p>
+            <p>
+              {props.text}
+            </p>
+
           </div>
           <div className="col right">
-            <img src={props.imageUrl} alt="" />
+            <img src={props.imageUrl} alt="" style={{ objectPosition: `${props.imagePositionY ? props.imagePositionY : "center"} ${props.imagePositionX ? props.imagePositionX : "right"}`}}/>
           </div>
         </div>
       </div>

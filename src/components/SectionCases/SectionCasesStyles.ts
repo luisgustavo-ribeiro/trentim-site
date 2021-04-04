@@ -56,7 +56,7 @@ export const SectionCasesStyles = styled.section`
         img {
           height: 100%;
         }
-      }      
+      }
 
       .title {
         font-size: 24px;
@@ -84,6 +84,61 @@ export const SectionCasesStyles = styled.section`
         text-decoration: none;
         margin: 32px 0 0;
       }
+    }
+  }
+
+  @media screen and (max-width: 768.99px) {
+    margin: 0;
+    height: auto;
+  }
+
+  .case-mobile {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+    }
+
+    .image {
+      margin: 0 -20px;
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+
+      img {
+        display: flex;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        height: 100%;
+      }
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 32px 0 24px;
+    }
+
+    .text {
+      font-size: 14px;
+      margin: 0 0 24px;
+    }
+
+    .btn-cases {
+      display: flex;
+      border: 2px solid;
+      text-decoration: none;
+      height: 40px;
+      align-items: center;
+      padding: 0 16px;
+      justify-content: center;
+      margin: 0 0 40px;
     }
   }
 `;

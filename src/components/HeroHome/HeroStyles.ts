@@ -155,10 +155,9 @@ export const HeroContent = styled.div`
     }
 
     .content-info {
-      height: 100px !important;
 
       p {
-        font-size: 18px;
+        font-size: 3.5vmax;
       }
     }
 

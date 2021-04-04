@@ -34,6 +34,12 @@ export const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
   }
 
   React.useEffect(() => {
+
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
+
     function handleResize() {
       setDimensions({
         height: window.innerHeight,
