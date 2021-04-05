@@ -13,7 +13,7 @@ export const HomeContainer = styled.div`
     align-items: center;
     justify-content: center;
     height: 150px;
-    background-color: white;    
+    background-color: white;
 
     p {
       color: ${(props) => props.theme.colors.base.blue2};
@@ -22,6 +22,7 @@ export const HomeContainer = styled.div`
       text-align: center;
       align-self: center;
       margin: 0 auto;
+      z-index: 10;
 
       @media screen and (max-width: 768px) {
         font-size: 14px;
@@ -210,30 +211,12 @@ export const HomeContainer = styled.div`
     transition: 10s ease-in-out all;
     padding: 100px 0;
 
-    &:hover {
-      background-color: ${(props) => props.theme.colors.base.orange};
-      transition: 10s ease-in-out all;
-
-      .form-info {
-        .title-area {
-          color: ${(props) => props.theme.colors.base.orange};
-          transition: 10s ease-in-out all;
-        }
-
-        .send-button {
-          background-color: ${(props) => props.theme.colors.base.orange};
-          border-color: ${(props) => props.theme.colors.base.orange};
-          transition: 10s ease-in-out all;
-        }
-      }
-    }
-
     .contact-form {
       background-color: #fff;
       padding: 30px 60px 100px;
       border-radius: 2px;
       min-width: 600px;
-      z-index: 2;
+      z-index: 9;
 
       .form-info {
         width: 100%;
@@ -243,6 +226,7 @@ export const HomeContainer = styled.div`
         color: ${(props) => props.theme.colors.dark.yellow};
         margin: 0 0 24px;
         justify-content: center;
+        transition: 10s ease-in-out all;
       }
 
       .subtitle {
@@ -266,7 +250,7 @@ export const HomeContainer = styled.div`
         position: relative;
         margin: 0 0 10px;
 
-        input {
+        input:not([type="checkbox"]) {
           height: 50px;
           line-height: 50px;
           border: 1px solid #828282;
@@ -306,6 +290,18 @@ export const HomeContainer = styled.div`
             display: block;
           }
         }
+
+        &.checkbox {
+          label {
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            top: 0;
+            left: 0;
+          }
+        }
       }
 
       .send-button {
@@ -321,12 +317,27 @@ export const HomeContainer = styled.div`
         font-size: 24px;
         font-weight: 700;
         background-color: ${(props) => props.theme.colors.dark.yellow};
-        transition: 160ms ease-in-out all;
+        transition: 10s ease-in-out all;
+      }
+    }
 
-        &:hover {
-          color: ${(props) => props.theme.colors.dark.yellow};
-          background-color: transparent;
-          transition: 160ms ease-in-out all;
+    #contactPreference {
+      font-size: 18px;
+
+      .title {
+        margin: 0 0 8px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: inline-flex;
+
+          &:not(:last-child) {
+            margin-right: 32px;
+          }
         }
       }
     }
@@ -352,15 +363,27 @@ export const HomeContainer = styled.div`
       }
 
       .btn-work {
+        display: flex;
+        justify-content: center;
+        line-height: 40px;
         height: 50px;
         width: 300px;
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         background-color: #fff;
         color: ${(props) => props.theme.colors.dark.yellow};
         font-size: 24px;
         border-radius: 2px;
         margin: 0 auto;
         cursor: pointer;
+        text-decoration: none;
+        transition: 160ms ease-in-out all;
+
+        &:hover {
+          color: #fff;
+          background-color: transparent;
+          border-color: #fff;
+          transition: 160ms ease-in-out all;
+        }
       }
     }
 
@@ -375,6 +398,38 @@ export const HomeContainer = styled.div`
       .contact-info {
         padding: 30px 16px;
         min-width: 100%;
+      }
+    }
+
+    &.contact-hovered {
+      background-color: ${(props) => props.theme.colors.base.orange};
+      transition: 10s ease-in-out all;
+
+      .contact-form .title-area {
+        color: ${(props) => props.theme.colors.base.orange};
+        transition: 10s ease-in-out all;
+      }
+
+      .send-button {
+        background-color: ${(props) => props.theme.colors.base.orange};
+        border-color: ${(props) => props.theme.colors.base.orange};
+        transition: 10s ease-in all;
+
+        &:hover {
+          transition: 160ms ease-in-out all;
+        }
+      }
+
+      .send-button.contact-hovered {
+        background-color: ${(props) => props.theme.colors.base.orange};
+        border-color: ${(props) => props.theme.colors.base.orange};
+        transition: 160ms ease-in-out all;
+
+        &:hover {
+          color: ${(props) => props.theme.colors.base.orange};
+          background-color: transparent;
+          transition: 160ms ease-in-out all;
+        }
       }
     }
   }
@@ -396,6 +451,7 @@ export const HomeContainer = styled.div`
       grid-template-columns: repeat(3, 280px);
       gap: 20px;
       justify-content: center;
+      z-index: 10;
 
       .card {
         width: 100%;

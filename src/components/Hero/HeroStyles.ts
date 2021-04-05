@@ -6,6 +6,7 @@ export const HeroStyles = styled.div`
   height: 600px;
 
   .detail {
+    position: absolute;
     opacity: 0.2;
     top: 50%;
     transform: translateY(-50%);

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const FooterStyles = styled.section`
+  overflow: hidden;
   position: relative;
   background-color: #fff;
   color: ${(props) => props.theme.colors.base.gray1};
-  padding: 150px 0 280px;
+  padding: 150px 0 220px;
 
   a {
     color: ${(props) => props.theme.colors.base.purple};
@@ -52,6 +53,52 @@ export const FooterStyles = styled.section`
 
       @media screen and (max-width: 768px) {
         margin: 12px 0 32px;
+      }
+    }
+
+    .right-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: -90px 0 0;
+
+      @media screen and (max-width: 768.99px) {
+        margin: 32px 0 0;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+      .ms-gold {
+        height: 120px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .gptw {
+        height: 120px;
+        margin: 10px 0 40px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .pmi {
+        display: inline-flex;
+
+        @media screen and (max-width: 768.99px) {
+          flex: 1 1 100%;
+        }
+
+        img {
+          height: 50px;
+          margin: 4px;
+        }
       }
     }
   }

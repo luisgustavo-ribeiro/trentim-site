@@ -44,18 +44,25 @@ export const CarreirasContainer = styled.div`
         margin: 0 0 27px;
       }
 
-      button {
+      a {
+        display: flex;        
         background-color: #FFF;
         border: 2px solid #FFF;
+        border-radius: 2px;
         height: 50px;
+        line-height: 40px;
         width: 100%;
         color: ${props => props.theme.colors.dark.pink};
         font-size: 24px;
         cursor: pointer;
+        text-decoration: none;
+        justify-content: center;
+        transition: 160ms ease-in-out all;
 
         &:hover {
-          background-color: transparent;
           color: #FFF;
+          background-color: transparent;
+          transition: 160ms ease-in-out all;
         }
       }
     }

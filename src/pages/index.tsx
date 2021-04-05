@@ -65,14 +65,50 @@ const Home: React.FC = () => {
     processActiveItem !== index && setProcessActiveItem(index);
   };
 
-  const checkIfHasValue = (e) => {
+  const checkValue = (e) => {
     if (e.target.value !== '') e.target.labels[0].classList.add('has-value');
     if (e.target.value === '' && e.target.labels[0].classList.value === 'has-value') e.target.labels[0].classList.remove('has-value');
+  }
+
+  function validateNumber(e) {
+
+    const number = parseFloat(e.target.value);
+                    
+    if(!isNaN(number)) 
+      setNumberOfEmployees(number);
+
+    if(!isNaN(number) && e.target.nextElementSibling.classList.value.includes('show-error')) {
+      setNumberOfEmployees(number);
+      e.target.nextElementSibling.classList.remove('show-error');
+    }
+  
+    if (isNaN(number) && e.target.value !== "")
+      e.target.nextElementSibling.classList.add('show-error');
   }  
+
+  const contactFormEnter = (e) => {
+
+    if (e.target.id === "contact") {
+      e.target.classList.add("contact-hovered");
+      
+      setTimeout(() => {
+        e.target.querySelector(".send-button").classList.add("contact-hovered");
+      }, 10000);
+    }
+
+  }
+
+  const contactFormLeave = (e) => {
+
+    if (e.target.id === "contact") {
+      e.target.classList.remove("contact-hovered");
+      e.target.querySelector(".send-button").classList.remove("contact-hovered");
+    }
+
+  }
 
   return (
     
-      
       <HomeContainer>
 
         <HeroHome />
@@ -83,11 +119,13 @@ const Home: React.FC = () => {
               Aliamos pessoas, tecnologias e métodos <br />
               para transformar a Gestão de Projetos das organizações
             </p>
-            <div className="detail" style={{ left: "20px", bottom: "-51px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
-              <img src={Azul1} />
-            </div>
-            <div className="detail"  style={{ right: "20px", bottom: "-101px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
-              <img src={Azul2} />
+            <div className="sq-details" style={{ bottom: "-110px" }}>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
+                <img src={Azul1} />
+              </div>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
+                <img src={Azul2} />
+              </div>
             </div>
           </div>
         </section>        
@@ -119,14 +157,16 @@ const Home: React.FC = () => {
 
         <section id='process'>
           <div className="container col">
-            <div className="detail" style={{top: '-251px', left: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
-              <img src={Verde1} />
-            </div>
-            <div className="detail" style={{top: '-201px', right: '274px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
-              <img src={Verde2} />
-            </div>
-            <div className="detail" style={{top: '-151px', right: '20px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.4">
-              <img src={Verde3} />
+            <div className="sq-details" style={{ top: "-230px" }}>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
+                <img src={Verde1} />
+              </div>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
+                <img src={Verde2} />
+              </div>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
+                <img src={Verde3} />
+              </div>
             </div>
             <div className="title-area">
               <span className="shape postIt"></span>
@@ -152,17 +192,19 @@ const Home: React.FC = () => {
                 )}
               </div>
             </div>
-            <div className="detail" style={{bottom: '-205px', left: '20px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
-              <img src={VerdeClaro1} />
-            </div>
-            <div className="detail" style={{bottom: '-205px', right: '20px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
-              <img src={VerdeClaro2} />
+            <div className="sq-details" style={{ bottom: "-250px" }}>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
+                <img src={VerdeClaro1} />
+              </div>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
+                <img src={VerdeClaro2} />
+              </div>
             </div>
           </div>
 
         </section>
 
-        <section id="contact">
+        <section id="contact" onMouseEnter={e => contactFormEnter(e)} onMouseLeave={e => contactFormLeave(e)}>
           <div className="container">
             <div className="contact-form">
               <div className="form-info">
@@ -184,7 +226,7 @@ const Home: React.FC = () => {
                     type="text" 
                     id="txtName" 
                     onChange={ e => {
-                      checkIfHasValue(e);
+                      checkValue(e);
                       setName(e.target.value);
                     }}/>
                 </div>
@@ -194,7 +236,7 @@ const Home: React.FC = () => {
                     type="text" 
                     id="txtEmail"
                     onChange={ e => {
-                      checkIfHasValue(e);
+                      checkValue(e);
                       setEmail(e.target.value);
                     }}/>
                 </div>
@@ -204,21 +246,8 @@ const Home: React.FC = () => {
                     type="text" 
                     id="numEmployees"
                     onChange={ e => {
-                      checkIfHasValue(e);
-
-                      const number = parseFloat(e.target.value);
-                    
-                      if(!isNaN(number)) 
-                        setNumberOfEmployees(number);
-
-                      if(!isNaN(number) && e.target.nextElementSibling.classList.value.includes('show-error')) {
-                        setNumberOfEmployees(number);
-                        e.target.nextElementSibling.classList.remove('show-error');
-                      }
-                    
-                      if (isNaN(number) && e.target.value !== "")
-                        e.target.nextElementSibling.classList.add('show-error');
-
+                      checkValue(e);
+                      validateNumber(e);
                     }}/>
 
                     <span className="error-msg">Digite um número válido</span>
@@ -229,20 +258,42 @@ const Home: React.FC = () => {
                     type="text" 
                     id="txtPhone" 
                     onChange={e => { 
-                      checkIfHasValue(e);
+                      checkValue(e);
                       setPhone(e.target.value);
                     }}/>
                 </div>
                   
-                {/* checkboxes */}
-                  
+                <div id="contactPreference">
+                  <div className="title">forma de contato preferencial</div>
+                    <ul>
+                      <li>
+                        <div className="form-group checkbox">
+                          <input type="checkbox" className="styled-checkbox" id="prefEmail" />
+                          <label htmlFor="prefEmail">email</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="form-group checkbox">
+                          <input type="checkbox" className="styled-checkbox" id="prefPhone" />
+                          <label htmlFor="prefPhone">telefone</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div className="form-group checkbox">
+                          <input type="checkbox" className="styled-checkbox" id="prefTeams" />
+                          <label htmlFor="prefTeams">teams</label>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+
                 <div className="form-group">
                   <label htmlFor="txtSubject">assunto</label>
                   <input 
                     type="text" 
                     id="txtSubject"
                     onChange={e => { 
-                      checkIfHasValue(e);
+                      checkValue(e);
                       setSubject(e.target.value);
                     }}/>
                 </div>
@@ -252,7 +303,7 @@ const Home: React.FC = () => {
                     type="text" 
                     id="txtMessage"
                     onChange={e => { 
-                      checkIfHasValue(e);
+                      checkValue(e);
                       setMessage(e.target.value);
                     }}/>
                 </div>
@@ -266,30 +317,36 @@ const Home: React.FC = () => {
                 <span className="title">vagas</span>
               </div>
               <span className="subtitle">Seja a transformação, venha para a Trentim!</span>
-              <button className="btn-work">vagas</button>
+              <a href="http://trent.im/vagas" className="btn-work">vagas</a>
             </div>
-            <div className="detail" style={{bottom: '100px', right: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.01">
+
+            <div className="detail" style={{position: "absolute" , bottom: '150px', right: "0px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.01">
               <img src={BrancoContato} alt=""/>
             </div>
-            <div className="detail" style={{bottom: "-113px", left: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.4">
-              <img src={Laranja1} />
-            </div>
-            <div className="detail" style={{bottom: "-117px", right: "210px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
-              <img src={Laranja2} />
-            </div>
-            <div className="detail" style={{bottom: "-173px", right: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
-              <img src={Laranja3} />
+
+            <div className="sq-details" style={{ bottom: "-120px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
+              <div className="detail">
+                <img src={Laranja1} />
+              </div>
+              <div className="detail">
+                <img src={Laranja2} />
+              </div>
+              <div className="detail">
+                <img src={Laranja3} />
+              </div>
             </div>
           </div>
         </section>
 
         <section id="blog">
           <div className="container col">
-            <div className="detail" style={{top: "50px", left: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+          <div className="sq-details" style={{ top: "120px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
+            <div className="detail">
               <img src={VermelhoBlog1} alt=""/>
             </div>
-            <div className="detail" style={{top: "220px", right: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.1">
+            <div className="detail">
               <img src={VermelhoBlog2} alt=""/>
+            </div>
             </div>
             <div className="title-area">
               <span className="shape chat"></span>
@@ -340,14 +397,16 @@ const Home: React.FC = () => {
                 </form>
               </div>
             </div>
-            <div className="detail" style={{top: "50%", transform: "translateY(-50%)", right: "20px"}}>
+            <div className="detail" style={{position: "absolute", top: "50%", transform: "translateY(-50%)", right: "20px"}}>
               <img src={BrancoNewsLetter} alt=""/>
             </div>
-            <div className="detail" style={{bottom: "3px", left: "300px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
-              <img src={Vermelho1} alt=""/>
-            </div>
-            <div className="detail" style={{bottom: "3px", right: "20px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
-              <img src={Vermelho2} alt=""/>
+            <div className="sq-details" style={{ bottom: "-10px" }}>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+                <img src={Vermelho1} alt=""/>
+              </div>
+              <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+                <img src={Vermelho2} alt=""/>
+              </div>
             </div>
           </div>
         </section>

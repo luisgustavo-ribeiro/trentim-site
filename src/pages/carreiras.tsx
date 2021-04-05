@@ -49,7 +49,7 @@ const Carreiras: React.FC = () => {
             <div className="text">
               <p>Lorem ipsum dolor sit amet consectetur <br/>adipisicing elit blanditiis, a.</p>
             </div>
-            <button>vagas</button>
+            <a href="http://trent.im/vagas">vagas</a>
           </div>
         </div>
       </section>

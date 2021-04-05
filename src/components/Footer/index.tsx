@@ -10,6 +10,11 @@ import BRIcon from "../../assets/img/icons/braza@2x.svg";
 import CNIcon from "../../assets/img/icons/canada@2x.svg";
 import PTIcon from "../../assets/img/icons/portugal@2x.svg";
 
+import MS_GOLD from "../../assets/img/footer/ms-gold-partner-logo.gif";
+import GPTW from "../../assets/img/footer/GPTW.png";
+import EF_PMI from "../../assets/img/footer/EF_PMI.png";
+import PMI from "../../assets/img/footer/PMI.png";
+
 import Roxo from "../../assets/img/quadrados/home/roxo.png";
 
 const Footer: React.FC = () => {
@@ -29,10 +34,26 @@ const Footer: React.FC = () => {
             </ul>
 
             <div className="social-media">
-              <div className="social-icon"><Facebook /></div>
-              <div className="social-icon"><Instagram /></div>
-              <div className="social-icon"><Linkedin /></div>
-              <div className="social-icon"><Youtube /></div>
+              <div className="social-icon">
+              <a href="https://www.facebook.com/trentimbr" target="_blank" rel="noopener noreferrer">
+                <Facebook />
+              </a>
+              </div>
+              <div className="social-icon">
+              <a href="https://www.instagram.com/trentim.br/" target="_blank" rel="noopener noreferrer">
+                <Instagram />
+              </a>
+              </div>
+              <div className="social-icon">
+              <a href="https://www.linkedin.com/company/trentim" target="_blank" rel="noopener noreferrer">
+                <Linkedin />
+              </a>
+              </div>
+              <div className="social-icon">
+              <a href="https://www.youtube.com/c/trentim/" target="_blank" rel="noopener noreferrer">
+                <Youtube />
+              </a>
+              </div>
             </div>
 
             <div className='termos'>
@@ -78,10 +99,21 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="right-col"></div>
+          <div className="right-col">
+            <div className="ms-gold">
+              <img src={MS_GOLD} alt=""/>
+            </div>
+            <div className="gptw">
+              <img src={GPTW} alt=""/>
+            </div>
+            <div className="pmi">
+              <img src={EF_PMI} alt=""/>
+              <img src={PMI} alt=""/>
+            </div>
+          </div>
           
         </div>
-        <div className="detail" style={{left: "20px", bottom: "-280px"}}>
+        <div className="detail" style={{position: "absolute", left: "20px", bottom: "-220px"}}>
           <img src={Roxo} alt=""/>
         </div>
       </div>

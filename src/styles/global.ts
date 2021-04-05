@@ -7,10 +7,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  /* locomotive */
+  // locomotive
   html.has-scroll-smooth {
-  overflow: hidden;
-}
+    overflow: hidden;
+  }
 
   html.has-scroll-dragging {
     -webkit-user-select: none;
@@ -66,7 +66,7 @@ export default createGlobalStyle`
     cursor: grabbing;
   }
 
-/* locomotive end */
+// locomotive end
 
   body {
     font: 400 16px system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -111,10 +111,19 @@ export default createGlobalStyle`
     }
   }
 
-  .detail {
-    display: flex;
+  .sq-details {
+    min-width: 1280px;
+    overflow: hidden;
     position: absolute;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 20px;
+  }
+
+  .detail {
+    display: flex;
   }
 
   .container {
@@ -206,6 +215,81 @@ export default createGlobalStyle`
     }
   }
 
+//custom checkbox
+  .styled-checkbox {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    // Box.
+    & + label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 1px solid ${(props) => props.theme.colors.base.gray1};
+      border-radius: 2px;
+      transition: 200ms ease-in-out all;
+    }
+
+    // Box hover
+    &:hover + label:before {
+      background: ${(props) => props.theme.colors.dark.yellow};
+      transition: 200ms ease-in-out all;
+    }
+    
+    // Box focus
+    &:focus + label:before {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+
+    // Box checked
+    &:checked + label:before {
+      background: ${(props) => props.theme.colors.dark.yellow};
+      transition: 200ms ease-in-out all;
+    }
+    
+    // Disabled state label.
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+
+    // Disabled box.
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 11px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
+
+  // media queries
   @media screen and (max-width: 768px) {
     .detail {
       display: none;
