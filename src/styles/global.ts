@@ -72,6 +72,10 @@ export default createGlobalStyle`
     font: 400 16px system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     background-color: #FFF;
     scroll-behavior: smooth;
+
+    &.menu-open {
+      overflow: hidden;
+    }
   }
 
   .nav-toggle {

@@ -18,7 +18,7 @@ export const CarreirasContainer = styled.div`
         width: 100%;
         height: 220px;
         background-color: #000;
-        border: 5px solid #c4c4c4
+        border: 5px solid #c4c4c4;
       }
     }
 
@@ -27,8 +27,8 @@ export const CarreirasContainer = styled.div`
 
       .video-section {
         overflow: auto;
-        grid-template-columns: repeat(3,200px);
-        
+        grid-template-columns: repeat(3, 200px);
+
         iframe {
           width: 200px;
           height: 120px;
@@ -39,7 +39,7 @@ export const CarreirasContainer = styled.div`
 
   #carreiras-vagas {
     padding: 60px 0;
-    background-color: ${props => props.theme.colors.dark.pink};
+    background-color: ${(props) => props.theme.colors.dark.pink};
 
     .bloco-vagas {
       display: flex;
@@ -47,34 +47,37 @@ export const CarreirasContainer = styled.div`
       text-align: center;
 
       .title {
-        color: #FFF;
+        color: #fff;
         font-size: 48px;
         margin: 0 0 42px;
       }
 
       .text {
-        color: #FFF;
+        color: #fff;
         font-size: 18px;
         margin: 0 0 27px;
       }
 
       a {
-        display: flex;        
-        background-color: #FFF;
-        border: 2px solid #FFF;
+        display: flex;
+        background-color: #fff;
+        border: 2px solid #fff;
         border-radius: 2px;
         height: 50px;
         line-height: 40px;
         width: 100%;
-        color: ${props => props.theme.colors.dark.pink};
+        color: ${(props) => props.theme.colors.dark.pink};
         font-size: 24px;
         cursor: pointer;
         text-decoration: none;
         justify-content: center;
         transition: 160ms ease-in-out all;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
 
         &:hover {
-          color: #FFF;
+          color: #fff;
           background-color: transparent;
           transition: 160ms ease-in-out all;
         }
@@ -85,4 +88,4 @@ export const CarreirasContainer = styled.div`
       }
     }
   }
-`
+`;

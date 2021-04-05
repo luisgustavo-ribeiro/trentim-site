@@ -21,12 +21,14 @@ export const Navbar: React.FC<INavbarProps> = (props: INavbarProps) => {
     console.log(menuToggle);
 
     if (!menuToggle) {
+      document.body.classList.add("menu-open");
       document.querySelector("#pageContent").classList.add("menu-open");
       document.querySelector("#nav").classList.add("menu-open");
       document.querySelector(".nav-toggle").classList.add("menu-open");
     }
 
     if(menuToggle) {
+      document.body.classList.remove("menu-open");
       document.querySelector("#pageContent").classList.remove("menu-open");
       document.querySelector("#nav").classList.remove("menu-open");
       document.querySelector(".nav-toggle").classList.remove("menu-open");

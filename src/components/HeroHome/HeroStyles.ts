@@ -154,13 +154,6 @@ export const HeroContent = styled.div`
       display: none;
     }
 
-    .content-info {
-
-      p {
-        font-size: 3.5vmax;
-      }
-    }
-
     .hero-carousel-items-track {
       overflow: auto;
       margin: 0 -20px 0 0;

@@ -84,6 +84,9 @@ export const SectionCasesStyles = styled.section`
         transition: 200ms ease-in-out all;
         text-decoration: none;
         margin: 32px 0 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
       }
     }
   }

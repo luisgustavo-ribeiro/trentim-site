@@ -266,8 +266,7 @@ export const HomeContainer = styled.div`
       .container {
         flex-direction: column;
       }
-
-      .contact-form,
+      
       .contact-info {
         padding: 30px 16px;
         min-width: 100%;
@@ -448,6 +447,9 @@ export const HomeContainer = styled.div`
         font-size: 18px;
         font-weight: 600;
         cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
       }
     }
 
