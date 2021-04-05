@@ -361,33 +361,15 @@ const Home: React.FC = () => {
               </form>
             </div>
           </div>
-          <div
-            className="detail"
-            style={{
-              position: "absolute",
-              top: "50%",
-              transform: "translateY(-50%)",
-              right: "20px",
-            }}
-          >
-            <img src={BrancoNewsLetter} alt="" />
+          <div className="detail" style={{ position: "absolute", top: "50%", transform: "translateY(-50%)", right: "0" }}>
+            <img src={BrancoNewsLetter} />
           </div>
           <div className="sq-details" style={{ bottom: "-10px" }}>
-            <div
-              className="detail"
-              data-scroll
-              data-scroll-position="top"
-              data-scroll-speed="-0.5"
-            >
-              <img src={Vermelho1} alt="" />
+            <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+              <img src={Vermelho1} />
             </div>
-            <div
-              className="detail"
-              data-scroll
-              data-scroll-position="top"
-              data-scroll-speed="-0.5"
-            >
-              <img src={Vermelho2} alt="" />
+            <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+              <img src={Vermelho2} />
             </div>
           </div>
         </div>
