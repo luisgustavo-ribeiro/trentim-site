@@ -247,6 +247,10 @@ export const HomeContainer = styled.div`
         text-decoration: none;
         transition: 160ms ease-in-out all;
 
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
         &:hover {
           color: #fff;
           background-color: transparent;

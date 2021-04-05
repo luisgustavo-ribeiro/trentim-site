@@ -128,6 +128,7 @@ export const ContactFormStyles = styled.div`
     font-weight: 700;
     background-color: ${(props) => props.theme.colors.dark.yellow};
     transition: 10s ease-in-out all;
+    -webkit-appearance: none;
   }
 
   @media screen and (max-width: 768.99px) {
