@@ -10,7 +10,7 @@ export const SectionWithShapeStyles = styled.section`
   }
 
   .section-container {
-    display: grid;    
+    display: grid;
     gap: 200px;
     width: 100%;
     align-items: center;
@@ -65,8 +65,59 @@ export const SectionWithShapeStyles = styled.section`
 
       .text {
         font-size: 18px;
-        line-height: 1.6
+        line-height: 1.6;
       }
     }
   }
-`
+
+  @media screen and (max-width: 768.99px) {
+    padding: 32px 0 40px
+  }
+
+  .section-container.mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0;
+
+    iframe {
+      position: absolute;
+      height: 100%;
+    }
+
+    .block-media {
+      .media-container {
+        height: 200px;
+      }
+
+      .shape-image {
+        height: 200px;
+        width: 200px;
+        border-width: 10px;
+      }
+
+      .shape-left {
+        top: -20px;
+        left: -20px;
+      }
+
+      .shape-right {
+        bottom: -20px;
+        right: 15px;
+     }
+    }
+
+    .block-media,
+    .block-text {
+      position: relative;
+      width: 100%;
+    }
+
+    .block-text {
+      .title {
+        font-size: 24px;
+        margin: 24px 0;
+        font-weight: 600;
+      }
+    }
+  }
+`;

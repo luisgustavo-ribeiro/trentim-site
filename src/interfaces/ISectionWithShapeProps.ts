@@ -5,8 +5,11 @@ export interface ISectionWithShapeItems {
   shapeZIndex: number;
   mediaUrl: string;  
   imageScale?: number;
+  imageScaleMobile?: number;
   imageX?: string,
   imageY?: string,
+  imageXMobile?: string,
+  imageYMobile?: string,
   title: string;
   titleColor: any;
   text: string;

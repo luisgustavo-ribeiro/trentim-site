@@ -21,6 +21,20 @@ export const CarreirasContainer = styled.div`
         border: 5px solid #c4c4c4
       }
     }
+
+    @media screen and (max-width: 768px) {
+      padding: 40px 0;
+
+      .video-section {
+        overflow: auto;
+        grid-template-columns: repeat(3,200px);
+        
+        iframe {
+          width: 200px;
+          height: 120px;
+        }
+      }
+    }
   }
 
   #carreiras-vagas {
@@ -64,6 +78,10 @@ export const CarreirasContainer = styled.div`
           background-color: transparent;
           transition: 160ms ease-in-out all;
         }
+      }
+
+      @media screen and (max-width: 768px) {
+        margin: auto;
       }
     }
   }
