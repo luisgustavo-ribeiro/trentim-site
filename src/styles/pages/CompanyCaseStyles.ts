@@ -53,4 +53,48 @@ export const CompanyCaseStyles = styled.section`
       }
     }
   }
+
+  #contact {
+    background-color: ${props => props.theme.colors.dark.yellow};
+  }
+
+  @media screen and (max-width: 768px) {
+    .case-item-container {
+      display: flex;
+      flex-flow: column nowrap;
+      margin: 0 -20px;
+      height: auto;
+    }
+
+    .block {
+
+      &.image {
+        order: 0;
+        height: 200px;
+
+        img {
+          object-position: top center;
+        }
+      }
+
+      &.info {
+        padding: 0 20px;
+        order: 1;
+        margin: 0 0 40px;
+
+        .title {
+          margin: 30px 0;
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    #contact {
+      padding: 30px 0;
+    }
+  }
 `;

@@ -4,6 +4,7 @@ export const HeroStyles = styled.div`
   display: flex;
   background-color: ${(props) => props.theme.colors.base.blue2};
   height: 600px;
+  overflow: hidden;
 
   .detail {
     position: absolute;

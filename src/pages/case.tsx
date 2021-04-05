@@ -3,6 +3,7 @@ import Router from "next/router";
 import { Cases } from "../assets/data/cases";
 import { CompanyCaseStyles } from "../styles/pages/CompanyCaseStyles";
 import Hero from "../components/Hero";
+import ContactForm from "../components/ContactForm";
 
 const CompanyCase: React.FC = () => {
   const [cases, setCases] = React.useState(null);
@@ -17,12 +18,12 @@ const CompanyCase: React.FC = () => {
     <>
       {cases && (
         <CompanyCaseStyles>
-          <Hero 
+          <Hero
             imageUrl={cases.hero.imageUrl}
             logo={cases.hero.logo}
             text={cases.hero.text}
           />
-          
+
           <div className="container col">
             {cases.case.map((c) => (
               <div className="case-item-container">
@@ -32,7 +33,7 @@ const CompanyCase: React.FC = () => {
                       <img src={c.imgUrl} alt="" />
                     </div>
                     <div className="block info">
-                      <span className="title">{c.title}</span>
+                      <div className="title">{c.title}</div>
                       <p>{c.text}</p>
                     </div>
                   </>
@@ -40,7 +41,7 @@ const CompanyCase: React.FC = () => {
                 {c.imagePosition === "right" && (
                   <>
                     <div className="block info">
-                      <span className="title">{c.title}</span>
+                      <div className="title">{c.title}</div>
                       <p>{c.text}</p>
                     </div>
                     <div className="block image">
@@ -51,6 +52,12 @@ const CompanyCase: React.FC = () => {
               </div>
             ))}
           </div>
+        
+          <section id="contact">
+            <div className="container">
+              <ContactForm />
+            </div>
+          </section>
         </CompanyCaseStyles>
       )}
     </>

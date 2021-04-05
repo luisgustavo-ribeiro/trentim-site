@@ -120,6 +120,10 @@ export default createGlobalStyle`
     align-items: center;
     justify-content: space-between;
     padding: 0 0 20px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   .detail {

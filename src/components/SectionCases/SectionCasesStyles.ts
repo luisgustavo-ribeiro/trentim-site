@@ -4,6 +4,7 @@ export const SectionCasesStyles = styled.section`
   position: relative;
   margin: 70px 0 100px;
   height: 650px;
+  overflow: hidden;
 
   .columns {
     display: grid;
