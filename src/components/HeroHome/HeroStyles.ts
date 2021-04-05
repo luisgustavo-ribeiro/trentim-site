@@ -156,7 +156,7 @@ export const HeroContent = styled.div`
 
     .hero-carousel-items-track {
       overflow: auto;
-      margin: 0 -20px 0 0;
+      margin: 0 -10px;
     }
   }
 `;
