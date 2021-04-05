@@ -206,7 +206,6 @@ export default createGlobalStyle`
   #pageContent {
     position: relative;
     transition: 100ms ease-in-out;
-    overflow: hidden;
 
     &.menu-open {
       filter: blur(4px);

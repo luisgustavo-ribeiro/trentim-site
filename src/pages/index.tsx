@@ -364,11 +364,11 @@ const Home: React.FC = () => {
           <div className="detail" style={{ position: "absolute", top: "50%", transform: "translateY(-50%)", right: "0" }}>
             <img src={BrancoNewsLetter} />
           </div>
-          <div className="sq-details" style={{ bottom: "-10px" }}>
-            <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+          <div className="sq-details" style={{ bottom: "-10px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+            <div className="detail">
               <img src={Vermelho1} />
             </div>
-            <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.5">
+            <div className="detail">
               <img src={Vermelho2} />
             </div>
           </div>
