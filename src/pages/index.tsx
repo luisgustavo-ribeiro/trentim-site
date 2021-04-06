@@ -215,11 +215,7 @@ const Home: React.FC = () => {
             </div>
             <div className="text-container">
               {processData.map((item, index) => (
-                <div
-                  className={`text ${
-                    processActiveItem === index ? "open" : ""
-                  }`}
-                >
+                <div key={index} className={`text ${processActiveItem === index ? "open" : ""}`}>
                   <p>{item.text}</p>
                 </div>
               ))}
@@ -311,8 +307,8 @@ const Home: React.FC = () => {
             <span className="title">trends</span>
           </div>
           <div className="cards-container">
-            {blogCardsData.map((card) => (
-              <div className="card">
+            {blogCardsData.map((card, index) => (
+              <div className="card" key={index}>
                 <div className="img-container">
                   <img src={card.image} alt="" />
                 </div>
@@ -356,7 +352,7 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className="sq-details" style={{ top: "50%", transform: "translateY(-50%)" }}>
-            <img src={BrancoNewsLetter} alt="" />
+            <img src={BrancoNewsLetter} alt="" style={{ marginLeft: "auto" }}/>
           </div>
           <div
             className="sq-details"
