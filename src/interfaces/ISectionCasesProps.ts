@@ -15,4 +15,6 @@ export interface ISectionCasesItem {
 
 export default interface ISectionCasesProps {
   item: ISectionCasesItem;
+  index: number;
+  screenWidth: number;
 }

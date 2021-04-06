@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const SectionCasesStyles = styled.section`
   position: relative;
-  margin: 70px 0 100px;
-  height: 650px;
-  overflow: hidden;
+  margin: 70px 0 0;
+  height: 650px;  
 
   .columns {
     display: grid;
@@ -40,7 +39,6 @@ export const SectionCasesStyles = styled.section`
       overflow: hidden;
 
       img {
-        width: 100%;
         display: flex;
         object-fit: cover;
       }

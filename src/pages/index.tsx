@@ -276,13 +276,7 @@ const Home: React.FC = () => {
             <img src={BrancoContato} alt="" />
           </div>
 
-          <div
-            className="sq-details"
-            style={{ bottom: "-120px" }}
-            data-scroll
-            data-scroll-position="top"
-            data-scroll-speed="-0.3"
-          >
+          <div className="sq-details" style={{ bottom: "-120px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
             <div className="detail">
               <img src={Laranja1} />
             </div>
@@ -361,34 +355,18 @@ const Home: React.FC = () => {
               </form>
             </div>
           </div>
-          <div
-            className="detail"
-            style={{
-              position: "absolute",
-              top: "50%",
-              transform: "translateY(-50%)",
-              right: "20px",
-            }}
-          >
+          <div className="sq-details" style={{ top: "50%", transform: "translateY(-50%)" }}>
             <img src={BrancoNewsLetter} alt="" />
           </div>
-          <div className="sq-details" style={{ bottom: "-10px" }}>
-            <div
-              className="detail"
-              data-scroll
-              data-scroll-position="top"
-              data-scroll-speed="-0.5"
-            >
-              <img src={Vermelho1} alt="" />
-            </div>
-            <div
-              className="detail"
-              data-scroll
-              data-scroll-position="top"
-              data-scroll-speed="-0.5"
-            >
-              <img src={Vermelho2} alt="" />
-            </div>
+          <div
+            className="sq-details"
+            style={{ bottom: "-130px" }}
+            data-scroll
+            data-scroll-position="top"
+            data-scroll-speed="-0.2"
+          >
+            <img src={Vermelho1} alt="" />
+            <img src={Vermelho2} alt="" />
           </div>
         </div>
       </section>
