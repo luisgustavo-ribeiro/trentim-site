@@ -120,12 +120,7 @@ const Home: React.FC = () => {
             >
               <img src={Azul1} />
             </div>
-            <div
-              className="detail"
-              data-scroll
-              data-scroll-position="top"
-              data-scroll-speed="-0.3"
-            >
+            <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
               <img src={Azul2} />
             </div>
           </div>

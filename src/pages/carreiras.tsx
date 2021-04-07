@@ -4,7 +4,29 @@ import Hero from "../components/Hero";
 import { CarreirasContainer } from "../styles/pages/Carreiras";
 import { heroData, firstSectionData, videoSectionData, carreirasData } from "../assets/data/carreiras";
 
+import AzulClaro1 from "../assets/img/quadrados/carreiras/azul-claro-carreiras.png";
+import VerdeClaro1 from "../assets/img/quadrados/carreiras/verde-claro-carreiras.png";
+import BrancoVagas from "../assets/img/quadrados/carreiras/branco-fundo-roxo-carreiras.png";
+
 const Carreiras: React.FC = () => {
+
+  const [dimensions, setDimensions] = React.useState({ height: 0, width: 0 });
+
+  React.useEffect(() => {
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    });
+
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   return (
     <CarreirasContainer>
@@ -21,6 +43,14 @@ const Carreiras: React.FC = () => {
         mediaPosition={firstSectionData.mediaPosition}
         shapePosition="left"
       />
+      
+      {dimensions.width > 1024.99 &&
+        <div className="container" style={{zIndex: 0}}>
+          <div className="sq-details" data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
+            <img src={AzulClaro1} alt="" />
+          </div>
+        </div>
+      }
 
       <section id='carreiras-videos'>
         <div className="container">
@@ -31,6 +61,14 @@ const Carreiras: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {dimensions.width > 1024.99 &&
+        <div className="container" style={{zIndex: 0}}>
+          <div className="sq-details" data-scroll data-scroll-position="top" data-scroll-speed="-0.3" style={{top: "-160px"}}>
+            <img src={VerdeClaro1} alt="" style={{ marginLeft: "auto" }}/>
+          </div>
+        </div>
+      }
 
       {carreirasData.map((carreira, index) => 
         <SectionWithShape 
@@ -50,6 +88,9 @@ const Carreiras: React.FC = () => {
               <p>Lorem ipsum dolor sit amet consectetur <br/>adipisicing elit blanditiis, a.</p>
             </div>
             <a href="http://trent.im/vagas">vagas</a>
+          </div>
+          <div className="sq-details">
+            <img src={BrancoVagas} alt="" style={{marginLeft: "auto" }}/>
           </div>
         </div>
       </section>

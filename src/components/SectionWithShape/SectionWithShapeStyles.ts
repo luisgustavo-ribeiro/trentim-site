@@ -70,10 +70,6 @@ export const SectionWithShapeStyles = styled.section`
     }
   }
 
-  @media screen and (max-width: 768.99px) {
-    padding: 32px 0 40px
-  }
-
   .section-container.mobile {
     display: flex;
     flex-flow: column nowrap;
@@ -103,7 +99,7 @@ export const SectionWithShapeStyles = styled.section`
       .shape-right {
         bottom: -20px;
         right: 15px;
-     }
+      }
     }
 
     .block-media,
@@ -119,5 +115,31 @@ export const SectionWithShapeStyles = styled.section`
         font-weight: 600;
       }
     }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024.99px) {
+    .section-container {
+      grid-template-columns: 1fr 1fr !important;
+      gap: 20px !important;
+
+      .col {
+        .title {
+          font-size: 24px;
+        }
+        .text {
+          font-size: 1rem;
+        }
+        &.left {
+          padding: 0 !important;
+        }
+        &.right {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768.99px) {
+    padding: 32px 0 40px;
   }
 `;

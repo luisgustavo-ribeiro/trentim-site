@@ -13,6 +13,7 @@ export const CarreirasContainer = styled.div`
       grid-template-columns: repeat(3, 1fr);
       gap: 36px;
       width: 100%;
+      z-index: 9;
 
       iframe {
         width: 100%;
@@ -45,6 +46,7 @@ export const CarreirasContainer = styled.div`
       display: flex;
       flex-direction: column;
       text-align: center;
+      z-index: 10;
 
       .title {
         color: #fff;
