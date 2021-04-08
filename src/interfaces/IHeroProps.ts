@@ -1,5 +1,5 @@
 export default interface IHeroProps {
-  imageUrl: string;
+  imageUrl?: string;
   imagePositionX?: string;
   imagePositionY?: string;
   logo?: string;

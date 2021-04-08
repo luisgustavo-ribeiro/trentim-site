@@ -57,9 +57,9 @@ const Footer: React.FC = () => {
             </div>
 
             <div className='termos'>
-              <a href="#">Política de privacidade</a>
+              <a href="/informacoesadicionais?=politica-de-privacidade">Política de privacidade</a>
               <span style={{margin: '0 4px'}}>|</span>
-              <a href="#">Termos de uso</a>
+              <a href="/informacoesadicionais?=termos-de-uso">Termos de uso</a>
             </div>
           </div>
           <div className="mid-col">

@@ -141,9 +141,11 @@ const Home: React.FC = () => {
               </h2>
 
               <ul className="info-list">
-                <li>Gold lorem ipsum</li>
-                <li>Gold lorem ipsum</li>
-                <li>Silver lorem ipsum</li>
+                <li>Gold Project and Portfolio Management</li>
+                <li>Gold Cloud Business Applications</li>
+                <li>Gold Application Development</li>
+                <li>Gold Data Analytics</li>
+                <li>Gold Cloud Productivity</li>
               </ul>
             </div>
           </div>
