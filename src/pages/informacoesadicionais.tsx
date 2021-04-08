@@ -1,7 +1,7 @@
 import Router from "next/router";
 import React from "react";
 import { InformacoesAdicionaisContainer } from "../styles/pages/InformacoesAdicionaisContainer";
-import { InformacoesAdicionaisData } from "../assets/data/informacoesAdicionais";
+import { politicaDePrivacidadeData, termosDeUsoData } from "../assets/data/informacoesAdicionais";
 import Hero from "../components/Hero";
 
 // ADICIONAR POLITICA DE PRIVACIDADE E TERMOS DE USO
@@ -22,7 +22,7 @@ const InformacoesAdicionais = () => {
 
           <InformacoesAdicionaisContainer>
               <div className="container col">
-                {InformacoesAdicionaisData.map(item => 
+                {politicaDePrivacidadeData.map(item => 
                   <div className="info-block">
                     <h1 className="title">{item.title}</h1>
                     <p className="text">{item.text}</p>
@@ -36,7 +36,14 @@ const InformacoesAdicionais = () => {
         <>
 
           <InformacoesAdicionaisContainer>
-            <div className="container"></div>
+            <div className="container col">
+              {termosDeUsoData.map(item => 
+                <div className="info-block">
+                  <h1 className="title">{item.title}</h1>
+                  <p className="text">{item.text}</p>
+                </div>
+              )}
+            </div>
           </InformacoesAdicionaisContainer>
         </>
       }

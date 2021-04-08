@@ -1,4 +1,4 @@
-export const InformacoesAdicionaisData = [
+export const politicaDePrivacidadeData = [
   {
     title: "1 - INFORMAÇÕES GERAIS",
     text: `A presente Política de Privacidade contém informações sobre coleta, uso, armazenamento, tratamento e proteção dos dados pessoais dos usuários e visitantes do site trentim.com e suas páginas internas, com a finalidade de demonstrar absoluta transparência quanto ao assunto e esclarecer a todos interessados sobre os tipos de dados que são coletados, os motivos da coleta e a forma como os usuários podem gerenciar ou excluir as suas informações pessoais.
@@ -100,5 +100,52 @@ export const InformacoesAdicionaisData = [
     text: `Para a solução de controvérsias decorrentes do presente instrumento será aplicado integralmente o Direito brasileiro.
           \n
           Os eventuais litígios deverão ser apresentados no foro da comarca de São José dos Campos - São Paulo, local em que se encontra a sede da Trentim.`
+  },
+]
+
+export const termosDeUsoData = [
+  {
+    title: "1. Termos",
+    text: `Ao acessar ao site da Trentim Gestão e Tecnologia, concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.`
+  },
+  {
+    title: "2. Uso de Licença",
+    text: `É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site Trentim Gestão e Tecnologia , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não uma transferência de título e, sob esta licença, você não pode:
+          \n
+          Modificar ou copiar os materiais;
+          \n
+          Usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);
+          \n
+          Tentar descompilar ou fazer engenharia reversa de qualquer software contido no site da Trentim Gestão e Tecnologia;
+          \n
+          Remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou
+          \n
+          Transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.
+          \n
+          Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida pela Trentim Gestão e Tecnologia a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você deve apagar todos os materiais baixados em sua posse, seja em formato eletrónico ou impresso.`
+  },
+  {
+    title: "3. Isenção de responsabilidade",
+    text: `Os materiais no site da Trentim Gestão e Tecnologia são fornecidos 'como estão'. A Trentim Gestão e Tecnologia não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos.
+          \n
+          Além disso, a Trentim Gestão e Tecnologia não garante ou faz qualquer representação relativa à precisão, aos resultados prováveis ou à confiabilidade do uso dos materiais em seu site ou de outra forma relacionado a esses materiais ou em sites vinculados a este site.`
+  },
+  {
+    title: "4. Limitações",
+    text: `Em nenhum caso a Trentim Gestão e Tecnologia ou seus fornecedores serão responsáveis por quaisquer danos (incluindo, sem limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da incapacidade de usar os materiais em nosso site, mesmo que a Trentim Gestão e Tecnologia ou um representante autorizado dela tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade por danos consequentes ou incidentais, essas limitações podem não se aplicar a você.`
+  },
+  {
+    title: "5. Precisão dos materiais",
+    text: `Os materiais exibidos no site da Trentim Gestão e Tecnologia podem incluir erros técnicos, tipográficos ou fotográficos. A Trentim Gestão e Tecnologia não garante que qualquer material em seu site seja preciso, completo ou atual. Também nos reservamos o direito de fazer alterações nos materiais contidos no site a qualquer momento, sem aviso prévio. No entanto, a Trentim Gestão e Tecnologia não se compromete a atualizar os materiais.`
+  },
+  {
+    title: "6. Links",
+    text: `A Trentim Gestão e Tecnologia não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site vinculado. A inclusão de qualquer link não implica endosso pela Trentim Gestão e Tecnologia a tal site. O uso de qualquer site vinculado é por conta e risco do usuário.
+          \n
+          Modificações
+          A Trentim Gestão e Tecnologia pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de serviço.
+          \n
+          Lei aplicável
+          Estes termos e condições são regidos e interpretados de acordo com as leis vigentes em todo o Brasil, e você se submete irrevogavelmente à jurisdição exclusiva dos tribunais do estado de São Paulo, Brasil.`
   },
 ]
