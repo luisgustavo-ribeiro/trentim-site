@@ -15,5 +15,8 @@ export const SolutionsTitle = styled.section`
   }
 `;
 
+export const SolutionsPage = styled.div`
+
+`;
+
 export const SolutionsPageMobile = styled.div``;
-export const SolutionsPageDesktop = styled.div``;

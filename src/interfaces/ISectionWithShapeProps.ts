@@ -14,11 +14,12 @@ export interface ISectionWithShapeItems {
   subtitle?: string;
   titleColor?: any;
   text?: string;
-  textColor?: string;
+  textColor?: string;  
 }
 
 export default interface ISectionWithShapeProps {
   item: ISectionWithShapeItems;
+  box?: any;
   mediaType: "img" | "video";
   shapeType: "single" | "multiple";
   mediaPosition: string | "left" | "right";

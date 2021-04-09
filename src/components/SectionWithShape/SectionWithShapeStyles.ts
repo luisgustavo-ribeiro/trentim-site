@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionWithShapeStyles = styled.div`
+export const SectionWithShapeStyles = styled.section`
   display: flex;
   padding: 120px 0;
   align-items: center;
@@ -19,7 +19,15 @@ export const SectionWithShapeStyles = styled.div`
     width: 100%;
     align-items: center;
 
-    .media-w-shape {
+    &.multi-info {
+      .col,
+      .media-shape,
+      .media-container {
+        height: 100%;
+      }
+    }
+
+    .media-shape {
       position: relative;
 
       .shape-image {
@@ -57,6 +65,11 @@ export const SectionWithShapeStyles = styled.div`
     }
 
     .col {
+
+      .info-box:not(:first-child) {
+        margin: 100px 0 0;
+      }
+
       .title {
         font-size: 36px;
         font-weight: 600;
@@ -89,14 +102,21 @@ export const SectionWithShapeStyles = styled.div`
         }
       }
 
+      .shape-container {
+        display: flex;
+        position: absolute;
+        top: calc(50% - 50px);
+        z-index: 10;
+      }
+
       &.left {
-        .multi-shapes {
+        .shape-container {
           right: -50px;
         }
       }
 
       &.right {
-        .multi-shapes {
+        .shape-container {
           left: -50px;
         }
       }
