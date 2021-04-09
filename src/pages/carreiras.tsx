@@ -39,6 +39,7 @@ const Carreiras: React.FC = () => {
 
       <SectionWithShape 
         item={firstSectionData}
+        shapeType="single"
         mediaType="video"
         mediaPosition={firstSectionData.mediaPosition}
         shapePosition="left"
@@ -74,7 +75,8 @@ const Carreiras: React.FC = () => {
         <SectionWithShape 
           key={index}
           item={carreira} 
-          mediaType="img"          
+          shapeType="single"
+          mediaType="img"
           mediaPosition={carreira.mediaPosition} 
           shapePosition={carreira.mediaPosition}
         />

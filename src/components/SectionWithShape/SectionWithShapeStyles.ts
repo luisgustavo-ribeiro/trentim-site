@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
-export const SectionWithShapeStyles = styled.section`
+export const SectionWithShapeStyles = styled.div`
   display: flex;
   padding: 120px 0;
   align-items: center;
+
+  .shape {
+    margin: 0 !important;
+  }
 
   p {
     white-space: pre-line;
@@ -50,10 +54,6 @@ export const SectionWithShapeStyles = styled.section`
         object-fit: cover;
         width: 100%;
       }
-
-      iframe {
-        background-color: #000;
-      }
     }
 
     .col {
@@ -66,6 +66,39 @@ export const SectionWithShapeStyles = styled.section`
       .text {
         font-size: 18px;
         line-height: 1.6;
+      }
+
+      .multi-shapes {
+        position: absolute;
+        z-index: 2;
+        top: calc(50% - 50px);
+      }
+      
+      .title-area {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 0 40px;
+
+        .title,
+        .subtitle {
+          font-size: 24px;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      &.left {
+        .multi-shapes {
+          right: -50px;
+        }
+      }
+
+      &.right {
+        .multi-shapes {
+          left: -50px;
+        }
       }
     }
   }

@@ -157,7 +157,7 @@ export default createGlobalStyle`
 
     &.open {
       height: 100px;
-      width: 100px;      
+      width: 100px;
     }
 
     &.square {

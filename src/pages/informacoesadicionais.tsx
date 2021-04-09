@@ -2,9 +2,6 @@ import Router from "next/router";
 import React from "react";
 import { InformacoesAdicionaisContainer } from "../styles/pages/InformacoesAdicionaisContainer";
 import { politicaDePrivacidadeData, termosDeUsoData } from "../assets/data/informacoesAdicionais";
-import Hero from "../components/Hero";
-
-// ADICIONAR POLITICA DE PRIVACIDADE E TERMOS DE USO
 
 const InformacoesAdicionais = () => {
   const [informacoesAdicionais, setInformacoesAdicionais] = React.useState<string>(null);
