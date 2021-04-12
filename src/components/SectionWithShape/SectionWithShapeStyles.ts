@@ -19,6 +19,10 @@ export const SectionWithShapeStyles = styled.section`
     width: 100%;
     align-items: center;
 
+    iframe {
+      border: none;
+    }
+
     &.multi-info {
       .col,
       .media-shape,

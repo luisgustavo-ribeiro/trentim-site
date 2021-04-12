@@ -70,8 +70,7 @@ export default createGlobalStyle`
 
   body {
     font: 400 16px system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    background-color: #FFF;
-    scroll-behavior: smooth;
+    background-color: #FFF;    
 
     &.menu-open {
       overflow: hidden;
@@ -110,7 +109,7 @@ export default createGlobalStyle`
       margin: 0;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768.99px) {
       display: flex;
     }
   }
@@ -125,7 +124,7 @@ export default createGlobalStyle`
     justify-content: space-between;
     padding: 0 0 20px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768.99px) {
       display: none;
     }
   }
@@ -298,7 +297,7 @@ export default createGlobalStyle`
   }
 
   // media queries
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768.99px) {
     .detail {
       display: none;
     }

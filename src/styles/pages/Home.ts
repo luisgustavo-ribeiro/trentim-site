@@ -8,28 +8,6 @@ export const HomeContainer = styled.div`
     position: relative;
   }
 
-  #white-banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    background-color: white;
-
-    p {
-      color: ${(props) => props.theme.colors.base.blue2};
-      font-size: 24px;
-      line-height: 1.6;
-      text-align: center;
-      align-self: center;
-      margin: 0 auto;
-      z-index: 10;
-
-      @media screen and (max-width: 768px) {
-        font-size: 14px;
-      }
-    }
-  }
-
   #ms-partnership {
     display: flex;
     height: 450px;
@@ -94,7 +72,7 @@ export const HomeContainer = styled.div`
       font-weight: 300;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768.99px) {
       height: auto;
 
       .container {
@@ -181,7 +159,7 @@ export const HomeContainer = styled.div`
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768.99px) {
       padding: 40px 0;
       overflow: hidden;
       min-height: 500px;
@@ -247,7 +225,7 @@ export const HomeContainer = styled.div`
         text-decoration: none;
         transition: 160ms ease-in-out all;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 768.99px) {
           width: 100%;
         }
 
@@ -260,7 +238,7 @@ export const HomeContainer = styled.div`
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768.99px) {
       padding: 30px 0 70px;
 
       .container {
@@ -391,7 +369,7 @@ export const HomeContainer = styled.div`
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768.99px) {
       padding: 40px 0;
 
       .cards-container {
@@ -413,6 +391,7 @@ export const HomeContainer = styled.div`
       grid-template-columns: repeat(3, 1fr);
       gap: 80px;
       justify-content: center;
+      z-index: 10;
     }
 
     .newsletter-info {
@@ -453,7 +432,7 @@ export const HomeContainer = styled.div`
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768.99px) {
       padding: 40px 0;
 
       .newsletter-container {

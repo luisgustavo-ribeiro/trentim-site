@@ -1,8 +1,30 @@
 import styled from "styled-components";
 
+export const Hero = styled.section`
+  position: relative;
+  padding: 160px 0 100px;
+  width: 100%;
+  background-color: ${props => props.theme.colors.base.blue2};
+  color: #FFF;
+  text-transform: uppercase;
+
+  .detail {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    opacity: 0.5;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+    z-index: 10;
+  }
+`;
+
 export const InformacoesAdicionaisContainer = styled.section`
   display: flex;
-  padding: 100px 0;
+  padding: 50px 0 0;
 
   .info-block {
     position: relative;
@@ -22,5 +44,4 @@ export const InformacoesAdicionaisContainer = styled.section`
       margin: 0;
     }
   }
-
 `;

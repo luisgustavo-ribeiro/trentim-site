@@ -1,39 +1,35 @@
 import React from "react";
 import { HeroContent } from "./HeroStyles";
 import HeroBG from "../../assets/img/quadrados/home/hero.png";
-import SUZ_HERO from "../../assets/img/pages/cases/casePage/suzano/SUZ_HERO.jpg"; 
-import SUZ_LOGO from "../../assets/img/pages/cases/casePage/suzano/suzano-logo-hero.png";
-import SGB_HERO from "../../assets/img/pages/cases/casePage/saintgobain/SGB_HERO.jpg";
-import SGB_LOGO from "../../assets/img/pages/cases/casePage/saintgobain/saintgobain-logo-hero.png";
-import IBEMA_HERO from "../../assets/img/pages/cases/casePage/ibema/IBEMA_HERO.jpg";
-import IBEMA_LOGO from "../../assets/img/pages/cases/casePage/ibema/ibema-logo-hero.png";
-import BV_HERO from "../../assets/img/pages/cases/casePage/bv/BV_HERO.jpg";
-import BV_LOGO from "../../assets/img/pages/cases/casePage/bv/bv-logo-hero.png";
+import SUZ_LOGO from "../../assets/img/clientlogos/cor/Suzano-horizontal.png";
+import SGB_LOGO from "../../assets/img/clientlogos/cor/Saint-Gobain.png";
+import IBEMA_LOGO from "../../assets/img/clientlogos/cor/Ibema-horizontal.png";
+import BV_LOGO from "../../assets/img/clientlogos/cor/Bureal-Veritas.png";
 
 const tabItems = [
   {
-    hero: SUZ_HERO,
     name: "Suzano",
-    text: 'Redução de 4.500 horas mensais com a plataforma de gestão moderna de projetos',
-    url: SUZ_LOGO,
+    text: 'Redução de 4.500 horas mensais com a gestão moderna de projetos',
+    logo: SUZ_LOGO,
+    url: '/case?=suzano'
   },
   {
-    hero: SGB_HERO,
     name: "Saint-Gobain",
-    text: 'Transformação Digital com capacitação intensiva dos colaboradores',
-    url: SGB_LOGO,
+    text: 'Capacitação intensiva em ferramentas de colaboração para adotar novo modelo de trabalho imediatamente',
+    logo: SGB_LOGO,
+    url: '/case?=saintgobain'
   },
   {
-    hero: BV_HERO,
     name: "Bureau Veritas",
     text: 'Aplicativo de Gestão de Mudanças reduz custo e tempo em projetos',
-    url: BV_LOGO,
+    logo: BV_LOGO,
+    url: '/case?=bv'
   },
-  {
-    hero: IBEMA_HERO,
+  {    
     name: "Ibema",
-    text: 'Solução de Gestão de Projetos sem gastar uma única hora de trabalho',
-    url: IBEMA_LOGO,
+    text: 'Gestão de projeto de Recursos Humanos sem gastar uma única hora de trabalho',
+    logo: IBEMA_LOGO,
+    url: '/case?=ibema'
   },
 ];
 
@@ -46,39 +42,45 @@ const HeroHome: React.FC = () => {
 
   return (
     <HeroContent>
-      <div className='bg-container' style={{backgroundImage: `url(${HeroBG})`}}></div>
-      <div className="container">
-        <div className="hero-items">
-          <div className="hero-left-col">
-            <div className="hero-carousel">
-              {
-                tabItems.map((tabItem, index) => 
-                  <div key={index} className={`hero-carousel-content ${index === heroActiveItem ? 'open' : ''}`}>
-                    <div className='content-img'>
-                      <img src={tabItem.url} alt={tabItem.name} />
-                    </div>
-                    <div className='content-info'>
-                      <p>{tabItem.text}</p>
-                    </div>
-                  </div>
-                )
-              }
-              <div className="hero-carousel-items-track">
-                <div className="hero-carousel-items">
-                  {tabItems.map((item, index) => 
-                      <div className="carousel-logo-container" onClick={() => showItem(index)}>
-                        <img src={item.url} alt={item.name} />
-                      </div>
-                  )}
-                </div>
+      <div className="hero-banner">
+        <div className='bg-container' style={{backgroundImage: `url(${HeroBG})`}}></div>
+          <div className="container">
+            <div className="hero-title">
+              <div className="title">
+                <span className="shape square"></span>
+                <span className="title">trentim</span>
               </div>
+              <div className="hero-subtitle">
+                <p>Aliamos pessoas, tecnologias e métodos para <br/>
+                transformar a Gestão de Projetos das organizações</p>
             </div>
-          </div>
-          <div className="hero-right-col">
-            <img src={tabItems[heroActiveItem].hero} alt=""/>
-          </div>
+            </div>
+            
         </div>
       </div>
+      <section className="white-banner">
+        <div className="container">
+          <div className="hero-cases">            
+            <div className="box-info">
+              {tabItems.map((item, index) => 
+                <div className={`info ${heroActiveItem === index ? 'active' : ''}`} key={index}>
+                  <div className="title">{item.name}</div>
+                  <div className="text">{item.text}</div>
+                  <a href={item.url} className="btn-case">Veja o case clicando aqui!</a>
+                </div>
+              )}
+              </div>
+              <div className="box-logos">
+                {tabItems.map((item, index) => 
+                  <div className={`logo ${heroActiveItem === index ? 'active' : ''}`} key={index} onClick={() => setHeroActiveItem(index)}>
+                    <img src={item.logo} alt=""/>
+                  </div>
+                )}
+              </div>
+            </div>          
+        </div>
+      </section>
+
     </HeroContent>
   );
 };

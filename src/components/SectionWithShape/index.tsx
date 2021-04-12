@@ -239,7 +239,7 @@ const SectionWithShape:React.FC<ISectionWithShapeProps> = (props: ISectionWithSh
                   </div>
                 </div>
                 <div className="col right">
-                  <div className="media-w-shape">
+                  <div className="media-shape">
                     {props.shapeType === "single" && 
                       <div className={`shape shape-image shape-${props.shapePosition} ${props.item.shapeName}`} style={{borderColor: props.item.shapeColor, zIndex: props.item.shapeZIndex}}></div>
                     }
@@ -261,7 +261,7 @@ const SectionWithShape:React.FC<ISectionWithShapeProps> = (props: ISectionWithSh
         {dimensions.width < 768.99 && props.shapeType === "single" && 
           <div className="section-container mobile">
             <div className="block-media">
-              <div className="media-w-shape">
+              <div className="media-shape">
                 <div className={`shape shape-image shape-${props.shapePosition} ${props.item.shapeName}`} style={{borderColor: props.item.shapeColor, zIndex: props.item.shapeZIndex}}></div>
                 <div className="media-container">
                   {props.mediaType === "img" && 

@@ -18,12 +18,15 @@ export const CarreirasContainer = styled.div`
       iframe {
         width: 100%;
         height: 220px;
-        background-color: #000;
-        border: 5px solid #c4c4c4;
+        border: none;
+
+        @media screen and (max-width: 1024.99px) {
+          background-color: #000;
+        }
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768.99px) {
       padding: 40px 0;
 
       .video-section {
@@ -85,7 +88,7 @@ export const CarreirasContainer = styled.div`
         }
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 768.99px) {
         margin: auto;
       }
     }

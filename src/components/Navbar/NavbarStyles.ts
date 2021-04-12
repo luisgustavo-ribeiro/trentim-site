@@ -36,7 +36,7 @@ export const Navigation = styled.nav`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768.99px) {
     position: fixed;
     height: 100vh;
     flex-direction: column;

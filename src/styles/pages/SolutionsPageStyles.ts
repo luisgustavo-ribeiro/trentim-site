@@ -17,6 +17,11 @@ export const SolutionsTitle = styled.section`
 
 export const SolutionsPage = styled.div`
 
+  section {
+    padding: 0;
+    margin: 50px 0;
+  }
+
 `;
 
 export const SolutionsPageMobile = styled.div``;

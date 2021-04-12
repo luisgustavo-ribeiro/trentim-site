@@ -39,7 +39,8 @@ export const ContactFormStyles = styled.div`
     position: relative;
     margin: 0 0 10px;
 
-    input:not([type="checkbox"]) {
+    input:not([type="checkbox"]),
+    select {
       height: 50px;
       line-height: 50px;
       border: 1px solid #828282;
@@ -52,6 +53,11 @@ export const ContactFormStyles = styled.div`
       &:active {
         outline-color: ${(props) => props.theme.colors.dark.yellow};
       }
+    }
+
+    textarea {
+      padding: 8px 16px;
+      font: 400 18px system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     }
 
     label {

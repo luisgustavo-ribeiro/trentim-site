@@ -4,7 +4,7 @@ import { ContactFormStyles } from "./ContactFormStyles";
 const ContactForm = () => {
   const [name, setName] = React.useState<string>("");
   const [email, setEmail] = React.useState<string>("");
-  const [numberOfEmployees, setNumberOfEmployees] = React.useState<number>(0);
+  const [numberOfEmployees, setNumberOfEmployees] = React.useState<string>("");
   const [phone, setPhone] = React.useState<string>("");
   const [subject, setSubject] = React.useState<string>("");
   const [message, setMessage] = React.useState<string>("");
@@ -18,21 +18,13 @@ const ContactForm = () => {
       e.target.labels[0].classList.remove("has-value");
   }
 
-  function validateNumber(e) {
-    const number = parseFloat(e.target.value);
+  function handleNumeroDeFuncionarios(e) {
+    
+    const index = e.nativeEvent.target.selectedIndex;
+    const label = e.nativeEvent.target[index].text;
 
-    if (!isNaN(number)) setNumberOfEmployees(number);
-
-    if (
-      !isNaN(number) &&
-      e.target.nextElementSibling.classList.value.includes("show-error")
-    ) {
-      setNumberOfEmployees(number);
-      e.target.nextElementSibling.classList.remove("show-error");
-    }
-
-    if (isNaN(number) && e.target.value !== "")
-      e.target.nextElementSibling.classList.add("show-error");
+    setNumberOfEmployees(label);
+    console.log(label);
   }
 
   return (
@@ -77,14 +69,17 @@ const ContactForm = () => {
           </div>
           <div className="form-group">
             <label htmlFor="numEmployees">número de funcionários</label>
-            <input
-              type="text"
-              id="numEmployees"
-              onChange={(e) => {
+            <select id="numEmployees" onChange={(e) => {
                 checkValue(e);
-                validateNumber(e);
-              }}
-            />
+                handleNumeroDeFuncionarios(e)
+              }}>
+              <option value=""></option>
+              <option value="1">1 a 10</option>
+              <option value="2">10 a 50</option>
+              <option value="3">50 a 100</option>
+              <option value="4">100 a 500</option>
+              <option value="5">mais de 500</option>
+            </select>
 
             <span className="error-msg">Digite um número válido</span>
           </div>
@@ -149,8 +144,8 @@ const ContactForm = () => {
           </div>
           <div className="form-group">
             <label htmlFor="txtMessage">como podemos ajudar?</label>
-            <input
-              type="text"
+            <textarea
+              rows={8}
               id="txtMessage"
               onChange={(e) => {
                 checkValue(e);

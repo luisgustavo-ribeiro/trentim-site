@@ -51,24 +51,29 @@ export const FooterStyles = styled.section`
     .termos {
       margin: 12px 0 0;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 768.99px) {
         margin: 12px 0 32px;
       }
     }
 
     .right-col {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 32px;
+      grid-auto-rows: auto;
       align-items: center;
-      margin: -90px 0 0;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
 
       @media screen and (max-width: 768.99px) {
         margin: 32px 0 0;
-        align-items: flex-start;
         flex-wrap: wrap;
         flex-direction: row;
+        align-items: flex-start;
         justify-content: flex-start;
+        justify-items: flex-start;
+        grid-template-columns: inherit;
       }
 
       .ms-gold {
@@ -81,7 +86,6 @@ export const FooterStyles = styled.section`
 
       .gptw {
         height: 120px;
-        margin: 10px 0 40px;
 
         img {
           height: 100%;
@@ -90,6 +94,7 @@ export const FooterStyles = styled.section`
 
       .pmi {
         display: inline-flex;
+        grid-column: 1/-1;
 
         @media screen and (max-width: 768.99px) {
           flex: 1 1 100%;
@@ -129,7 +134,7 @@ export const FooterStyles = styled.section`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768.99px) {
     padding: 40px 0 60px;
 
     .footer-container {

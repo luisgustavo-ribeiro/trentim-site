@@ -3,8 +3,6 @@ import { HomeContainer } from "../styles/pages/Home";
 import HeroHome from "../components/HeroHome";
 import MSPartnership from "../assets/img/pages/home/ms-partnership.jpg";
 
-import Azul1 from "../assets/img/quadrados/home/azul1.png";
-import Azul2 from "../assets/img/quadrados/home/azul2.png";
 import BrancoContato from "../assets/img/quadrados/home/branco_contato.png";
 import BrancoNewsLetter from "../assets/img/quadrados/home/branco_newsletter.png";
 import Laranja1 from "../assets/img/quadrados/home/laranja1.png";
@@ -103,29 +101,8 @@ const Home: React.FC = () => {
 
   return (
     <HomeContainer>
+      
       <HeroHome />
-
-      <section id="white-banner">
-        <div className="container">
-          <p>
-            Aliamos pessoas, tecnologias e métodos <br />
-            para transformar a Gestão de Projetos das organizações
-          </p>
-          <div className="sq-details" style={{ bottom: "-110px" }}>
-            <div
-              className="detail"
-              data-scroll
-              data-scroll-position="top"
-              data-scroll-speed="-0.2"
-            >
-              <img src={Azul1} />
-            </div>
-            <div className="detail" data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
-              <img src={Azul2} />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="ms-partnership">
         <div className="container">
