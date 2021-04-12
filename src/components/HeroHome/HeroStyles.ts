@@ -8,12 +8,7 @@ export const HeroContent = styled.section`
     display: flex;
     flex-direction: column;
     height: 600px;
-    background: linear-gradient(
-        to right,
-        rgba(0, 114, 198, 0.85),
-        rgba(0, 114, 198, 0.85)
-      ),
-      url("${HOME_BG}");
+    background: linear-gradient( to right, rgba(0, 114, 198, 0.85), rgba(0, 114, 198, 0.85) ), url("${HOME_BG}");
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -54,7 +49,7 @@ export const HeroContent = styled.section`
 
   .bg-container {
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
     top: 50%;
     left: 0;
     transform: translate(0, -50%);

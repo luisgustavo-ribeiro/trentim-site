@@ -56,6 +56,7 @@ export const CompanyCaseStyles = styled.section`
 
   #contact {
     background-color: ${props => props.theme.colors.dark.yellow};
+    padding: 60px 0;
   }
 
   @media screen and (max-width: 768.99px) {

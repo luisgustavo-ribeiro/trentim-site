@@ -6,8 +6,8 @@ export const ShapesStyles = styled.div`
 
   .shape-inline {
     position: absolute;
-    top: -12px;
-    left: -12px;
+    top: -25px;
+    left: -25px;
     z-index: 1;
     border-width: 4px;
   }

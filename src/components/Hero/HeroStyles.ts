@@ -8,7 +8,7 @@ export const HeroStyles = styled.div`
 
   .detail {
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
     top: 50%;
     transform: translateY(-50%);
     width: 1280px;
@@ -23,7 +23,7 @@ export const HeroStyles = styled.div`
 
   .hero-columns {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 1fr 1fr;
     color: #fff;
 
     .col {
@@ -33,7 +33,7 @@ export const HeroStyles = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 150px;
+        padding: 0px 80px;
         z-index: 2;
 
         .hero-title {

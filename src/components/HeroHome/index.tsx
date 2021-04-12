@@ -1,10 +1,10 @@
 import React from "react";
 import { HeroContent } from "./HeroStyles";
 import HeroBG from "../../assets/img/quadrados/home/hero.png";
-import SUZ_LOGO from "../../assets/img/clientlogos/cor/Suzano-horizontal.png";
-import SGB_LOGO from "../../assets/img/clientlogos/cor/Saint-Gobain.png";
-import IBEMA_LOGO from "../../assets/img/clientlogos/cor/Ibema-horizontal.png";
-import BV_LOGO from "../../assets/img/clientlogos/cor/Bureal-Veritas.png";
+import SUZ_LOGO from "../../assets/img/logos/cor/Suzano-horizontal.png";
+import SGB_LOGO from "../../assets/img/logos/cor/Saint-Gobain.png";
+import IBEMA_LOGO from "../../assets/img/logos/cor/Ibema-horizontal.png";
+import BV_LOGO from "../../assets/img/logos/cor/Bureau-Veritas.png";
 
 const tabItems = [
   {

@@ -22,6 +22,10 @@ export const SolutionsPage = styled.div`
     margin: 50px 0;
   }
 
+  .section-container .media-container {
+    height: 350px;
+  }
+
 `;
 
 export const SolutionsPageMobile = styled.div``;

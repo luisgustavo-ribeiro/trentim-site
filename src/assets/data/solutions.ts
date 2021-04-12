@@ -1,4 +1,9 @@
 import theme from "../../styles/theme";
+import assessment from "../img/pages/solucoes/assesment.jpg";
+import modernPMO from "../img/pages/solucoes/modernPMO.jpg";
+import aaservice from "../img/pages/solucoes/as-a-services.jpg";
+import learn from "../img/pages/solucoes/as-a-services.jpg";
+import subscription from "../img/pages/solucoes/learn.jpg";
 
 export const solutionsData = [
   {
@@ -7,7 +12,7 @@ export const solutionsData = [
     titleColor: `${theme.colors.base.lime}`,
     text: "por onde começar? Se você não sabe qual a melhor tecnologia, ferramenta e metodologia de gestão de projetos adotar, recomendamos o Trentim Assessment, um programa de consultoria rápido (4 semanas), cujo objetivo é conhecer seus processos, necessidades e nível de maturidade tecnológica e apontar caminhos de melhoria.",    
     mediaPosition: "right",
-    mediaUrl: "https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    mediaUrl: assessment,
     inlineShapeName: "lime",
     filledShapeName: "postIt",
     inlineShapeColor: `${theme.colors.base.lime}`,
@@ -20,7 +25,7 @@ export const solutionsData = [
     titleColor: `${theme.colors.base.blue2}`,
     text: "por onde começar? Se você não sabe qual a melhor tecnologia, ferramenta e metodologia de gestão de projetos adotar, recomendamos o Trentim Assessment, um programa de consultoria rápido (4 semanas), cujo objetivo é conhecer seus processos, necessidades e nível de maturidade tecnológica e apontar caminhos de melhoria.",    
     mediaPosition: "left",
-    mediaUrl: "https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    mediaUrl: modernPMO,
     inlineShapeName: "square",
     filledShapeName: "postIt",
     inlineShapeColor: `${theme.colors.base.blue2}`,
@@ -33,7 +38,7 @@ export const solutionsData = [
     titleColor: `${theme.colors.base.blue}`,
     text: "para organizações que já possuem projetos acontecendo, mas sofrem com problemas de headcount de profissionais especializados em gestão de projetos, o PMO as a Service é a melhor solução. Nele alocamos em sua empresa profissionais que são supervisionados pelo time de PMO da Trentim, esse modelo evita problemas comuns da forma tradicional de alocação, como continuidade e complementariedade de habilidades.",
     mediaPosition: "right",
-    mediaUrl: "https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    mediaUrl: aaservice,
     inlineShapeName: "person",
     filledShapeName: "postIt",
     inlineShapeColor: `${theme.colors.base.blue}`,
@@ -52,7 +57,7 @@ export const solutionsData = [
     titleColor: `${theme.colors.dark.pink}`,
     text: "acreditamos que todo processo de transformação também envolve a capacitação times para usarem adequadamente as ferramentas, seguirem os processos, etc, por isso também temos o Trentim Learn, um programa de treinamentos pocket, baseado em roteiros de aprendizagem pensados para gerar maturidade tecnológica (ferramentas) e técnica (metodologias).",
     mediaPosition: "left",
-    mediaUrl: "https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    mediaUrl: learn,
     inlineShapeName: "circle",
     filledShapeName: "person",
     inlineShapeColor: `${theme.colors.dark.pink}`,
@@ -65,7 +70,7 @@ export const solutionsData = [
     titleColor: `${theme.colors.dark.orange}`,
     text: "finalmente, depois que tudo estiver rodando, nossos clientes sempre precisam de apoio, para isso oferecemos o Subscription, um serviço de suporte ativo e reativo, com atendimento por tickets e baseado em horas que podem ser usadas para resolver eventuais dificuldades, esclarecer dúvidas, desenvolver pequenas melhorias e realizar breves treinamentos.",
     mediaPosition: "right",
-    mediaUrl: "https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    mediaUrl: subscription,
     inlineShapeName: "person",
     filledShapeName: "square",
     inlineShapeColor: `${theme.colors.dark.orange}`,

@@ -70,8 +70,8 @@ export const SectionWithShapeStyles = styled.section`
 
     .col {
 
-      .info-box:not(:first-child) {
-        margin: 100px 0 0;
+      .info-box {
+        padding: 40px 0;
       }
 
       .title {

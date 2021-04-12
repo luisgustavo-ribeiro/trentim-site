@@ -10,7 +10,7 @@ import { SmoothScrollProvider } from "../contexts/SmoothScrollContext";
 
 const links = [
   { title: "Cases", url: "/cases" },
-  { title: "Soluções", url: "/solutions" },
+  { title: "Soluções", url: "/solucoes" },
   { title: "Seguimentos", url: "/" },
   { title: "Carreiras", url: "/carreiras" },
   { title: "Blog", url: "/" },
