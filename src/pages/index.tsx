@@ -50,25 +50,22 @@ const processData = [
 
 const blogCardsData = [
   {
-    image:
-      "https://cdn.stocksnap.io/img-thumbs/960w/laptop-working_HB4IJY3TPI.jpg",
-    title: "Project for the Web e Power Plataform: Conexão e Benefícios",
-    text:
-      "O Project for the Web foi desenvolvido pela Microsoft visando ser de fácil uso para planejadores de projetos e suas equipes.",
+    image: "https://trentim.com.br/portal/wp-content/uploads/2021/01/Tudo-o-que-precisa-saber-sobre-gestao-de-projetos-blog--850x560.jpg",
+    title: "Tudo o que você precisa saber sobre Gestão de Projetos",
+    text: "Entenda o que é essa área de atuação, quais suas atribuições e como ingressar nessa carreira",
+    url: "https://trentim.com.br/portal/gestao-de-projetos-tudo-o-que-precisa-saber/"
   },
   {
-    image:
-      "https://cdn.stocksnap.io/img-thumbs/960w/laptop-working_HB4IJY3TPI.jpg",
+    image: "https://trentim.com.br/portal/wp-content/uploads/2020/09/Evolucao-do-Microsoft-Project-Blog-min-850x560.png",
     title: "Project for the Web e Power Plataform: Conexão e Benefícios",
-    text:
-      "O Project for the Web foi desenvolvido pela Microsoft visando ser de fácil uso para planejadores de projetos e suas equipes.",
+    text: "Qual foi a sequência de evolução do Microsoft Project? Quando e porque utilizar cada um deles?",
+    url: "https://trentim.com.br/portal/evolucao-do-microsoft-project/"
   },
   {
-    image:
-      "https://cdn.stocksnap.io/img-thumbs/960w/laptop-working_HB4IJY3TPI.jpg",
+    image: "https://trentim.com.br/portal/wp-content/uploads/2020/10/Project-for-the-web-Power-Plataform-conexao-e-beneficios-BLOG-min-850x560.jpg",
     title: "Project for the Web e Power Plataform: Conexão e Benefícios",
-    text:
-      "O Project for the Web foi desenvolvido pela Microsoft visando ser de fácil uso para planejadores de projetos e suas equipes.",
+    text: "Saiba por que união de gestão de projetos com o low code têm surpreendido as empresas",
+    url: "https://trentim.com.br/portal/gestao-de-projetos-com-low-code-project-e-power-platform/"
   },
 ];
 
@@ -289,7 +286,7 @@ const Home: React.FC = () => {
                 <div className="title">{card.title}</div>
                 <div className="text">{card.text}</div>
                 <div className="button-container">
-                  <button className="button">continuar lendo</button>
+                  <a href={card.url} className="button" target="_blank" rel="noopener noreferrer">continuar lendo</a>
                 </div>
               </div>
             ))}

@@ -359,6 +359,7 @@ export const HomeContainer = styled.div`
           font-size: 18px;
           font-weight: 600;
           height: 48px;
+          text-decoration: none;
           cursor: pointer;
 
           &:hover {
