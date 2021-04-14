@@ -8,7 +8,12 @@ export const HeroContent = styled.section`
     display: flex;
     flex-direction: column;
     height: 600px;
-    background: linear-gradient( to right, rgba(0, 114, 198, 0.85), rgba(0, 114, 198, 0.85) ), url("${HOME_BG}");
+    background: linear-gradient(
+        to right,
+        rgba(0, 114, 198, 0.85),
+        rgba(0, 114, 198, 0.85)
+      ),
+      url("${HOME_BG}");
     background-size: cover;
     overflow: hidden;
     position: relative;
@@ -136,6 +141,20 @@ export const HeroContent = styled.section`
     }
   }
 
+  @media screen and (max-width: 1024.99px) {
+    .hero-cases {
+      gap: 24px;
+
+      .box-logos {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   @media screen and (max-width: 768.99px) {
     .hero-banner {
       height: 400px;
@@ -176,6 +195,7 @@ export const HeroContent = styled.section`
 
           img {
             height: 60px;
+            width: auto;
           }
         }
       }

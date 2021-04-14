@@ -145,7 +145,7 @@ const ContactForm = () => {
           <div className="form-group">
             <label htmlFor="txtMessage">como podemos ajudar?</label>
             <textarea
-              rows={8}
+              rows={5}
               id="txtMessage"
               onChange={(e) => {
                 checkValue(e);

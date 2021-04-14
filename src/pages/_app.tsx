@@ -8,6 +8,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { SmoothScrollProvider } from "../contexts/SmoothScrollContext";
 
+import "../styles/fabric-icons.css";
+
 const links = [
   { title: "Cases", url: "/cases" },
   { title: "Soluções", url: "/solucoes" },

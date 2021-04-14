@@ -1,30 +1,33 @@
-import SUZ_HERO from "../img/pages/cases/casePage/suzano/SUZ_HERO.jpg";
-import SUZ_LOGO from "../img/pages/cases/casePage/suzano/suzano-logo-hero.png";
+import CASE_HERO from "../img/pages/home/home-hero.jpg";
+
+import SUZ_LOGO from "../img/logos/branco/Suzano-horizontal.png";
 import SUZ1 from "../img/pages/cases/casePage/suzano/SUZ1.jpg";
 import SUZ2 from "../img/pages/cases/casePage/suzano/SUZ2.jpg";
 import SUZ3 from "../img/pages/cases/casePage/suzano/SUZ3.jpg";
-import SGB_HERO from "../img/pages/cases/casePage/saintgobain/SGB_HERO.jpg";
-import SGB_LOGO from "../img/pages/cases/casePage/saintgobain/saintgobain-logo-hero.png";
+
+import SGB_LOGO from "../img/logos/branco/Saint-Gobain.png";
 import SGB1 from "../img/pages/cases/casePage/saintgobain/SGB1.jpg";
 import SGB2 from "../img/pages/cases/casePage/saintgobain/SGB2.jpg";
 import SGB3 from "../img/pages/cases/casePage/saintgobain/SGB3.jpg";
-import BV_HERO from "../img/pages/cases/casePage/bv/BV_HERO.jpg";
-import BV_LOGO from "../img/pages/cases/casePage/bv/bv-logo-hero.png";
+
+import BV_LOGO from "../img/logos/branco/Bureau-Veritas.png";
 import BV1 from "../img/pages/cases/casePage/bv/BV1.jpg";
 import BV2 from "../img/pages/cases/casePage/bv/BV2.jpg";
 import BV3 from "../img/pages/cases/casePage/bv/BV3.jpg";
-import IBEMA_HERO from "../img/pages/cases/casePage/ibema/IBEMA_HERO.jpg";
-import IBEMA_LOGO from "../img/pages/cases/casePage/ibema/ibema-logo-hero.png";
+
+import IBEMA_LOGO from "../img/logos/branco/Ibema-horizontal.png";
 import IBEMA1 from "../img/pages/cases/casePage/ibema/IBEMA1.jpg";
 import IBEMA2 from "../img/pages/cases/casePage/ibema/IBEMA2.jpg";
 import IBEMA3 from "../img/pages/cases/casePage/ibema/IBEMA3.jpg";
 
+["sharepoint", "powerapps", "powerbi", "powerautomate", "ms word", "ms teams", "ms planner", "forms"]
+
 export const Cases = {
   suzano: {
     hero: {
-      imageUrl: SUZ_HERO,
+      imageUrl: CASE_HERO,
       logo: SUZ_LOGO,
-      text: "Redução de 4.500 horas mensais com a gestão moderna de projetos"
+      text: `Redução de 4.500 horas mensais com a\ngestão moderna de projetos`
     },
     case: [
       {
@@ -50,16 +53,17 @@ export const Cases = {
       },
     ],
     usedTech: [
-      { icon: "", techName: "" },
-      { icon: "", techName: "" },
-      { icon: "", techName: "" },
+      { icon: "SharepointLogo", techName: "SharePoint" },
+      { icon: "PowerBILogo", techName: "Power BI" },
+      { icon: "PowerAutomateLogo", techName: "Power Automate" },
+      { icon: "WordLogo", techName: "Microsoft Word" },
     ]
   },
   saintgobain: {
     hero: {
-      imageUrl: SGB_HERO,
+      imageUrl: CASE_HERO,
       logo: SGB_LOGO,
-      text: "Capacitação intensiva em ferramentas de colaboração para adotar novo modelo de trabalho imediatamente."
+      text: "Capacitação intensiva em ferramentas de colaboração\npara adotar novo modelo de trabalho imediatamente."
     },
     case: [
       {
@@ -85,14 +89,13 @@ export const Cases = {
       },
     ],
     usedTech: [
-      { icon: "", techName: "" },
-      { icon: "", techName: "" },
-      { icon: "", techName: "" },
+      { icon: "TeamsLogo", techName: "Microsoft Teams" },
+      { icon: "PlannerLogo", techName: "Microsoft Planner" },      
     ]
   },
   bv: {
     hero: {
-      imageUrl: BV_HERO,
+      imageUrl: CASE_HERO,
       logo: BV_LOGO,
       text: "Aplicativo de Gestão de Mudanças reduz custo e tempo em projetos"
     },
@@ -120,14 +123,14 @@ export const Cases = {
       },
     ],
     usedTech: [
-      { icon: "", techName: "" },
-      { icon: "", techName: "" },
-      { icon: "", techName: "" },
+      { icon: "PowerAppsLogo", techName: "PowerApps" },
+      { icon: "PowerAutomateLogo", techName: "Power Automate" },
+      { icon: "SharepointLogo", techName: "SharePoint" },
     ]
   },
   ibema: {
     hero: {
-      imageUrl: IBEMA_HERO,
+      imageUrl: CASE_HERO,
       logo: IBEMA_LOGO,
       text: "Gestão de projeto de Recursos Humanos sem gastar uma única hora de trabalho."
     },
@@ -155,9 +158,10 @@ export const Cases = {
       },
     ],
     usedTech: [
-      { icon: "", techName: "" },
-      { icon: "", techName: "" },
-      { icon: "", techName: "" },
+      { icon: "OfficeFormsLogo", techName: "Forms PRO" },
+      { icon: "PowerAutomateLogo", techName: "Power Automate" },
+      { icon: "SharepointLogo", techName: "SharePoint" },
+      { icon: "PowerBILogo", techName: "Power BI" },
     ]
   },
 };

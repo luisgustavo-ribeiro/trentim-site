@@ -1,13 +1,42 @@
 import styled from "styled-components";
 
-export const CompanyCaseStyles = styled.section`
+export const CompanyCaseStyles = styled.div`
   background-color: #fff;
   position: relative;
 
-  .hero-columns {
-    p {
-      font-size: 36px !important;
-      line-height: 1.4 !important;
+  #case-hero {
+    height: 400px;
+    display: flex;
+    width: 100%;
+    background-size: cover !important;
+    margin: 0 0 160px;
+
+    .hero-items {
+      width: 100%;
+      display: grid;
+      grid-template-rows: 80px auto;
+      gap: 32px;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      color: #fff;
+
+      .logo {
+        display: flex;
+        height: 80px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .text {
+        font-size: 24px;
+        font-weight: 600;
+        white-space: pre-wrap;
+        text-align: center;
+      }
     }
   }
 
@@ -54,9 +83,39 @@ export const CompanyCaseStyles = styled.section`
     }
   }
 
+  .used-tech {
+    display: flex;
+    flex-flow: column;
+    margin: 48px 0;
+
+    .title {
+      font-size: 24px;
+      margin: 0 0 32px;
+      color: ${props => props.theme.colors.base.gray2}
+    }
+
+    .tech-icons {
+      display: inline-flex;
+      margin: 0 0 32px;
+    }
+
+    .icon-box {
+      display: flex;
+      height: 64px;
+      width: 64px;
+      padding: 14px;
+      font-size: 36px;
+      background-color: ${(props) => props.theme.colors.base.gray4};
+      margin-right: 24px;
+      color: #fff;
+    }
+  }
+
   #contact {
-    background-color: ${props => props.theme.colors.dark.yellow};
+    position: relative;
+    background-color: ${(props) => props.theme.colors.dark.yellow};
     padding: 60px 0;
+    margin: 100px 0 0;
   }
 
   @media screen and (max-width: 768.99px) {
@@ -68,7 +127,6 @@ export const CompanyCaseStyles = styled.section`
     }
 
     .block {
-
       &.image {
         order: 0;
         height: 200px;

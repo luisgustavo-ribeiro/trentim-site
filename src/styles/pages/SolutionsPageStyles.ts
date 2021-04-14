@@ -1,20 +1,5 @@
 import styled from "styled-components";
 
-export const SolutionsTitle = styled.section`
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 30px;
-
-  .title {
-    font-size: 24px;
-    font-weight: 600;
-  }
-
-  .subtitle {
-    font-size: 24px;
-  }
-`;
-
 export const SolutionsPage = styled.div`
 
   section {
@@ -26,6 +11,26 @@ export const SolutionsPage = styled.div`
     height: 350px;
   }
 
+  #solutions-banner {
+    padding: 60px 0;
+    background-color: ${props => props.theme.colors.base.blue2};
+    overflow: hidden;
+    position: relative;
+
+    .sq-details {
+      bottom: -190px;
+      opacity: 0.2;
+      z-index: 0
+    }
+
+    p {
+      color: #FFF;
+      font-size: 24px;
+      text-align: center;
+      z-index: 10;
+      width: 100%;
+    }
+  }
 `;
 
 export const SolutionsPageMobile = styled.div``;

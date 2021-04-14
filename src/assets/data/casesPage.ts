@@ -1,11 +1,11 @@
 import theme from "../../styles/theme";
-import SUZ_LOGO from "../img/pages/cases/casePage/suzano/suzano-logo-hero.png";
+import SUZ_LOGO from "../img/logos/cor/Suzano-horizontal.png";
 import SUZ_HERO from "../img/pages/cases/casePage/suzano/SUZ_HERO.jpg";
-import SGB_LOGO from "../img/pages/cases/casePage/saintgobain/saintgobain-logo-hero.png";
+import SGB_LOGO from "../img/logos/branco/Saint-Gobain.png";
 import SGB_HERO from "../img/pages/cases/casePage/saintgobain/SGB_HERO.jpg";
-import BV_LOGO from "../img/pages/cases/casePage/bv/bv-logo-hero.png";
+import BV_LOGO from "../img/logos/cor/Bureau-Veritas.png";
 import BV_HERO from "../img/pages/cases/casePage/bv/BV_HERO.jpg";
-import IBEMA_LOGO from "../img/pages/cases/casePage/ibema/ibema-logo-hero.png";
+import IBEMA_LOGO from "../img/logos/branco/Ibema-horizontal.png";
 import IBEMA_HERO from "../img/pages/cases/casePage/ibema/IBEMA_HERO.jpg";
 
 export const CasesPageData = [
