@@ -421,6 +421,8 @@ export const HomeContainer = styled.div`
       }
 
       .button-newsletter {
+        border: 2px solid #fff;
+        height: 40px;
         margin: 16px 0 0;
         background-color: #fff;
         color: ${(props) => props.theme.colors.base.red};
@@ -430,6 +432,13 @@ export const HomeContainer = styled.div`
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
+        transition: 200ms ease-in-out all;
+
+        &:hover {
+          background-color: transparent;
+          color: #fff;
+          transition: 200ms ease-in-out all;
+        }
       }
     }
 

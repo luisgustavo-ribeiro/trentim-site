@@ -96,6 +96,38 @@ const Home: React.FC = () => {
     }
   };
 
+  function sendEmailNewsLetter(e) {
+    e.preventDefault();
+
+    const data = {
+      email: newsletterEmail
+    }
+
+    fetch('https://prod-22.brazilsouth.logic.azure.com:443/workflows/3d99dfb186474b348858d9e945a728c9/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=oEeiSPS1YIAhyR7xXUaODxDHHSoKlmIJcRWgvSVhB0U', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(() => {
+      document.querySelector(".form-message").innerHTML = "formulário enviado com sucesso!";
+
+      setTimeout(() => {
+        document.querySelector(".form-message").innerHTML = "";
+        
+        const newsletterInput = document.querySelector("#emailForNewsletter") as HTMLInputElement;
+        newsletterInput.value = "";
+
+        setNewsletterEmail("")
+      }, 1000);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
+
   return (
     <HomeContainer>
       
@@ -303,18 +335,10 @@ const Home: React.FC = () => {
                 <br />
                 gestão de projetos, assine nossa news!
               </span>
-              <form action="">
-                <input
-                  type="text"
-                  name=""
-                  id="emailForNewsletter"
-                  onChange={(e) => setNewsletterEmail(e.target.value)}
-                />
-                <input
-                  className="button-newsletter"
-                  type="submit"
-                  value="receber newsletter"
-                />
+              <form>
+                <input type="text" name="" id="emailForNewsletter" onChange={(e) => setNewsletterEmail(e.target.value)} />
+                <div className="form-message"></div>
+                <button className="button-newsletter" type="submit" onClick={(e) => sendEmailNewsLetter(e)}>receber newsletter</button>
               </form>
             </div>
           </div>
