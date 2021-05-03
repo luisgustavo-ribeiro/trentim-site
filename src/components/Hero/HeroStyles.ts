@@ -107,4 +107,10 @@ export const HeroStyles = styled.div`
       left: 0;
     }
   }
+
+  @media screen and (min-width: 768.99px) and (max-width: 1024.99px) {
+    .container {
+      padding-right: 0;
+    }
+  }
 `;

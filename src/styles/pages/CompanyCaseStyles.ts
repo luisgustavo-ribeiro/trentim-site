@@ -9,7 +9,7 @@ export const CompanyCaseStyles = styled.div`
     display: flex;
     width: 100%;
     background-size: cover !important;
-    margin: 0 0 160px;
+    margin: 0 0 80px;
 
     .hero-items {
       width: 100%;

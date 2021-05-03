@@ -13,10 +13,10 @@ import "../styles/fabric-icons.css";
 const links = [
   { title: "Cases", url: "/cases" },
   { title: "Soluções", url: "/solucoes" },
-  { title: "Seguimentos", url: "/" },
+  // { title: "Seguimentos", url: "/" },
   { title: "Carreiras", url: "/carreiras" },
-  { title: "Blog", url: "/" },
-  { title: "Cliente", url: "/" },
+  // { title: "Blog", url: "/" },
+  // { title: "Cliente", url: "/" },
 ];
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {

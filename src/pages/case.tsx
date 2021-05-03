@@ -59,7 +59,7 @@ const CompanyCase: React.FC = () => {
 
           {dimensions.width > 1024.99 &&
             <div className="container">
-              <div className="sq-details" style={{top: "-165px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
+              <div className="sq-details" style={{top: "-100px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
                 <img src={AzulHero1} />
                 <img src={AzulHero2} />
                 <img src={AzulHero3} />

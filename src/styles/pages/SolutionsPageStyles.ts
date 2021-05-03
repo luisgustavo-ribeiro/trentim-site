@@ -29,6 +29,10 @@ export const SolutionsPage = styled.div`
       text-align: center;
       z-index: 10;
       width: 100%;
+
+      @media screen and (max-width: 768.99px) {
+        font-size: 16px;
+      }
     }
   }
 `;

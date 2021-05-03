@@ -7,6 +7,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html, body {
+    overflow-x: hidden;
+  }
+
   // locomotive
   html.has-scroll-smooth {
     overflow: hidden;

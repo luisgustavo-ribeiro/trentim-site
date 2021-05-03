@@ -7,8 +7,10 @@ export const SectionCasesStyles = styled.section`
 
   .columns {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
 
     &.img-left {
       .col.right {
@@ -48,12 +50,12 @@ export const SectionCasesStyles = styled.section`
       display: flex;
       flex-direction: column;
 
-      .logo-container {
-        height: 56px;
+      .logo-container {        
         margin: 0 0 20px;
 
         img {
           height: 100%;
+          width: 200px;
         }
       }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import ISectionWithShapeProps from '../../interfaces/ISectionWithShapeProps';
 import theme from '../../styles/theme';
 import Shapes from '../Shapes/Shapes';
-import { SectionWithShapeStyles } from './SectionWithShapeStyles';
+import { SectionWithShapeMobile, SectionWithShapeStyles } from './SectionWithShapeStyles';
 
 const SectionWithShape:React.FC<ISectionWithShapeProps> = (props: ISectionWithShapeProps) => {
 
@@ -174,6 +174,53 @@ const SectionWithShape:React.FC<ISectionWithShapeProps> = (props: ISectionWithSh
             }
 
           </>
+        }
+
+        {dimensions.width < 768.99 && props.shapeType === "multiple" && 
+
+          <SectionWithShapeMobile>
+            {props.item.subtitle && 
+              <div className="info-box">
+                <div className="title-area title-n-shape">
+                  <div className="shape-container">
+                    <Shapes 
+                      inlineShapeName={props.inlineShapeName}
+                      filledShapeName={props.filledShapeName}
+                      inlineShapeColor={props.inlineShapeColor}
+                      filledShapeColor={props.filledShapeColor}
+                      shapesSize="50px !important"
+                    />
+                  </div>
+                  <div>
+                    <div className="title" style={{ color: props.item.titleColor }}>
+                      {props.item.title}
+                    </div>
+                    <div className="subtitle" style={{ color: props.item.titleColor }}>
+                      {props.item.subtitle}
+                    </div>
+                  </div>
+                </div>
+                <div className="text" style={{color: props.item.textColor ? props.item.textColor : theme.colors.base.gray2}}>
+                  <p>{props.item.text}</p>
+                </div>
+              </div>
+            }
+            {props.box && 
+              <div className="info-box">
+                <div className="title-area">
+                  <div className="title" style={{ color: props.box.titleColor }}>
+                    {props.box.title}
+                  </div>
+                  <div className="subtitle" style={{ color: props.box.titleColor }}>                          
+                    {props.box.subtitle}
+                  </div>
+                </div>
+                <div className="text" style={{color: props.item.textColor ? props.item.textColor : theme.colors.base.gray2}}>
+                  <p>{props.box.text}</p>
+                </div>
+              </div>
+            }
+          </SectionWithShapeMobile>
         }
 
         {dimensions.width > 768.99 && props.shapeType === "single" && 
