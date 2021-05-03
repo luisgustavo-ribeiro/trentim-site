@@ -46,7 +46,7 @@ const HeroHome: React.FC = () => {
         <div className='bg-container' style={{backgroundImage: `url(${HeroBG})`}}></div>
           <div className="container">
             <div className="hero-title">
-              <div className="title">
+              <div className="title title-center">
                 <span className="shape square"></span>
                 <span className="title">trentim</span>
               </div>

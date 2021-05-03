@@ -41,6 +41,13 @@ export const HeroContent = styled.section`
         font-size: 8vmax;
         padding: 0 0 2vmax;
       }
+
+      .title-center {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
     }
 
     .hero-subtitle {
@@ -96,7 +103,6 @@ export const HeroContent = styled.section`
           font-size: 18px;
           line-height: 1.5;
         }
-
         &.active {
           display: grid;
         }
@@ -126,12 +132,10 @@ export const HeroContent = styled.section`
         opacity: 0.5;
         filter: grayscale(1);
         transition: 200ms ease-in-out all;
-
         &:hover {
           opacity: 1;
           transition: 200ms ease-in-out all;
         }
-
         &.active {
           opacity: 1;
           filter: grayscale(0);
@@ -158,6 +162,16 @@ export const HeroContent = styled.section`
   @media screen and (max-width: 768.99px) {
     .hero-banner {
       height: 400px;
+
+      .hero-subtitle {
+        font-size: 14px;
+        line-height: 19px;
+        font-style: normal;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
     }
 
     .shape {
@@ -167,7 +181,10 @@ export const HeroContent = styled.section`
     }
 
     .title {
-      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
     }
 
     .hero-subtitle {
@@ -182,6 +199,18 @@ export const HeroContent = styled.section`
       .box-info {
         order: 1;
         grid-template-columns: repeat(4, 1fr);
+        .info {
+          .title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+          }
+          .text {
+            font-size: 14px;
+            line-height: 1.5;
+          }
+        }
       }
 
       .box-logos {
@@ -195,7 +224,8 @@ export const HeroContent = styled.section`
 
           img {
             height: 60px;
-            width: auto;
+            width: 110px;
+            object-fit: contain;
           }
         }
       }

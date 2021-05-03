@@ -141,7 +141,9 @@ export default createGlobalStyle`
     max-width: 1320px;
     padding: 0 20px;
     margin: 0 auto;
-
+    /* @media screen and (max-width: 1024px){
+      padding: 0px;
+    } */
     &.col {
       flex-flow: column;
     }
@@ -303,7 +305,7 @@ export default createGlobalStyle`
     }
 
     .title-area {
-      font-size: 24px;
+      font-size: 32px;
 
       .shape {
         width: 30px !important;

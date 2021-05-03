@@ -50,19 +50,19 @@ const processData = [
 
 const blogCardsData = [
   {
-    image: "https://trentim.com.br/portal/wp-content/uploads/2021/01/Tudo-o-que-precisa-saber-sobre-gestao-de-projetos-blog--850x560.jpg",
+    image: "https://trentim.com.br/portal/wp-content/uploads/2021/02/Gestao-de-projetos-tudo-o-que-precisa-saber-sobre.jpg",
     title: "Tudo o que você precisa saber sobre Gestão de Projetos",
     text: "Entenda o que é essa área de atuação, quais suas atribuições e como ingressar nessa carreira",
     url: "https://trentim.com.br/portal/gestao-de-projetos-tudo-o-que-precisa-saber/"
   },
   {
-    image: "https://trentim.com.br/portal/wp-content/uploads/2020/09/Evolucao-do-Microsoft-Project-Blog-min-850x560.png",
+    image: "https://trentim.com.br/portal/wp-content/uploads/2020/09/Microsoft-project-versoes-disponiveis-e-evolucao-850x560.png",
     title: "Project for the Web e Power Plataform: Conexão e Benefícios",
     text: "Qual foi a sequência de evolução do Microsoft Project? Quando e porque utilizar cada um deles?",
     url: "https://trentim.com.br/portal/evolucao-do-microsoft-project/"
   },
   {
-    image: "https://trentim.com.br/portal/wp-content/uploads/2020/10/Project-for-the-web-Power-Plataform-conexao-e-beneficios-BLOG-min-850x560.jpg",
+    image: "https://trentim.com.br/portal/wp-content/uploads/2020/10/Gestao-de-projetos-com-low-code-850x560.png",
     title: "Project for the Web e Power Plataform: Conexão e Benefícios",
     text: "Saiba por que união de gestão de projetos com o low code têm surpreendido as empresas",
     url: "https://trentim.com.br/portal/gestao-de-projetos-com-low-code-project-e-power-platform/"
@@ -72,6 +72,7 @@ const blogCardsData = [
 const Home: React.FC = () => {
   const [processActiveItem, setProcessActiveItem] = React.useState<number>(0);
   const [newsletterEmail, setNewsletterEmail] = React.useState<string>("");
+  const [btnWorkStyle, setBtnWorStylek] = React.useState<string>("btn-work")
 
   const showProcess = (index: number) => {
     processActiveItem !== index && setProcessActiveItem(index);
@@ -83,6 +84,7 @@ const Home: React.FC = () => {
 
       setTimeout(() => {
         e.target.querySelector(".send-button").classList.add("contact-hovered");
+        setBtnWorStylek("btn-work-hovered")
       }, 10000);
     }
   };
@@ -90,6 +92,7 @@ const Home: React.FC = () => {
   const contactFormLeave = (e) => {
     if (e.target.id === "contact") {
       e.target.classList.remove("contact-hovered");
+      setBtnWorStylek("btn-work")
       e.target
         .querySelector(".send-button")
         .classList.remove("contact-hovered");
@@ -198,7 +201,11 @@ const Home: React.FC = () => {
               <div className="forms-container">
                 {processData.map((item, index) => 
                   <>
-                    <div className={`shape ${item.form} ${ processActiveItem === index ? "open" : "" }`}onClick={() => showProcess(index)}></div>
+                    <div 
+                    className={`shape ${item.form} ${ processActiveItem === index ? "open" : "" }`}
+                    onClick={() => showProcess(index)} 
+                    onMouseEnter={() => showProcess(index)}>
+                    </div>
                     
                     {index < processData.length - 1 ? (
                       <span style={{ display: "flex" }}>
@@ -215,7 +222,7 @@ const Home: React.FC = () => {
             <div className="text-container">
               {processData.map((item, index) => (
                 <div key={index} className={`text ${processActiveItem === index ? "open" : ""}`}>
-                  <p>{item.text}</p>
+                  <p><b>{item.text.split(' ')[0]}</b> {item.text.substr(item.text.indexOf(" ") + 1)}</p>
                 </div>
               ))}
             </div>
@@ -256,7 +263,7 @@ const Home: React.FC = () => {
             <span className="subtitle">
               Seja a transformação, venha para a Trentim!
             </span>
-            <a href="http://trent.im/vagas" className="btn-work">
+            <a href="http://trent.im/vagas" className={btnWorkStyle}>
               vagas
             </a>
           </div>
@@ -335,7 +342,7 @@ const Home: React.FC = () => {
                 <br />
                 gestão de projetos, assine nossa news!
               </span>
-              <form>
+              <form className="form-area">
                 <input type="text" name="" id="emailForNewsletter" onChange={(e) => setNewsletterEmail(e.target.value)} />
                 <div className="form-message"></div>
                 <button className="button-newsletter" type="submit" onClick={(e) => sendEmailNewsLetter(e)}>receber newsletter</button>
@@ -352,8 +359,8 @@ const Home: React.FC = () => {
             data-scroll-position="top"
             data-scroll-speed="-0.2"
           >
-            <img src={Vermelho1} alt="" />
-            <img src={Vermelho2} alt="" />
+            <img src={Vermelho1} alt=""  className="img-newsletter"/>
+            <img src={Vermelho2} alt=""  className="img-newsletter"/>
           </div>
         </div>
       </section>

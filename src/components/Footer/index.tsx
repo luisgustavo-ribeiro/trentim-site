@@ -20,7 +20,7 @@ import Roxo from "../../assets/img/quadrados/home/roxo.png";
 const Footer: React.FC = () => {
   return (
     <FooterStyles id="footer">
-      <div className="container col">
+      <div className="container col" >
         <div className="title-area">
           <span className="shape chat"></span>
           <span className="title">contate-nos</span>
@@ -30,10 +30,14 @@ const Footer: React.FC = () => {
             <ul id="address-info">
               <li>Telefone +55 12 3042-0108</li>
               <li>E-mail contato@trentim.com</li>
-              <li>Whatsapp +55 12 99172-5779</li>
+              <li>
+                <a href="https://api.whatsapp.com/send?phone=5512991725779" style={{color: "#5c5c5c"}}>
+                  Whatsapp +55 12 99172-5779
+                </a>
+              </li>
             </ul>
 
-            <div className="social-media">
+            <div className="social-media">  
               <div className="social-icon">
               <a href="https://www.facebook.com/trentimbr" target="_blank" rel="noopener noreferrer">
                 <Facebook />
@@ -99,12 +103,14 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="right-col">
-            <div className="ms-gold">
-              <img src={MS_GOLD} alt=""/>
-            </div>
-            <div className="gptw">
-              <img src={GPTW} alt=""/>
+          <div className="right-col"> 
+          <div style={{display: "flex", justifyContent: "center", alignContent: "center", alignItems: "center"}}>
+              <div className="ms-gold">
+                <img src={MS_GOLD} alt=""/>
+              </div>
+              <div className="gptw">
+                <img src={GPTW} alt=""/>
+              </div>
             </div>
             <div className="pmi">
               <img src={EF_PMI} alt=""/>

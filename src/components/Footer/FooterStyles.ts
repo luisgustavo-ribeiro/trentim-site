@@ -7,6 +7,10 @@ export const FooterStyles = styled.section`
   color: ${(props) => props.theme.colors.base.gray1};
   padding: 100px 0 220px;
 
+  @media (max-width: 1024px) and (min-width: 769px) {
+    overflow: none;
+  }
+
   a {
     color: ${(props) => props.theme.colors.base.purple};
     text-decoration: none;
@@ -66,15 +70,23 @@ export const FooterStyles = styled.section`
       align-content: center;
       justify-items: center;
 
+      @media (max-width: 1024px) and (min-width: 769px) {
+       margin-top: 24px;
+       position: relative;
+       left: -35%;
+       display: flex;
+      }
+
       @media screen and (max-width: 768.99px) {
         margin: 32px 0 0;
         flex-wrap: wrap;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        justify-items: flex-start;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
         grid-template-columns: inherit;
       }
+
 
       .ms-gold {
         height: 120px;
@@ -132,6 +144,26 @@ export const FooterStyles = styled.section`
         padding: 0;
       }
     }
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    padding: 40px 0 60px;
+
+    .footer-container {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      gap: 0;
+      left: 35%;
+    }
+
+    .title-area {
+    color: ${(props) => props.theme.colors.base.purple};
+    margin: 0 0 32px;
+    position: relative;
+    left: 32%;
+  }
+
   }
 
   @media screen and (max-width: 768.99px) {
