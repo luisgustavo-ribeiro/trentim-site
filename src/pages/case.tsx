@@ -44,7 +44,7 @@ const CompanyCase: React.FC = () => {
       {cases && (
         <CompanyCaseStyles>
 
-          <section id="case-hero" style={{background: `linear-gradient( to right, rgba(0, 114, 198, 0.85), rgba(0, 114, 198, 0.85) ), url("${cases.hero.imageUrl}") top left no-repeat`}}>
+          <section id="case-hero" style={{background: `linear-gradient( to right, rgba(0, 114, 198, 0.85), rgba(0, 114, 198, 0.85) ), url("${cases.hero.imageUrl}") center center no-repeat`}}>
             <div className="container">
               <div className="hero-items">
                 <div className="logo">
