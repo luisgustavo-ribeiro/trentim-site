@@ -149,8 +149,8 @@ export const SectionWithShapeStyles = styled.section`
       }
 
       .shape-left {
-        top: -20px;
-        left: -20px;
+        top: -14px;
+        left: -14px;
       }
 
       .shape-right {
@@ -198,5 +198,35 @@ export const SectionWithShapeStyles = styled.section`
 
   @media screen and (max-width: 768.99px) {
     padding: 32px 0 40px;
+  }
+`;
+
+export const SectionWithShapeMobile = styled.section`
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+  .title-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 24px;
+    .title {
+      padding: 0;
+      font-weight: 600;
+    }
+    .title, 
+    .subtitle {
+      align-self: end;
+    }
+  }
+  .title-n-shape {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    .shape-inline { 
+      top: -12px;
+      left: -12px;
+    }
+  }
+  .info-box {
+    margin: 0 0 20px;
   }
 `;

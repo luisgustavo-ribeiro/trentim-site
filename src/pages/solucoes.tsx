@@ -61,11 +61,9 @@ const Solutions = () => {
             </div>
           </div>
           <p>
-            Seja qual for a sua necessidade, fale com nosso
-            <br />
-            time de soluções e comece já a transformação
-            <br />
-            da gestão de projetos em sua organização.
+          <p>Seja qual for a sua necessidade, fale com nosso</p>
+          <p>time de soluções e comece já a transformação</p>
+          <p>da gestão de projetos em sua organização.</p>
           </p>
         </div>
       </section>

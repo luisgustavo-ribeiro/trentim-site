@@ -41,22 +41,36 @@ export const HeroStyles = styled.div`
           font-weight: 600;
           margin: 0 0 24px;
 
+          @media screen and (min-width: 769px) and (max-width: 1024.99px) {
+            font-size: 24px;
+            margin-left: -100px;
+          }
+
           .subtitle {
             margin: 8px 0 0;
             font-size: 24px;
-            font-weight: 600;
+            font-weight: 600;          
           }
         }
 
         p {
           font-size: 24px;
           line-height: 1.6;
+
+          @media screen and (min-width: 769px) and (max-width: 1024.99px) {
+            font-size: 18px;
+            margin-left: -100px;
+          }
         }
       }
 
       &.right {
         position: relative;
         display: flex;
+
+        @media screen and (min-width: 769px) and (max-width: 1024.99px) {
+          margin-right: -20px;
+        }
 
         img {
           width: 100%;
@@ -105,6 +119,12 @@ export const HeroStyles = styled.div`
     .detail {
       display: flex !important;
       left: 0;
+    }
+  }
+  
+  @media screen and (min-width: 768.99px) and (max-width: 1024.99px) {
+    .container {
+      padding-right: 0;
     }
   }
 `;
