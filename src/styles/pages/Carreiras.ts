@@ -91,6 +91,14 @@ export const CarreirasContainer = styled.div`
       @media screen and (max-width: 768.99px) {
         margin: auto;
       }
+
+      @media screen and (min-width: 480.99px) and (max-width: 768.99px) {
+        .shape-sv-carreiras {
+          .shape-left {
+            left: 20%;
+          }
+        }
+      }
     }
   }
 `;

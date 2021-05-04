@@ -37,23 +37,24 @@ const Carreiras: React.FC = () => {
         text={heroData.text}
       />
 
-      <SectionWithShape 
-        item={firstSectionData}
-        shapeType="single"
-        mediaType="video"
-        mediaPosition={firstSectionData.mediaPosition}
-        shapePosition="left"
-      />
+      <div className="shape-sv-carreiras">
+        <SectionWithShape 
+          item={firstSectionData}
+          shapeType="single"
+          mediaType="video"
+          mediaPosition={firstSectionData.mediaPosition}
+          shapePosition="left"
+        />
+      </div>
       
-      {dimensions.width > 1024.99 &&
-        <div className="container" style={{zIndex: 0}}>
-          <div className="sq-details" data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
-            <img src={AzulClaro1} alt="" />
-          </div>
-        </div>
-      }
-
       <section id='carreiras-videos'>
+        {dimensions.width > 1024.99 &&
+          <div className="container" style={{zIndex: 0}}>
+            <div className="sq-details" data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
+              <img src={AzulClaro1} alt="" />
+            </div>
+          </div>
+        }
         <div className="container">
           <div className="video-section">
             {videoSectionData.map(video => 
@@ -61,15 +62,16 @@ const Carreiras: React.FC = () => {
             )}
           </div>
         </div>
+
+        {dimensions.width > 1024.99 &&
+          <div className="container" style={{zIndex: 0}}>
+            <div className="sq-details" data-scroll data-scroll-position="top" data-scroll-speed="-0.3" style={{top: "-160px"}}>
+              <img src={VerdeClaro1} alt="" style={{ marginLeft: "auto" }}/>
+            </div>
+          </div>
+        }
       </section>
 
-      {dimensions.width > 1024.99 &&
-        <div className="container" style={{zIndex: 0}}>
-          <div className="sq-details" data-scroll data-scroll-position="top" data-scroll-speed="-0.3" style={{top: "-160px"}}>
-            <img src={VerdeClaro1} alt="" style={{ marginLeft: "auto" }}/>
-          </div>
-        </div>
-      }
 
       {carreirasData.map((carreira, index) => 
         <SectionWithShape 

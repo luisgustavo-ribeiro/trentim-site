@@ -170,7 +170,7 @@ const SectionCases: React.FC<ISectionCasesProps> = (props: ISectionCasesProps) =
             </div>
           }
           {props.index === 2 && props.screenWidth > 1024.99 &&
-            <div className="sq-details" style={{bottom: '-70px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
+            <div className="sq-details" style={{bottom: '-90px'}} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
               <img src={Amarelo1} alt=""style={{marginBottom: "50px"}}/>
               <img src={Amarelo2} alt=""/>
               <img src={Amarelo3} alt="" style={{marginTop: "50px"}}/>

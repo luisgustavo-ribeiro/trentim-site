@@ -9,7 +9,11 @@ export const CompanyCaseStyles = styled.div`
     display: flex;
     width: 100%;
     background-size: cover !important;
-    margin: 0 0 160px;
+    margin: 0 0 80px;
+
+    @media screen and (max-width: 768.99px) {
+      margin: 0;
+    }
 
     .hero-items {
       width: 100%;
@@ -43,7 +47,6 @@ export const CompanyCaseStyles = styled.div`
   .case-item-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 600px;
   }
 
   .block {
@@ -54,7 +57,7 @@ export const CompanyCaseStyles = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 0 72px;
+      padding: 40px 72px;
 
       .title {
         color: ${(props) => props.theme.colors.base.gray2};
@@ -86,7 +89,11 @@ export const CompanyCaseStyles = styled.div`
   .used-tech {
     display: flex;
     flex-flow: column;
-    margin: 48px 0;
+    margin: 48px 0 48px 72px;
+
+    @media screen and (max-width: 768.99px) {
+      margin: 48px 0 0;
+    }
 
     .title {
       font-size: 24px;

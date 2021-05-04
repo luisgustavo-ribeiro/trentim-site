@@ -44,7 +44,7 @@ const CompanyCase: React.FC = () => {
       {cases && (
         <CompanyCaseStyles>
 
-          <section id="case-hero" style={{background: `linear-gradient( to right, rgba(0, 114, 198, 0.85), rgba(0, 114, 198, 0.85) ), url("${cases.hero.imageUrl}") top left no-repeat`}}>
+          <section id="case-hero" style={{background: `linear-gradient( to right, rgba(0, 114, 198, 0.85), rgba(0, 114, 198, 0.85) ), url("${cases.hero.imageUrl}") center center no-repeat`}}>
             <div className="container">
               <div className="hero-items">
                 <div className="logo">
@@ -59,7 +59,7 @@ const CompanyCase: React.FC = () => {
 
           {dimensions.width > 1024.99 &&
             <div className="container">
-              <div className="sq-details" style={{top: "-165px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
+              <div className="sq-details" style={{top: "-100px"}} data-scroll data-scroll-position="top" data-scroll-speed="-0.2">
                 <img src={AzulHero1} />
                 <img src={AzulHero2} />
                 <img src={AzulHero3} />
@@ -128,7 +128,7 @@ const CompanyCase: React.FC = () => {
           <section id="contact">
             <div className="container">
               {dimensions.width > 1024.99 &&
-                <div className="sq-details" style={{ top: "-240px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
+                <div className="sq-details" style={{ top: "-160px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
                   <div className="detail">
                     <img src={Laranja1} />
                   </div>

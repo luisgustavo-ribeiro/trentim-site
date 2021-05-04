@@ -8,7 +8,7 @@ export const FooterStyles = styled.section`
   padding: 100px 0 220px;
 
   @media (max-width: 1024px) and (min-width: 769px) {
-    overflow: none;
+    overflow: hidden;
   }
 
   a {
@@ -27,6 +27,16 @@ export const FooterStyles = styled.section`
     .right-col {
       display: flex;
       flex-direction: column;
+
+      @media screen and (max-width: 1024.99px) {
+        align-items: center;
+      }
+
+      @media screen and (max-width: 768.99px) {
+        flex: 1 1 100%;
+        justify-self: flex-start;
+        align-items: flex-start;
+      }
     }
 
     #address-info {
@@ -71,10 +81,9 @@ export const FooterStyles = styled.section`
       justify-items: center;
 
       @media (max-width: 1024px) and (min-width: 769px) {
-       margin-top: 24px;
-       position: relative;
-       left: -35%;
-       display: flex;
+        margin-top: 24px;
+        position: relative;
+        display: flex;
       }
 
       @media screen and (max-width: 768.99px) {
@@ -86,7 +95,6 @@ export const FooterStyles = styled.section`
         justify-items: center;
         grid-template-columns: inherit;
       }
-
 
       .ms-gold {
         height: 120px;
@@ -108,8 +116,8 @@ export const FooterStyles = styled.section`
         display: inline-flex;
         grid-column: 1/-1;
 
-        @media screen and (max-width: 768.99px) {
-          flex: 1 1 100%;
+        @media screen and (max-width: 1024.99px) {
+          justify-self: flex-start;
         }
 
         img {
@@ -146,7 +154,7 @@ export const FooterStyles = styled.section`
     }
   }
 
-  @media (max-width: 1024px) and (min-width: 769px) {
+  @media screen and (min-width: 768.99px) and (max-width: 1024px) {
     padding: 40px 0 60px;
 
     .footer-container {
@@ -154,16 +162,14 @@ export const FooterStyles = styled.section`
       display: flex;
       flex-flow: column;
       gap: 0;
-      left: 35%;
     }
 
     .title-area {
-    color: ${(props) => props.theme.colors.base.purple};
-    margin: 0 0 32px;
-    position: relative;
-    left: 32%;
-  }
-
+      color: ${(props) => props.theme.colors.base.purple};
+      margin: 0 0 32px;
+      position: relative;
+      justify-content: center;
+    }
   }
 
   @media screen and (max-width: 768.99px) {

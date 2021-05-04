@@ -7,8 +7,10 @@ export const SectionCasesStyles = styled.section`
 
   .columns {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
 
     &.img-left {
       .col.right {
@@ -19,6 +21,31 @@ export const SectionCasesStyles = styled.section`
     &.img-right {
       .col.left {
         padding-right: 160px;
+      }
+    }
+
+    @media screen and (min-width: 768.99px) and (max-width: 1024.99px) {
+      &.img-left {
+        .col.right {
+          padding: 0;
+          padding-left: 40px;
+        }
+      }
+
+    &.img-right {
+      .col.left {
+        padding-right: 40px;
+      }
+    }
+    }
+
+    @media screen and (min-width: 768.99px) and (max-width: 1024.99px) {
+      &.img-left {
+        margin-left: -20px;
+      }
+
+      &.img-right {
+        margin-right: -20px;
       }
     }
   }
@@ -48,12 +75,12 @@ export const SectionCasesStyles = styled.section`
       display: flex;
       flex-direction: column;
 
-      .logo-container {
-        height: 56px;
+      .logo-container {        
         margin: 0 0 20px;
 
         img {
           height: 100%;
+          width: 200px;
         }
       }
 
@@ -94,6 +121,21 @@ export const SectionCasesStyles = styled.section`
     height: auto;
   }
 
+  @media screen and (min-width: 768.99px) and (max-width: 1024.99px) {
+    height: 480px;
+
+    .block {
+      &.info {
+        .title {
+          font-size: 18px;
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
   .case-mobile {
     display: flex;
     flex-direction: column;
@@ -104,6 +146,10 @@ export const SectionCasesStyles = styled.section`
       align-items: center;
       justify-content: center;
       padding: 40px 0;
+      
+      img {
+        width: 200px;
+      }
     }
 
     .image {
