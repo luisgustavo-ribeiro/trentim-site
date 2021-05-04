@@ -139,6 +139,10 @@ export const ContactFormStyles = styled.div`
     appearance: none;
   }
 
+  @media screen and (max-width: 1024.99px) {
+    margin: 0 auto;
+  }
+
   @media screen and (max-width: 768.99px) {
     min-width: 100%;
     padding: 24px 16px 16px;

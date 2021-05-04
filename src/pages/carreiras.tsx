@@ -37,15 +37,16 @@ const Carreiras: React.FC = () => {
         text={heroData.text}
       />
 
-      <SectionWithShape 
-        item={firstSectionData}
-        shapeType="single"
-        mediaType="video"
-        mediaPosition={firstSectionData.mediaPosition}
-        shapePosition="left"
-      />
+      <div className="shape-sv-carreiras">
+        <SectionWithShape 
+          item={firstSectionData}
+          shapeType="single"
+          mediaType="video"
+          mediaPosition={firstSectionData.mediaPosition}
+          shapePosition="left"
+        />
+      </div>
       
-
       <section id='carreiras-videos'>
         {dimensions.width > 1024.99 &&
           <div className="container" style={{zIndex: 0}}>

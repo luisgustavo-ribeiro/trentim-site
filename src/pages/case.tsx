@@ -128,7 +128,7 @@ const CompanyCase: React.FC = () => {
           <section id="contact">
             <div className="container">
               {dimensions.width > 1024.99 &&
-                <div className="sq-details" style={{ top: "-240px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
+                <div className="sq-details" style={{ top: "-160px" }} data-scroll data-scroll-position="top" data-scroll-speed="-0.3">
                   <div className="detail">
                     <img src={Laranja1} />
                   </div>

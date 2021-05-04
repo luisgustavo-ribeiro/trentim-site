@@ -149,8 +149,8 @@ export const SectionWithShapeStyles = styled.section`
       }
 
       .shape-left {
-        top: -20px;
-        left: -20px;
+        top: -14px;
+        left: -14px;
       }
 
       .shape-right {
