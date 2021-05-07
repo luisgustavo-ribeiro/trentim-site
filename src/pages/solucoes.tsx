@@ -9,6 +9,24 @@ import { solutionsData } from "../assets/data/solutions";
 import HERO_BG from "../assets/img/pages/solucoes/banner.jpg";
 
 const Solutions = () => {
+
+
+  // const [screenWidth, setScreenWidth] = React.useState(window.screen.width)
+  const [windowSize, setWindowSize] = React.useState({
+    width: undefined,
+  });
+
+  React.useEffect(() => {
+    function handleResize() {
+      setWindowSize({
+        width: window.innerWidth,
+      });
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <SolutionsPage>
       <Hero
@@ -60,11 +78,19 @@ const Solutions = () => {
               <img src={BANNER_BG} />
             </div>
           </div>
-          <p>
-          <p>Seja qual for a sua necessidade, fale com nosso</p>
-          <p>time de soluções e comece já a transformação</p>
-          <p>da gestão de projetos em sua organização.</p>
+          { windowSize.width > 768 ?  
+            <p>
+            <p>Seja qual for a sua necessidade, fale com nosso</p>
+            <p>time de soluções e comece já a transformação</p>
+            <p>da gestão de projetos em sua organização.</p>
           </p>
+            :
+          <p>
+            Seja qual for a sua necessidade, fale com nosso
+            time de soluções e comece já a transformação
+            da gestão de projetos em sua organização.
+          </p>
+        }
         </div>
       </section>
     </SolutionsPage>

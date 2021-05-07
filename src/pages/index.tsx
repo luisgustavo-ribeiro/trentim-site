@@ -222,7 +222,16 @@ const Home: React.FC = () => {
             <div className="text-container">
               {processData.map((item, index) => (
                 <div key={index} className={`text ${processActiveItem === index ? "open" : ""}`}>
-                  <p><b>{item.text.split(' ')[0]}</b> {item.text.substr(item.text.indexOf(" ") + 1)}</p>
+                  {item.text.split(" ")[0] === "Pensando" ? 
+                  <p>{item.text}</p>
+                  :
+                  (
+                    !item.text.includes("Traçar o caminho") ?
+                    <p><b>{item.text.split(' ')[0]}</b> {item.text.substr(item.text.indexOf(" ") + 1)}</p>
+                  :
+                    <p><b>{item.text.split(' ').slice(0,3).join(' ')}</b>{item.text.substr(item.text.indexOf(" ") + 11)} </p>
+                  )
+                  }
                 </div>
               ))}
             </div>

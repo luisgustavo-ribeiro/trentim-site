@@ -192,7 +192,6 @@ export const HeroContent = styled.section`
     }
 
     .hero-cases {
-      height: 400px;
       grid-template-columns: 1fr;
       gap: 24px;
 
@@ -214,6 +213,7 @@ export const HeroContent = styled.section`
       }
 
       .box-logos {
+        margin-top: -40px;
         grid-template-columns: repeat(4, 1fr);
         gap: 32px;
         overflow: auto;
