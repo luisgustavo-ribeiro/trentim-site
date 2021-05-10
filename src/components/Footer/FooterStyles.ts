@@ -29,7 +29,7 @@ export const FooterStyles = styled.section`
       flex-direction: column;
 
       @media screen and (max-width: 1024.99px) {
-        align-items: center;
+
       }
 
       @media screen and (max-width: 768.99px) {
@@ -155,7 +155,22 @@ export const FooterStyles = styled.section`
   }
 
   @media screen and (min-width: 768.99px) and (max-width: 1024px) {
+    .left-col,
+    .mid-col {
+      margin: 0 auto;
+    }
+    .mid-col {
+      margin-top: 40px;
+      margin-bottom: 24px;
+
+
+    }
     padding: 40px 0 60px;
+
+    .address {
+      .icon {
+      }
+    }
 
     .footer-container {
       position: relative;
