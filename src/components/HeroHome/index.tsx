@@ -5,7 +5,7 @@ import SUZ_LOGO from "../../assets/img/logos/cor/Suzano-horizontal.png";
 import SGB_LOGO from "../../assets/img/logos/cor/Saint-Gobain.png";
 import IBEMA_LOGO from "../../assets/img/logos/cor/Ibema-horizontal.png";
 import BV_LOGO from "../../assets/img/logos/cor/Bureau-Veritas.png";
-import LOGO_HERO from "../../assets/logoHero.svg";
+import LOGO_MOBILE from "../../assets/LogoMobile.svg";
 
 
 const tabItems = [
@@ -63,7 +63,7 @@ const HeroHome: React.FC = () => {
             <div className="hero-title">
               <div className="title title-center">
                 {windowSize.width < 768 ? 
-                  <LOGO_HERO />
+                  <LOGO_MOBILE />
                 :
                 <>
                 <span className="shape square"></span>
