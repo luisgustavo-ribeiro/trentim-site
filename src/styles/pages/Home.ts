@@ -262,6 +262,7 @@ export const HomeContainer = styled.div`
     background-color: ${(props) => props.theme.colors.dark.yellow};
     transition: 10s ease-in-out all;
     padding: 100px 0;
+    z-index: 10000;
 
     .contact-info {
       display: flex;
@@ -297,7 +298,7 @@ export const HomeContainer = styled.div`
         margin: 0 auto;
         cursor: pointer;
         text-decoration: none;
-        transition: 10s ease-in-out all;
+        transition: 160ms ease-in-out all;
 
         @media screen and (max-width: 768.99px) {
           width: 100%;

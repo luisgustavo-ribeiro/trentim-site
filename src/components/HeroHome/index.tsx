@@ -5,7 +5,8 @@ import SUZ_LOGO from "../../assets/img/logos/cor/Suzano-horizontal.png";
 import SGB_LOGO from "../../assets/img/logos/cor/Saint-Gobain.png";
 import IBEMA_LOGO from "../../assets/img/logos/cor/Ibema-horizontal.png";
 import BV_LOGO from "../../assets/img/logos/cor/Bureau-Veritas.png";
-import TRENTIM_LOGO from "../../assets/img/logos/branco/Trentim.svg"
+import LOGO_HERO from "../../assets/logoHero.svg";
+
 
 const tabItems = [
   {
@@ -62,13 +63,14 @@ const HeroHome: React.FC = () => {
             <div className="hero-title">
               <div className="title title-center">
                 {windowSize.width < 768 ? 
-                <span style={{marginRight: 12}}>
-                  <TRENTIM_LOGO />
-                </span>
+                  <LOGO_HERO />
                 :
+                <>
                 <span className="shape square"></span>
-                } 
                 <span className="title">trentim</span>
+                </>
+                } 
+                
               </div>
               <div className="hero-subtitle">
                 <p>Aliamos pessoas, tecnologias e métodos para <br/>

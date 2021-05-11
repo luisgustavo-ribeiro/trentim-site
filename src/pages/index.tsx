@@ -85,7 +85,7 @@ const Home: React.FC = () => {
       setTimeout(() => {
         e.target.querySelector(".send-button").classList.add("contact-hovered");
         setBtnWorStylek("btn-work-hovered")
-      }, 10000);
+      }, 1000);
     }
   };
 
@@ -261,6 +261,7 @@ const Home: React.FC = () => {
         id="contact"
         onMouseEnter={(e) => contactFormEnter(e)}
         onMouseLeave={(e) => contactFormLeave(e)}
+        
       >
         <div className="container">
           <ContactForm />
